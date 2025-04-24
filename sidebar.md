@@ -1,3 +1,6 @@
 - Home
 - Patterns
   - [Guiding Pattern](patterns/guiding.md)
+  - [Puzzle Pattern](patterns/puzzle.md)
+  - [Drawing Pattern](patterns/drawing.md)
+  - [Threat Defender Pattern](patterns/threat-defender.md)
