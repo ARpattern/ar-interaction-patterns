@@ -1,0 +1,3 @@
+- Home
+- Patterns
+  - [Guiding Pattern](patterns/guiding.md)
