@@ -22,8 +22,7 @@ title: AR Pattern Library
 <section id="patterns" class="gallery-section">
   <h2 class="section-title">High-Level Patterns</h2>
   <div class="gallery">
-    {% assign patterns = site.patterns | where: "category", "high-level" %}
-    {% for pattern in all_pages %}
+{% for pattern in site.pages %}
       {% if pattern.category == "high-level" %}
       <div class="thumbnail">
         <a href="{{ pattern.url | relative_url }}">
