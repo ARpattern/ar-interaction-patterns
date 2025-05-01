@@ -107,6 +107,10 @@ html {
 	padding-left: 20px;
 	padding-right: 20px;
 	color: #A3A3A3;
+	
+	max-height: 4.5em; /* 约3行文字 */
+    overflow: hidden;
+    position: relative;
 }
 .gallery {
 	clear: both;
@@ -132,7 +136,21 @@ html {
 	border-radius: 3px;
 	padding-top: 20px;
 	border-bottom: 4px solid #6DC7D0;
+	
+    position: relative;
+    min-height: 360px; /* 保证卡片统一高度，按你页面适配调整 */
+    box-sizing: border-box;
+	
 }
+
+.show-more {
+  color: #007bff;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 0.5em;
+}
+
+
 .gallery .thumbnail h4 {
 	margin-top: 5px;
 	margin-bottom: 5px;
