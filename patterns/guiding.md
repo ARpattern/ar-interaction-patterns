@@ -4,8 +4,8 @@ title: Point of Interest Guide
 category: high-level
 tags: Navigation, AR
 thumbnail: /images/bkg_06.jpg
-summary: Helps users reach points of interest using spatial or visual guidance.
-description: Helps users reach points of interest using spatial or visual guidance. This may include animated trails, directional arrows, or audio cues dynamically adapted to the user's position and surrounding context.
+summary: Guiding to Points of Interest (PoIs)
+description: Guiding to Points of Interest (PoIs): To assist users in reaching PoIs effectively, combine spatial guidance, interface support, and multisensory feedback.
 permalink: /patterns/guiding/
 ---
 
