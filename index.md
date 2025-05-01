@@ -144,5 +144,4 @@ title: AR Pattern Library
   &copy; 2025 Yu Liu. This project is part of my PhD research and is released under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
 </div>
 <!-- Main Container Ends -->
-</body>
-</html>
+
