@@ -1,6 +1,22 @@
-# AR Interaction Patterns
+# Head-Mounted AR Interaction Design Pattern Library
 
-Welcome to the AR Interaction Design Pattern Library!  
-This site documents interaction design patterns for augmented reality experiences in cultural heritage, particularly using HoloLens devices.
+This project presents a web-based template for showcasing a set of design patterns developed as part of my PhD research on augmented reality (AR) interaction design using head-mounted displays (HMDs). It is intended for researchers, designers, and developers interested in applying reusable interaction strategies to AR experiences, especially in cultural heritage and museum contexts.
 
-Explore the sidebar to see available patterns.
+## 👤 Author
+
+**Yu Liu**  
+PhD Researcher in AR Interaction Design  
+[Your University or Institution Name]  
+
+## 🌐 Project Description
+
+This web template is designed to present and explore interaction design patterns in an intuitive, visual format. It is part of an academic effort to support designers and developers working with AR technologies.
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## 📫 Contact
+
+If you have any questions or suggestions, feel free to open an issue or contact me at:  
+`[your.email@example.com]`
