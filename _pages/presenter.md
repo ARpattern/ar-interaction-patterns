@@ -4,7 +4,6 @@ title: "AR Experience Presenter"
 category: "high-level"
 tags:
   - Exploration
-  - AR Experience
   - Experience Navigation
 thumbnail: /images/Presenter_Button.png
 summary: "Exploring and Controlling AR Content"
