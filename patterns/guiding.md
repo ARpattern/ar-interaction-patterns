@@ -1,3 +1,8 @@
+---
+layout: default
+title: Guiding Pattern
+---
+
 # Guiding Pattern
 
 **Intent:** Guide users to relevant exhibits in AR space.

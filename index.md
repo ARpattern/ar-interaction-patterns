@@ -1,35 +1,11 @@
-<!doctype html>
-<html>
-<head>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-<meta charset="utf-8">
-<meta name="google-site-verification" content="iBer0Ocd9YxV_IApnUwn2zfPS-Z1agQIB4_nalVPR2s" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AR Pattern Library</title>
-<link href="css/simpleGridTemplate.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-<!-- Main Container -->
-<div class="container"> 
-  <!-- Header -->
-	
+---
+layout: default
+title: AR Pattern Library
+---
 
-<div class="title-bar">
-  <h4 class="logo">AR Pattern Library</h4>
-  <p class="tagline">An HMD-based AR interaction design pattern collection</p>
-</div>
-	
-<nav class="navbar">
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#patterns">Patterns</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-	
-  <!-- Hero Section -->
+
+
+
   <section id="about" class="intro">
     <div class="column">
       <img src="images/HomePage/ARInteraction.png" alt="" class="profile"> </div>    
