@@ -3,6 +3,8 @@ layout: default
 title: AR Pattern Library
 ---
 
+<p style="color: red;">🚀 如果你看到这段红字，说明 layout 成功生效！</p>
+
 <section id="about" class="intro">
   <div class="column">
     <img src="/images/HomePage/ARInteraction.png" alt="" class="profile">
