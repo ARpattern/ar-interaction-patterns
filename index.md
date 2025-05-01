@@ -29,11 +29,13 @@ title: AR Pattern Library
         <h4>Point of Interest Guide</h4>
       </a>
       <p class="tag">Navigation, AR</p>
-      <p class="text_column">
-        <span class="short-text">Helps users reach points of interest using spatial or visual guidance.</span>
-        <span class="full-text" style="display:none;">Helps users reach points of interest using spatial or visual guidance. This may include animated trails, directional arrows, or audio cues dynamically adapted to the user's position and surrounding context.</span>
+      <div class="text_column">
+        <div class="text-wrapper">
+          <span class="short-text">Helps users reach points of interest using spatial or visual guidance.</span>
+          <span class="full-text" style="display:none;">Helps users reach points of interest using spatial or visual guidance. This may include animated trails, directional arrows, or audio cues dynamically adapted to the user's position and surrounding context.</span>
+        </div>
         <span class="show-more" onclick="toggleText(this)">More</span>
-      </p>
+      </div>
     </div>
 
     <div class="thumbnail">
@@ -42,11 +44,13 @@ title: AR Pattern Library
         <h4>AR Experience Indicator</h4>
       </a>
       <p class="tag">Focus, AR Effects</p>
-      <p class="text_column">
-        <span class="short-text">Directs users' attention using animation, glow, or spatial triggers.</span>
-        <span class="full-text" style="display:none;">Directs users' attention using animation, glow, or spatial triggers. It ensures the viewer does not miss key visual cues or interactive elements by emphasizing specific areas in the AR environment.</span>
+      <div class="text_column">
+        <div class="text-wrapper">
+          <span class="short-text">Directs users' attention using animation, glow, or spatial triggers.</span>
+          <span class="full-text" style="display:none;">Directs users' attention using animation, glow, or spatial triggers. It ensures the viewer does not miss key visual cues or interactive elements by emphasizing specific areas in the AR environment.</span>
+        </div>
         <span class="show-more" onclick="toggleText(this)">More</span>
-      </p>
+      </div>
     </div>
 
     <div class="thumbnail">
@@ -55,11 +59,13 @@ title: AR Pattern Library
         <h4>AR Experience Presenter</h4>
       </a>
       <p class="tag">Step-by-step, Info Flow</p>
-      <p class="text_column">
-        <span class="short-text">Presents exhibit content in progressive steps with navigation controls.</span>
-        <span class="full-text" style="display:none;">Presents exhibit content in progressive steps with navigation controls. This supports logical sequencing and maintains user focus while delivering structured information in AR.</span>
+      <div class="text_column">
+        <div class="text-wrapper">
+          <span class="short-text">Presents exhibit content in progressive steps with navigation controls.</span>
+          <span class="full-text" style="display:none;">Presents exhibit content in progressive steps with navigation controls. This supports logical sequencing and maintains user focus while delivering structured information in AR.</span>
+        </div>
         <span class="show-more" onclick="toggleText(this)">More</span>
-      </p>
+      </div>
     </div>
   </div>
 </section>
@@ -75,11 +81,13 @@ title: AR Pattern Library
         <h4>Labeling</h4>
       </a>
       <p class="tag">AR, Text Overlay</p>
-      <p class="text_column">
-        <span class="short-text">Displays labels over exhibit parts in AR view.</span>
-        <span class="full-text" style="display:none;">Displays labels over exhibit parts in AR view. Labels may be context-sensitive, appear on demand, or fade in/out as the user navigates around the exhibit.</span>
+      <div class="text_column">
+        <div class="text-wrapper">
+          <span class="short-text">Displays labels over exhibit parts in AR view.</span>
+          <span class="full-text" style="display:none;">Displays labels over exhibit parts in AR view. Labels may be context-sensitive, appear on demand, or fade in/out as the user navigates around the exhibit.</span>
+        </div>
         <span class="show-more" onclick="toggleText(this)">More</span>
-      </p>
+      </div>
     </div>
 
     <div class="thumbnail">
@@ -88,11 +96,13 @@ title: AR Pattern Library
         <h4>Indicating & Triggering</h4>
       </a>
       <p class="tag">Activation, Hints</p>
-      <p class="text_column">
-        <span class="short-text">Tells users what can be triggered, and how.</span>
-        <span class="full-text" style="display:none;">Tells users what can be triggered, and how. Visual hints, glow outlines, or vibration feedback indicate interactable objects and provide onboarding guidance.</span>
+      <div class="text_column">
+        <div class="text-wrapper">
+          <span class="short-text">Tells users what can be triggered, and how.</span>
+          <span class="full-text" style="display:none;">Tells users what can be triggered, and how. Visual hints, glow outlines, or vibration feedback indicate interactable objects and provide onboarding guidance.</span>
+        </div>
         <span class="show-more" onclick="toggleText(this)">More</span>
-      </p>
+      </div>
     </div>
 
   </div>
@@ -101,16 +111,21 @@ title: AR Pattern Library
 <!-- JS for "More" toggle -->
 <script>
 function toggleText(button) {
-  const shortText = button.parentNode.querySelector('.short-text');
-  const fullText = button.parentNode.querySelector('.full-text');
+  const wrapper = button.parentNode.querySelector('.text-wrapper');
+  const short = wrapper.querySelector('.short-text');
+  const full = wrapper.querySelector('.full-text');
 
-  if (fullText.style.display === 'none') {
-    fullText.style.display = 'inline';
-    shortText.style.display = 'none';
+  if (full.style.display === 'none') {
+    full.style.display = 'inline';
+    short.style.display = 'none';
+    wrapper.style.webkitLineClamp = 'unset';
+    wrapper.style.maxHeight = 'none';
     button.textContent = 'Less';
   } else {
-    fullText.style.display = 'none';
-    shortText.style.display = 'inline';
+    full.style.display = 'none';
+    short.style.display = 'inline';
+    wrapper.style.webkitLineClamp = '2';
+    wrapper.style.maxHeight = '2.8em';
     button.textContent = 'More';
   }
 }

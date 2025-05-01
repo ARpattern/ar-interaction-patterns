@@ -111,6 +111,12 @@ html {
 	max-height: 4.5em; /* 约3行文字 */
     overflow: hidden;
     position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 6.5em; /* 固定高度，2 行文字 + 1 行按钮 */
+	
 }
 .gallery {
 	clear: both;
@@ -142,12 +148,21 @@ html {
     box-sizing: border-box;
 	
 }
+.text-wrapper {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;       /* 限制显示2行 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.4em;
+  max-height: 2.8em;
+}
 
 .show-more {
+  align-self: flex-start;
   color: #007bff;
   cursor: pointer;
-  display: inline-block;
-  margin-top: 0.5em;
+  font-weight: bold;
+  margin-top: 0.3em;
 }
 
 
