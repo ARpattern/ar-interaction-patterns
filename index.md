@@ -22,51 +22,23 @@ title: AR Pattern Library
 <section id="patterns" class="gallery-section">
   <h2 class="section-title">High-Level Patterns</h2>
   <div class="gallery">
-
+    {% assign patterns = site.pages | where: "category", "high-level" %}
+    {% for pattern in patterns %}
     <div class="thumbnail">
-      <a href="{{ '/patterns/guiding.html' | relative_url }}">
-        <img src="{{ '/images/bkg_06.jpg' | relative_url }}" alt="Guiding" class="cards"/>
-        <h4>Point of Interest Guide</h4>
+      <a href="{{ pattern.url | relative_url }}">
+        <img src="{{ pattern.thumbnail | relative_url }}" alt="{{ pattern.title }}" class="cards"/>
+        <h4>{{ pattern.title }}</h4>
       </a>
-      <p class="tag">Navigation, AR</p>
+      <p class="tag">{{ pattern.tags }}</p>
       <div class="text_column">
         <div class="text-wrapper">
-          <span class="short-text">Helps users reach points of interest using spatial or visual guidance.</span>
-          <span class="full-text" style="display:none;">Helps users reach points of interest using spatial or visual guidance. This may include animated trails, directional arrows, or audio cues dynamically adapted to the user's position and surrounding context.</span>
+          <span class="short-text">{{ pattern.summary }}</span>
+          <span class="full-text" style="display:none;">{{ pattern.description }}</span>
         </div>
         <span class="show-more" onclick="toggleText(this)">More</span>
       </div>
     </div>
-
-    <div class="thumbnail">
-      <a href="{{ '/patterns/attention.html' | relative_url }}">
-        <img src="{{ '/images/bkg_06.jpg' | relative_url }}" alt="Attention Guiding" class="cards"/>
-        <h4>AR Experience Indicator</h4>
-      </a>
-      <p class="tag">Focus, AR Effects</p>
-      <div class="text_column">
-        <div class="text-wrapper">
-          <span class="short-text">Directs users' attention using animation, glow, or spatial triggers.</span>
-          <span class="full-text" style="display:none;">Directs users' attention using animation, glow, or spatial triggers. It ensures the viewer does not miss key visual cues or interactive elements by emphasizing specific areas in the AR environment.</span>
-        </div>
-        <span class="show-more" onclick="toggleText(this)">More</span>
-      </div>
-    </div>
-
-    <div class="thumbnail">
-      <a href="{{ '/patterns/sequential.html' | relative_url }}">
-        <img src="{{ '/images/bkg_06.jpg' | relative_url }}" alt="Sequential Explanation" class="cards"/>
-        <h4>AR Experience Presenter</h4>
-      </a>
-      <p class="tag">Step-by-step, Info Flow</p>
-      <div class="text_column">
-        <div class="text-wrapper">
-          <span class="short-text">Presents exhibit content in progressive steps with navigation controls.</span>
-          <span class="full-text" style="display:none;">Presents exhibit content in progressive steps with navigation controls. This supports logical sequencing and maintains user focus while delivering structured information in AR.</span>
-        </div>
-        <span class="show-more" onclick="toggleText(this)">More</span>
-      </div>
-    </div>
+    {% endfor %}
   </div>
 </section>
 

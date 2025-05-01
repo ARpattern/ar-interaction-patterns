@@ -1,6 +1,12 @@
 ---
 layout: default
 title: AR Experience Indicator
+category: high-level
+tags: Focus, AR Effects
+thumbnail: /images/bkg_06.jpg
+summary: Directs users' attention using animation, glow, or spatial triggers.
+description: Directs users' attention using animation, glow, or spatial triggers. It ensures the viewer does not miss key visual cues or interactive elements by emphasizing specific areas in the AR environment.
+permalink: /patterns/indicator/
 ---
 
 # AR Experience Indicator

@@ -1,6 +1,12 @@
 ---
 layout: default
 title: AR Experience Presenter
+category: high-level
+tags: Step-by-step, Info Flow
+thumbnail: /images/bkg_06.jpg
+summary: Presents exhibit content in progressive steps with navigation controls.
+description: Presents exhibit content in progressive steps with navigation controls. This supports logical sequencing and maintains user focus while delivering structured information in AR.
+permalink: /patterns/presenter/
 ---
 
 # AR Experience Presenter
