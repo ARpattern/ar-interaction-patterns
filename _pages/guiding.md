@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Point of Interest Guide
-category: high-level
+title: "Point of Interest Guide"
+category: "high-level"
 tags:
   - Navigation
   - AR
 thumbnail: /images/bkg_06.jpg
-summary: Guiding to Points of Interest (PoIs)
-description: Guiding to Points of Interest (PoIs): To assist users in reaching PoIs effectively, combine spatial guidance, interface support, and multisensory feedback.
+summary: "Guiding to Points of Interest (PoIs)"
+description: "Guiding to Points of Interest (PoIs): To assist users in reaching PoIs effectively, combine spatial guidance, interface support, and multisensory feedback."
 permalink: /patterns/guiding/
 ---
 
