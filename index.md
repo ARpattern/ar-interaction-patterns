@@ -3,15 +3,7 @@ layout: default
 title: AR Pattern Library
 ---
 
-    <!-- Navigation -->
-<nav class="navbar">
-  <ul class="nav-links">
-    <a href="{{ '/index.html' | relative_url }}">Home</a>
-    <li><a href="{{ '/#about' | relative_url }}">About</a></li>
-    <li><a href="{{ '/#patterns' | relative_url }}">Patterns</a></li>
-    <li><a href="{{ '/#contact' | relative_url }}">Contact</a></li>
-  </ul>
-</nav>
+
 
 <section id="about" class="intro">
   <div class="column">
