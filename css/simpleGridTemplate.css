@@ -141,12 +141,21 @@ header {
 	border: 3px solid #FFFFFF;
 	color: #FFFFFF;
 	transition: all 0.3s linear;
+	display: inline-block;
 }
 .button:hover {
 	background-color: #6DC7D0;
 	color: #FFFFFF;
 	cursor: pointer;
 }
+
+footer {
+  background-color: #B3B3B3;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center; 
+}
+
 .copyright {
 	text-align: center;
 	padding-top: 20px;
