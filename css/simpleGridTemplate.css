@@ -118,13 +118,14 @@ html {
   height: 6.5em; /* 固定高度，2 行文字 + 1 行按钮 */
 	
 }
-a {
+.logo a {
   text-decoration: none;
-  color: #000;
+  color: inherit; /* 继承父元素颜色 */
 }
 
-a:hover {
-  color: #06D5F7; /* or whatever accent color */
+.logo a:hover {
+  color: #007bff; /* 可选：鼠标悬停时变色 */
+  text-decoration: underline; /* 或保持无下划线 */
 }
 .gallery {
 	clear: both;
