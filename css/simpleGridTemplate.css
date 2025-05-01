@@ -118,6 +118,14 @@ html {
   height: 6.5em; /* 固定高度，2 行文字 + 1 行按钮 */
 	
 }
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #06D5F7; /* or whatever accent color */
+}
 .gallery {
 	clear: both;
 	display: inline-block;
