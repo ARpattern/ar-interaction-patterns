@@ -2,7 +2,7 @@
 layout: default
 title: AR Experience Presenter
 category: high-level
-tags: Step-by-step, Info Flow
+tags: AR Experience, Experience Navigation
 thumbnail: /images/bkg_06.jpg
 summary: Exploring and Controlling AR Content
 description: Exploring and Controlling AR Content: Present the content in a structured, navigable, and user-controlled manner.
