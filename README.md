@@ -6,7 +6,7 @@ This project presents a web-based template for showcasing a set of design patter
 
 **Yu Liu**  
 PhD Researcher in AR Interaction Design  
-[Your University or Institution Name]  
+[Hochuschule RheinMain]  
 
 ## 🌐 Project Description
 
@@ -19,4 +19,4 @@ This project is licensed under the [MIT License](LICENSE).
 ## 📫 Contact
 
 If you have any questions or suggestions, feel free to open an issue or contact me at:  
-`[your.email@example.com]`
+`[yu.liu@hs-rm.de]`
