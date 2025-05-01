@@ -22,25 +22,37 @@ title: AR Pattern Library
 <section id="patterns" class="gallery-section">
   <h2 class="section-title">High-Level Patterns</h2>
   <div class="gallery">
-    {% assign patterns = site.pages | where: "category", "high-level" %}
-    {% for pattern in patterns %}
-    <div class="thumbnail">
-      <a href="{{ pattern.url | relative_url }}">
-        <img src="{{ pattern.thumbnail | relative_url }}" alt="{{ pattern.title }}" class="cards"/>
-        <h4>{{ pattern.title }}</h4>
-      </a>
-      <p class="tag">{{ pattern.tags }}</p>
-      <div class="text_column">
-        <div class="text-wrapper">
-          <span class="short-text">{{ pattern.summary }}</span>
-          <span class="full-text" style="display:none;">{{ pattern.description }}</span>
+    {% assign all_pages = site.pages %}
+    {% for pattern in all_pages %}
+      {% if pattern.category == "high-level" %}
+      <div class="thumbnail">
+        <a href="{{ pattern.url | relative_url }}">
+          <img src="{{ pattern.thumbnail | relative_url }}" alt="{{ pattern.title }}" class="cards"/>
+          <h4>{{ pattern.title }}</h4>
+        </a>
+
+        <!-- 支持 tag 是数组格式 -->
+        <p class="tag">
+          {% if pattern.tags %}
+            {% for tag in pattern.tags %}
+              <span class="tag-item">{{ tag }}</span>{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+          {% endif %}
+        </p>
+
+        <div class="text_column">
+          <div class="text-wrapper">
+            <span class="short-text">{{ pattern.summary }}</span>
+            <span class="full-text" style="display:none;">{{ pattern.description }}</span>
+          </div>
+          <span class="show-more" onclick="toggleText(this)">More</span>
         </div>
-        <span class="show-more" onclick="toggleText(this)">More</span>
       </div>
-    </div>
+      {% endif %}
     {% endfor %}
   </div>
 </section>
+
 
 <!-- Sub-Patterns Section -->
 <section class="gallery-section">

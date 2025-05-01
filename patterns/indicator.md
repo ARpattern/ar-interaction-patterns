@@ -2,7 +2,10 @@
 layout: default
 title: AR Experience Indicator
 category: high-level
-tags: Indication, AR Experience, AR Effects
+tags:
+  - Indication
+  - AR Experience
+  - AR Effects
 thumbnail: /images/bkg_06.jpg
 summary: Recognizing and Activating AR Experiences
 description: Recognizing and Activating AR Experiences: To help visitors easily identify and access AR content, combine clear visual cues with intuitive activation methods and feedback.
