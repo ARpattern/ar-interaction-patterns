@@ -5,7 +5,7 @@ category: "high-level"
 tags:
   - Navigation
   - AR
-thumbnail: /images/bkg_06.jpg
+thumbnail: /images/PatternImage/Circles.png
 summary: "Guiding to Points of Interest (PoIs)"
 description: "Guiding to Points of Interest (PoIs): To assist users in reaching PoIs effectively, combine spatial guidance, interface support, and multisensory feedback."
 permalink: /patterns/guiding/
