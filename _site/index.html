@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AR Pattern Library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="/css/simpleGridTemplate.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+<div class="title-bar">
+  <a href="/index.html">
+  <h4 class="logo">
+    <a href="/index.html">AR Pattern Library</a>
+  </h4>
+  </a>
+  <p class="tagline">An HMD-based AR interaction design pattern collection</p>
+</div>
+    <!-- Navigation -->
+<nav class="navbar">
+  <ul class="nav-links">
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#patterns">Patterns</a></li>
+    <li><a href="/#contact">Contact</a></li>
+  </ul>
+</nav>
+
+
+    <!-- Main Content -->
+    <main>
+      <section id="about" class="intro">
+  <div class="column">
+    <img src="/images/HomePage/ARInteraction.png" alt="AR Interaction" class="profile" />
+  </div>    
+  <div class="column">
+    <h3 class="section-subtitle">Introduction</h3>
+    <p class="intro-text">
+      AR Interaction Design Patterns provide structured solutions to recurring challenges in augmented reality interaction design. By capturing best practices across domains such as user navigation, object manipulation, and spatial feedback, these patterns help designers and developers create intuitive, efficient, and context-aware AR experiences.
+    </p>
+    <p class="intro-text">
+      Grounded in empirical research and iterative prototyping, AR interaction patterns serve as reusable design knowledge that supports the development of user-centered AR applications, particularly in complex environments like cultural heritage, education, and gaming.
+    </p>
+  </div>
+</section>
+
+<!-- High-Level Patterns Section -->
+<section id="patterns" class="gallery-section">
+  <h2 class="section-title">High-Level Patterns</h2>
+  <div class="gallery">
+
+      
+      <div class="thumbnail">
+        <a href="/patterns/guiding/">
+          <img src="/images/Circles.png" alt="Point of Interest Guide" class="cards" />
+          <h4>Point of Interest Guide</h4>
+        </a>
+
+        <!-- 支持 tag 是数组格式 -->
+        <p class="tag">
+          
+            
+              <span class="tag-item">Navigation</span>, 
+            
+              <span class="tag-item">AR</span>
+            
+          
+        </p>
+
+        <div class="text_column">
+          <div class="text-wrapper">
+            <span class="short-text">Guiding to Points of Interest (PoIs)</span>
+            <span class="full-text" style="display:none;">Guiding to Points of Interest (PoIs): To assist users in reaching PoIs effectively, combine spatial guidance, interface support, and multisensory feedback.</span>
+          </div>
+          <span class="show-more" onclick="toggleText(this)">More</span>
+        </div>
+      </div>
+      
+    
+      
+    
+      
+      <div class="thumbnail">
+        <a href="/patterns/indicator/">
+          <img src="/images/OrcaTrigger.jpg" alt="AR Experience Indicator" class="cards" />
+          <h4>AR Experience Indicator</h4>
+        </a>
+
+        <!-- 支持 tag 是数组格式 -->
+        <p class="tag">
+          
+            
+              <span class="tag-item">Indication</span>, 
+            
+              <span class="tag-item">AR Experience</span>, 
+            
+              <span class="tag-item">AR Effects</span>
+            
+          
+        </p>
+
+        <div class="text_column">
+          <div class="text-wrapper">
+            <span class="short-text">Recognizing and Activating AR Experiences</span>
+            <span class="full-text" style="display:none;">Recognizing and Activating AR Experiences: To help visitors easily identify and access AR content, combine clear visual cues with intuitive activation methods and feedback.</span>
+          </div>
+          <span class="show-more" onclick="toggleText(this)">More</span>
+        </div>
+      </div>
+      
+    
+      
+      <div class="thumbnail">
+        <a href="/patterns/presenter/">
+          <img src="/images/Presenter_Button.png" alt="AR Experience Presenter" class="cards" />
+          <h4>AR Experience Presenter</h4>
+        </a>
+
+        <!-- 支持 tag 是数组格式 -->
+        <p class="tag">
+          
+            
+              <span class="tag-item">Exploration</span>, 
+            
+              <span class="tag-item">AR Experience</span>, 
+            
+              <span class="tag-item">Experience Navigation</span>
+            
+          
+        </p>
+
+        <div class="text_column">
+          <div class="text-wrapper">
+            <span class="short-text">Exploring and Controlling AR Content</span>
+            <span class="full-text" style="display:none;">Exploring and Controlling AR Content: Present the content in a structured, navigable, and user-controlled manner.</span>
+          </div>
+          <span class="show-more" onclick="toggleText(this)">More</span>
+        </div>
+      </div>
+      
+    
+  </div>
+</section>
+
+<!-- Sub-Patterns Section -->
+<section class="gallery-section">
+  <h2 class="section-title">Sub-Patterns</h2>
+  <div class="gallery">
+
+    <div class="thumbnail">
+      <a href="/patterns/labeling.html">
+        <img src="/images/bkg_06.jpg" alt="Labeling" class="cards" />
+        <h4>Labeling</h4>
+      </a>
+      <p class="tag">AR, Text Overlay</p>
+      <div class="text_column">
+        <div class="text-wrapper">
+          <span class="short-text">Displays labels over exhibit parts in AR view.</span>
+          <span class="full-text" style="display:none;">Displays labels over exhibit parts in AR view. Labels may be context-sensitive, appear on demand, or fade in/out as the user navigates around the exhibit.</span>
+        </div>
+        <span class="show-more" onclick="toggleText(this)">More</span>
+      </div>
+    </div>
+
+    <div class="thumbnail">
+      <a href="/patterns/triggering.html">
+        <img src="/images/bkg_06.jpg" alt="Indicating &amp; Triggering" class="cards" />
+        <h4>Indicating &amp; Triggering</h4>
+      </a>
+      <p class="tag">Activation, Hints</p>
+      <div class="text_column">
+        <div class="text-wrapper">
+          <span class="short-text">Tells users what can be triggered, and how.</span>
+          <span class="full-text" style="display:none;">Tells users what can be triggered, and how. Visual hints, glow outlines, or vibration feedback indicate interactable objects and provide onboarding guidance.</span>
+        </div>
+        <span class="show-more" onclick="toggleText(this)">More</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- JS for "More" toggle -->
+<script>
+function toggleText(button) {
+  const wrapper = button.parentNode.querySelector('.text-wrapper');
+  const short = wrapper.querySelector('.short-text');
+  const full = wrapper.querySelector('.full-text');
+
+  if (full.style.display === 'none') {
+    full.style.display = 'inline';
+    short.style.display = 'none';
+    wrapper.style.webkitLineClamp = 'unset';
+    wrapper.style.maxHeight = 'none';
+    button.textContent = 'Less';
+  } else {
+    full.style.display = 'none';
+    short.style.display = 'inline';
+    wrapper.style.webkitLineClamp = '2';
+    wrapper.style.maxHeight = '2.8em';
+    button.textContent = 'More';
+  }
+}
+</script>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <p class="hero_header">GET IN TOUCH WITH ME</p>
+      <a href="https://mail.google.com/mail/?view=cm&to=yu.liu@hs-rm.de" target="_blank" class="button">EMAIL ME</a>
+    </footer>
+
+    <div class="copyright">
+      &copy; 2025 Yu Liu. This project is part of my PhD research and is released under the 
+      <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
+    </div>
+  </div>
+</body>
+</html>
