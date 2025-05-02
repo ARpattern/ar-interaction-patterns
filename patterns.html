@@ -1,0 +1,63 @@
+---
+layout: default
+title: Pattern Library
+custom_js: custom-script
+permalink: /patterns.html
+---
+
+<section class="gallery-section">
+  <h2 class="section-title">High-Level Patterns</h2>
+  <div class="gallery">
+    {% for pattern in site.pages %}
+      {% if pattern.category == "high-level" %}
+        <div class="thumbnail">
+          <a href="{{ pattern.url | relative_url }}">
+            <div class="image-container">
+              <img src="{{ pattern.thumbnail | relative_url }}" alt="{{ pattern.title }}">
+            </div>
+            <h4>{{ pattern.title }}</h4>
+          </a>
+
+          <p class="tag">
+            {% if pattern.tags %}
+              {% for tag in pattern.tags %}
+                <span class="tag-item">{{ tag }}</span>{% unless forloop.last %}, {% endunless %}
+              {% endfor %}
+            {% endif %}
+          </p>
+
+          <div class="text_column">
+            <div class="text-wrapper">
+              <span class="short-text">{{ pattern.summary }}</span>
+              <span class="full-text" style="display:none;">{{ pattern.description }}</span>
+            </div>
+            <span class="show-more" onclick="toggleText(this)">More</span>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<script>
+    function toggleText(button) {
+      const wrapper = button.parentNode.querySelector('.text-wrapper');
+      const short = wrapper.querySelector('.short-text');
+      const full = wrapper.querySelector('.full-text');
+    
+      if (full.style.display === 'none') {
+        full.style.display = 'inline';
+        short.style.display = 'none';
+        wrapper.style.webkitLineClamp = 'unset';
+        wrapper.style.maxHeight = 'none';
+        button.textContent = 'Less';
+      } else {
+        full.style.display = 'none';
+        short.style.display = 'inline';
+        wrapper.style.webkitLineClamp = '2';
+        wrapper.style.maxHeight = '2.8em';
+        button.textContent = 'More';
+      }
+    }
+    </script>
+    

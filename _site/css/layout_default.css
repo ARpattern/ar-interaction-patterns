@@ -3,6 +3,10 @@
 .logo a {
 	text-decoration: none;
 	color: inherit; /* 继承父元素颜色 */
+
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: #353535;
   }
   
   .logo a:hover {
@@ -21,15 +25,18 @@
 	
 }
 
+.logo-section {
+	display: flex;
+	flex-direction: column;
+  }
+
 .title-bar {
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
-	justify-content: flex-start; /* 让元素从左开始排列 */
-	gap: 2rem;
+	padding: 1.2rem 2rem;
 	background-color: #ffffff;
-	padding: 1.2rem 5rem;
 	flex-wrap: wrap;
-	padding: 1.2rem 5rem 1.2rem 0rem;
   }
   
   .tagline {
@@ -48,6 +55,12 @@ body {
 	background-color: #FFFFFF;
 	margin: 0;
 }
+
+html, body {
+	overflow-x: hidden;
+	overflow-y: scroll; /* 防止滚动条影响布局跳动 */
+  }
+
 /* Container */
 .container {
 	width: 90%;
@@ -63,6 +76,47 @@ header {
 	background-color: #b8b8b8;
 	border-bottom: 1px solid #353635;
 }
+
+.header-right {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+  }
+
+  
+  .search-form input {
+	padding: 0.4rem 0.8rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.9rem;
+  }
+  
+  .header-nav {
+	list-style: none;
+	display: flex;
+	gap: 1rem;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .header-nav li a {
+	text-decoration: none;
+	color: #007bff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.95rem;
+	transition: color 0.2s ease;
+  }
+  
+  .header-nav li a:hover {
+	color: #0056b3;
+  }
+
+  .header-nav li a.active {
+	border-bottom: 2px solid #007bff;
+	font-weight: bold;
+	color: #007bff;
+  }
 
 .hero_header {
 	color: #FFFFFF;
@@ -88,15 +142,23 @@ header {
 }
 
 .nav-links li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
+	color: #ffffff;
+	text-decoration: none;
+	padding-bottom: 4px;
+	border-bottom: 2px solid transparent;
+	transition: border-color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+	border-bottom: 2px solid #007bff; /* 悬停时显示蓝色下划线 */
+  }
+  
+  .nav-links li a.active {
+	border-bottom: 2px solid #007bff; /* 当前页面高亮下划线 */
+	font-weight: bold;
+	color: #007bff;
+  }
 
-.nav-links li a:hover {
-  color: #00bfff; /* Hover 效果：亮蓝 */
-}
 html {
   scroll-behavior: smooth;
 }
@@ -110,7 +172,7 @@ html {
   margin-top: 0;
   margin-bottom: 1rem;
   font-family: 'Roboto', sans-serif;
-  border-left: 4px solid #0b07ff; /* 可选：加一点视觉引导 */
+  border-left: 4px solid #007bff; /* 可选：加一点视觉引导 */
   padding-left: 0.6rem;
 }
 .intro-text {
@@ -237,7 +299,7 @@ html {
 .gallery .thumbnail h4 {
 	margin-top: 5px;
 	margin-bottom: 5px;
-	color: #0550a5;
+	color: #007bff;
 	text-align: left;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -248,6 +310,35 @@ html {
 	text-align: left;
 	padding-left: 20px;
 }
+
+.thumbnail a {
+	text-decoration: none;
+	color: inherit;
+  }
+  
+  .thumbnail a:hover h4 {
+	color: #7a970f;         /* 悬停时改变标题颜色 */
+	text-decoration: none;  /* 不显示下划线 */
+  }
+
+  .thumbnail {
+	transition: box-shadow 0.3s ease, transform 0.3s ease;
+	cursor: pointer;
+  }
+  
+  .thumbnail:hover {
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	transform: translateY(-4px);
+  }
+  
+  .thumbnail:active {
+	transform: scale(0.97); /* 点击时轻微缩小 */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+
+
+
 /* More info */
 .intro {
 	background-color: #FFFFFF;
@@ -320,6 +411,15 @@ footer {
   text-align: center; 
 }
 
+footer, .copyright {
+	background: pink !important;
+	display: block !important;
+	padding: 40px !important;
+	color: black !important;
+	border: 3px dashed red;
+	font-size: 1.2rem;
+  }
+
 .copyright {
 	text-align: center;
 	padding-top: 20px;
@@ -367,6 +467,24 @@ footer {
 	margin-bottom: 0px;
 	margin-left: 0px;
 }
+
+.title-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .header-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
 .text_column {
 	width: 100%;
 	font-family: 'Roboto', sans-serif;

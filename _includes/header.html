@@ -1,0 +1,30 @@
+<!-- Header (Logo, Tagline, Search, Header Nav) -->
+<div class="title-bar">
+    <div class="logo-section">
+      <h4 class="logo">
+        <a href="{{ '/index.html' | relative_url }}">AR Pattern Library</a>
+      </h4>
+      <p class="tagline">An HMD-based AR interaction design pattern collection</p>
+    </div>
+  
+    <div class="header-right">
+      <form class="search-form" action="/search" method="get">
+        🔍 <input type="text" name="q" placeholder="Search..." />
+      </form>
+      <ul class="header-nav">
+        <li><a href="{{ '/about.html' | relative_url }}" class="{% if page.url == '/about.html' %}active{% endif %}">About</a></li>
+        <li><a href="{{ '/contact.html' | relative_url }}" class="{% if page.url == '/contact.html' %}active{% endif %}">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Primary Navigation -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="{{ '/index.html' | relative_url }}" class="{% if page.url == '/index.html' %}active{% endif %}">Home</a></li>
+      <li><a href="{{ '/patterns.html' | relative_url }}" class="{% if page.url contains 'patterns' and page.url != '/patterns/guiding/' %}active{% endif %}">Patterns</a></li>
+      <li><a href="{{ '/technology.html' | relative_url }}" class="{% if page.url == '/technology.html' %}active{% endif %}">Technology</a></li>
+      <li><a href="{{ '/literature.html' | relative_url }}" class="{% if page.url == '/literature.html' %}active{% endif %}">Literature</a></li>
+    </ul>
+  </nav>
+  

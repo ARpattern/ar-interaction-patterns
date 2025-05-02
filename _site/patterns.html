@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>AR Pattern Library</title>
+  <title>Pattern Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="/css/layout_default.css" rel="stylesheet">
@@ -36,8 +36,8 @@
   <!-- Primary Navigation -->
   <nav class="navbar">
     <ul class="nav-links">
-      <li><a href="/index.html" class="active">Home</a></li>
-      <li><a href="/patterns.html" class="">Patterns</a></li>
+      <li><a href="/index.html" class="">Home</a></li>
+      <li><a href="/patterns.html" class="active">Patterns</a></li>
       <li><a href="/technology.html" class="">Technology</a></li>
       <li><a href="/literature.html" class="">Literature</a></li>
     </ul>
@@ -45,23 +45,7 @@
   
 
     <main>
-      <section id="about" class="intro">
-  <div class="column">
-    <img src="/images/HomePage/ARInteraction.png" alt="AR Interaction" class="profile">
-  </div>    
-  <div class="column">
-    <h3 class="section-subtitle">AR Interaction Patterns</h3>
-    <p class="intro-text">
-      AR Interaction Design Patterns provide structured solutions to recurring challenges in augmented reality interaction design. By capturing best practices across domains such as user navigation, object manipulation, and spatial feedback, these patterns help designers and developers create intuitive, efficient, and context-aware AR experiences.
-    </p>
-    <p class="intro-text">
-      Grounded in empirical research and iterative prototyping, AR interaction patterns serve as reusable design knowledge that supports the development of user-centered AR applications, particularly in complex environments like cultural heritage, education, and gaming.
-    </p>
-  </div>
-</section>
-
-<!-- High-Level Patterns Section -->
-<section id="patterns" class="gallery-section">
+      <section class="gallery-section">
   <h2 class="section-title">High-Level Patterns</h2>
   <div class="gallery">
     
@@ -77,6 +61,7 @@
             </div>
             <h4>Point of Interest Guide</h4>
           </a>
+
           <p class="tag">
             
               
@@ -86,6 +71,7 @@
               
             
           </p>
+
           <div class="text_column">
             <div class="text-wrapper">
               <span class="short-text">Guiding to Points of Interest (PoIs)</span>
@@ -106,6 +92,7 @@
             </div>
             <h4>AR Experience Indicator</h4>
           </a>
+
           <p class="tag">
             
               
@@ -117,6 +104,7 @@
               
             
           </p>
+
           <div class="text_column">
             <div class="text-wrapper">
               <span class="short-text">Recognizing and Activating AR Experiences</span>
@@ -139,6 +127,7 @@
             </div>
             <h4>AR Experience Presenter</h4>
           </a>
+
           <p class="tag">
             
               
@@ -148,6 +137,7 @@
               
             
           </p>
+
           <div class="text_column">
             <div class="text-wrapper">
               <span class="short-text">Exploring and Controlling AR Content</span>
@@ -165,69 +155,28 @@
   </div>
 </section>
 
-<!-- Sub-Patterns Section -->
-<section class="gallery-section">
-  <h2 class="section-title">Sub-Patterns</h2>
-  <div class="gallery">
-    <div class="thumbnail">
-      <a href="/patterns/labeling.html">
-        <div class="image-container">
-          <img src="/images/bkg_06.jpg" alt="Labeling">
-        </div>
-        <h4>Labeling</h4>
-      </a>
-      <p class="tag">AR, Text Overlay</p>
-      <div class="text_column">
-        <div class="text-wrapper">
-          <span class="short-text">Displays labels over exhibit parts in AR view.</span>
-          <span class="full-text" style="display:none;">Displays labels over exhibit parts in AR view. Labels may be context-sensitive, appear on demand, or fade in/out as the user navigates around the exhibit.</span>
-        </div>
-        <span class="show-more" onclick="toggleText(this)">More</span>
-      </div>
-    </div>
-
-    <div class="thumbnail">
-      <a href="/patterns/triggering.html">
-        <div class="image-container">
-          <img src="/images/bkg_06.jpg" alt="Indicating & Triggering">
-        </div>
-        <h4>Indicating & Triggering</h4>
-      </a>
-      <p class="tag">Activation, Hints</p>
-      <div class="text_column">
-        <div class="text-wrapper">
-          <span class="short-text">Tells users what can be triggered, and how.</span>
-          <span class="full-text" style="display:none;">Tells users what can be triggered, and how. Visual hints, glow outlines, or vibration feedback indicate interactable objects and provide onboarding guidance.</span>
-        </div>
-        <span class="show-more" onclick="toggleText(this)">More</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- JS for "More" toggle -->
 <script>
-function toggleText(button) {
-  const wrapper = button.parentNode.querySelector('.text-wrapper');
-  const short = wrapper.querySelector('.short-text');
-  const full = wrapper.querySelector('.full-text');
-
-  if (full.style.display === 'none') {
-    full.style.display = 'inline';
-    short.style.display = 'none';
-    wrapper.style.webkitLineClamp = 'unset';
-    wrapper.style.maxHeight = 'none';
-    button.textContent = 'Less';
-  } else {
-    full.style.display = 'none';
-    short.style.display = 'inline';
-    wrapper.style.webkitLineClamp = '2';
-    wrapper.style.maxHeight = '2.8em';
-    button.textContent = 'More';
-  }
-}
-</script>
-
+    function toggleText(button) {
+      const wrapper = button.parentNode.querySelector('.text-wrapper');
+      const short = wrapper.querySelector('.short-text');
+      const full = wrapper.querySelector('.full-text');
+    
+      if (full.style.display === 'none') {
+        full.style.display = 'inline';
+        short.style.display = 'none';
+        wrapper.style.webkitLineClamp = 'unset';
+        wrapper.style.maxHeight = 'none';
+        button.textContent = 'Less';
+      } else {
+        full.style.display = 'none';
+        short.style.display = 'inline';
+        wrapper.style.webkitLineClamp = '2';
+        wrapper.style.maxHeight = '2.8em';
+        button.textContent = 'More';
+      }
+    }
+    </script>
+    
     </main>
 
     <footer id="contact">

@@ -5,47 +5,32 @@
   <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link href="{{ '/css/simpleGridTemplate.css' | relative_url }}" rel="stylesheet" type="text/css">
+  <link href="{{ '/css/layout_default.css' | relative_url }}" rel="stylesheet">
 
+  {% if page.url contains '/patterns/' %}
+    <link href="{{ '/css/layout_pattern.css' | relative_url }}" rel="stylesheet">
+  {% elsif page.url == '/technology.html' %}
+    <link href="{{ '/css/layout_technology.css' | relative_url }}" rel="stylesheet">
+  {% elsif page.url == '/literature.html' %}
+    <link href="{{ '/css/layout_literature.css' | relative_url }}" rel="stylesheet">
+  {% endif %}
 </head>
+
 <body>
   <div class="container">
 
-    <!-- Header -->
-<div class="title-bar">
-  <a href="{{ '/index.html' | relative_url }}">
-  <h4 class="logo">
-    <a href="{{ '/index.html' | relative_url }}">AR Pattern Library</a>
-  </h4>
-  </a>
-  <p class="tagline">An HMD-based AR interaction design pattern collection</p>
-</div>
-    <!-- Navigation -->
-<nav class="navbar">
-  <ul class="nav-links">
-    <li><a href="{{ '/index.html' | relative_url }}">Home</a></li>
-    <li><a href="{{ '/#about' | relative_url }}">About</a></li>
-    <li><a href="{{ '/#patterns' | relative_url }}">Patterns</a></li>
-    <li><a href="{{ '/#contact' | relative_url }}">Contact</a></li>
-  </ul>
-</nav>
+    {% include header.html %}
 
-
-    <!-- Main Content -->
     <main>
       {{ content }}
     </main>
 
-    <!-- Footer -->
-    <footer id="contact">
-      <p class="hero_header">GET IN TOUCH WITH ME</p>
-      <a href="https://mail.google.com/mail/?view=cm&to=yu.liu@hs-rm.de" target="_blank" class="button">EMAIL ME</a>
-    </footer>
-
-    <div class="copyright">
-      &copy; 2025 Yu Liu. This project is part of my PhD research and is released under the 
-      <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
-    </div>
+    {% include footer.html %}
+    
+    
   </div>
+
+    <!-- 引入统一的 JavaScript 文件 -->
+    <script src="{{ '/assets/js/site.js' | relative_url }}"></script>
 </body>
 </html>

@@ -5,48 +5,94 @@
   <title>Point of Interest Guide</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link href="/css/simpleGridTemplate.css" rel="stylesheet" type="text/css">
-
+  <link href="/css/layout_default.css" rel="stylesheet">
+  <link href="/css/layout_pattern.css" rel="stylesheet">
 </head>
+
 <body>
   <div class="container">
 
-    <!-- Header -->
+    <!-- Header (Logo, Tagline, Search, Header Nav) -->
 <div class="title-bar">
-  <a href="/index.html">
-  <h4 class="logo">
-    <a href="/index.html">AR Pattern Library</a>
-  </h4>
-  </a>
-  <p class="tagline">An HMD-based AR interaction design pattern collection</p>
-</div>
-    <!-- Navigation -->
-<nav class="navbar">
-  <ul class="nav-links">
-    <li><a href="/index.html">Home</a></li>
-    <li><a href="/#about">About</a></li>
-    <li><a href="/#patterns">Patterns</a></li>
-    <li><a href="/#contact">Contact</a></li>
-  </ul>
-</nav>
+    <div class="logo-section">
+      <h4 class="logo">
+        <a href="/index.html">AR Pattern Library</a>
+      </h4>
+      <p class="tagline">An HMD-based AR interaction design pattern collection</p>
+    </div>
+  
+    <div class="header-right">
+      <form class="search-form" action="/search" method="get">
+        🔍 <input type="text" name="q" placeholder="Search..." />
+      </form>
+      <ul class="header-nav">
+        <li><a href="/about.html" class="">About</a></li>
+        <li><a href="/contact.html" class="">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Primary Navigation -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="/index.html" class="">Home</a></li>
+      <li><a href="/patterns.html" class="">Patterns</a></li>
+      <li><a href="/technology.html" class="">Technology</a></li>
+      <li><a href="/literature.html" class="">Literature</a></li>
+    </ul>
+  </nav>
+  
 
+    <!-- Pattern-specific secondary nav -->
+     
+    <nav class="pattern-subnav">
+    <ul class="dropdown-menu">
+      <li class="dropdown">
+        <span>High-Level Patterns ▾</span>
+        <ul class="dropdown-content">
+          <li><a href="/patterns/guiding/">Point of Interest Guide</a></li>
+          <li><a href="/patterns/triggering/">Indicating & Triggering</a></li>
+          <li><a href="/patterns/sequencing/">Sequential Explanation</a></li>
+        </ul>
+      </li>
+  
+      <li class="dropdown">
+        <span>Sub-Level Patterns ▾</span>
+        <ul class="dropdown-content">
+          <li><a href="/patterns/labeling/">Labeling</a></li>
+          <li><a href="/patterns/drawing/">AR Feature Drawing</a></li>
+          <li><a href="/patterns/reassembling/">Exhibit Reassembler</a></li>
+          <li><a href="/patterns/navigation-feedback/">Navigation Feedback</a></li>
+          <li><a href="/patterns/proximity-activation/">Proximity Activation</a></li>
+          <li><a href="/patterns/environment-aware/">Environment-Aware Cues</a></li>
+          <li><a href="/patterns/multi-modal/">Multi-Modal Interaction</a></li>
+          <li><a href="/patterns/gesture-trigger/">Gesture Trigger</a></li>
+          <li><a href="/patterns/hint-overlay/">Hint Overlay</a></li>
+          <li><a href="/patterns/object-highlighting/">Object Highlighting</a></li>
+          <!-- 你可以继续添加更多 pattern 链接 -->
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  
 
-    <!-- Main Content -->
-    <main>
+    <main class="pattern-content">
       <h1 id="point-of-interest-guide">Point of Interest Guide</h1>
 
-<p><strong>Problem</strong><br />
-Visitors in AR-enhanced environments such as museums or exhibitions may struggle to efficiently locate points of interest (PoIs). Without clear directional guidance, they risk missing key exhibits due to complex spatial layouts, limited time, or inadequate physical signage.</p>
+<h2 id="problem">Problem</h2>
+<p>Visitors in AR-enhanced environments such as museums or exhibitions may struggle to efficiently locate points of interest (PoIs). Without clear directional guidance, they risk missing key exhibits due to complex spatial layouts, limited time, or inadequate physical signage.</p>
 
-<p><strong>Context</strong><br />
-This pattern is suitable for AR spaces containing multiple PoIs, such as museums, galleries, or trade shows. It is especially valuable when:</p>
+<h2 id="context">Context</h2>
+<p>This pattern is suitable for AR spaces containing multiple PoIs, such as museums, galleries, or trade shows. It is especially valuable when:</p>
+
 <ul>
   <li>Visitors have limited time and need to prioritize key content.</li>
   <li>The venue is large or subdivided, making it hard to identify or reach a specific exhibit.</li>
   <li>Conventional maps or signage are insufficient or difficult to interpret.</li>
 </ul>
 
-<p><strong>Use When</strong></p>
+<h2 id="use-when">Use When</h2>
+
 <ul>
   <li>Visitors begin exploration and seek their first AR destination.</li>
   <li>Visitors want to locate unvisited exhibits efficiently.</li>
@@ -54,54 +100,58 @@ This pattern is suitable for AR spaces containing multiple PoIs, such as museums
   <li>Time constraints require targeted navigation.</li>
 </ul>
 
-<p><strong>Solution</strong><br />
-To assist users in reaching PoIs effectively, combine spatial guidance, interface support, and multisensory feedback:</p>
+<h2 id="solution">Solution</h2>
+
+<p>To assist users in reaching PoIs effectively, combine spatial guidance, interface support, and multisensory feedback:</p>
 
 <ul>
   <li>
     <p><strong>Path Point-Based Guiding Method</strong><br />
-Generate or author a guiding path from the user’s current or starting position to a selected PoI. Insert path nodes (waypoints) at critical decision points (e.g., corners, junctions) to create a continuous and intuitive route.</p>
+Generate or author a guiding path from the user’s current or starting position to a selected PoI.</p>
   </li>
   <li>
     <p><strong>Point of Interest Selection Interface</strong><br />
-Provide a user interface (e.g., hand-held menu, gaze-triggered selection, or voice command) allowing visitors to choose PoIs based on personal interest, route efficiency, or time availability.</p>
+Provide a user interface for selecting PoIs by interest, efficiency, or time.</p>
   </li>
   <li>
     <p><strong>Navigation Control Interface</strong><br />
-Include options for users to start, pause, resume, or stop guidance as needed.</p>
+Allow users to start, pause, resume, or stop guidance.</p>
   </li>
   <li>
     <p><strong>Directional Visual Cues</strong><br />
-Overlay visual indicators (e.g., arrows, animated trails, footprints) in AR space, guiding the user step by step along the path.</p>
+Overlay visual indicators in AR space.</p>
   </li>
   <li>
     <p><strong>Auditory Feedback</strong><br />
-Reinforce the direction through audio cues—e.g., spatial sounds or spoken hints—especially near intersections or exhibit entrances.</p>
+Use spatial sounds or voice guidance at key locations.</p>
   </li>
   <li>
     <p><strong>Arrival Trigger</strong><br />
-Present a clear signal (e.g., a sound or visual flare) confirming successful arrival at the destination.</p>
+Provide visual/audio confirmation when the user reaches the PoI.</p>
   </li>
 </ul>
 
-<p><strong>Media</strong><br />
-<img src="https://example.com/guiding-pattern-demo.gif" alt="Example of AR Navigation" /></p>
+<h2 id="media">Media</h2>
 
-<p><strong>Notes</strong><br />
-This pattern enhances orientation and engagement in AR-rich spaces by reducing spatial confusion and supporting personalized exhibit discovery.</p>
+<p><img src="https://example.com/guiding-pattern-demo.gif" alt="Example of AR Navigation" /></p>
+
+<h2 id="notes">Notes</h2>
+
+<p>This pattern enhances orientation and engagement in AR-rich spaces by reducing spatial confusion and supporting personalized exhibit discovery.</p>
 
     </main>
 
-    <!-- Footer -->
     <footer id="contact">
-      <p class="hero_header">GET IN TOUCH WITH ME</p>
-      <a href="https://mail.google.com/mail/?view=cm&to=yu.liu@hs-rm.de" target="_blank" class="button">EMAIL ME</a>
-    </footer>
+    <p class="hero_header">GET IN TOUCH WITH ME</p>
+    <a href="mailto:yu.liu@hs-rm.de" class="button">EMAIL ME</a>
+  </footer>
+  
+  <div class="copyright">
+    &copy; 2025 Yu Liu. This project is part of my PhD research and is released under the 
+    <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
+  </div>
+  
 
-    <div class="copyright">
-      &copy; 2025 Yu Liu. This project is part of my PhD research and is released under the 
-      <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
-    </div>
   </div>
 </body>
 </html>
