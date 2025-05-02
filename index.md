@@ -8,7 +8,7 @@ title: AR Pattern Library
     <img src="{{ '/images/HomePage/ARInteraction.png' | relative_url }}" alt="AR Interaction" class="profile">
   </div>    
   <div class="column">
-    <h3 class="section-subtitle">Introduction</h3>
+    <h3 class="section-subtitle">AR Interaction Patterns</h3>
     <p class="intro-text">
       AR Interaction Design Patterns provide structured solutions to recurring challenges in augmented reality interaction design. By capturing best practices across domains such as user navigation, object manipulation, and spatial feedback, these patterns help designers and developers create intuitive, efficient, and context-aware AR experiences.
     </p>
@@ -23,35 +23,35 @@ title: AR Pattern Library
   <h2 class="section-title">High-Level Patterns</h2>
   <div class="gallery">
 {% for pattern in site.pages %}
-      {% if pattern.category == "high-level" %}
-      <div class="thumbnail">
-        <a href="{{ pattern.url | relative_url }}">
-          <img src="{{ pattern.thumbnail | relative_url }}" alt="{{ pattern.title }}" class="cards"/>
-          <h4>{{ pattern.title }}</h4>
-        </a>
-
-        <!-- 支持 tag 是数组格式 -->
-        <p class="tag">
-          {% if pattern.tags %}
-            {% for tag in pattern.tags %}
-              <span class="tag-item">{{ tag }}</span>{% unless forloop.last %}, {% endunless %}
-            {% endfor %}
-          {% endif %}
-        </p>
-
-        <div class="text_column">
-          <div class="text-wrapper">
-            <span class="short-text">{{ pattern.summary }}</span>
-            <span class="full-text" style="display:none;">{{ pattern.description }}</span>
-          </div>
-          <span class="show-more" onclick="toggleText(this)">More</span>
+  {% if pattern.category == "high-level" %}
+    <div class="thumbnail">
+      <a href="{{ pattern.url | relative_url }}">
+        <div class="image-container">
+          <img src="{{ pattern.thumbnail | relative_url }}" alt="{{ pattern.title }}">
         </div>
+        <h4>{{ pattern.title }}</h4>
+      </a>
+
+      <p class="tag">
+        {% if pattern.tags %}
+          {% for tag in pattern.tags %}
+            <span class="tag-item">{{ tag }}</span>{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+        {% endif %}
+      </p>
+
+      <div class="text_column">
+        <div class="text-wrapper">
+          <span class="short-text">{{ pattern.summary }}</span>
+          <span class="full-text" style="display:none;">{{ pattern.description }}</span>
+        </div>
+        <span class="show-more" onclick="toggleText(this)">More</span>
       </div>
-      {% endif %}
-    {% endfor %}
+    </div>
+  {% endif %}
+{% endfor %}
   </div>
 </section>
-
 
 <!-- Sub-Patterns Section -->
 <section class="gallery-section">
@@ -60,7 +60,9 @@ title: AR Pattern Library
 
     <div class="thumbnail">
       <a href="{{ '/patterns/labeling.html' | relative_url }}">
-        <img src="{{ '/images/bkg_06.jpg' | relative_url }}" alt="Labeling" class="cards"/>
+        <div class="image-container">
+          <img src="{{ '/images/bkg_06.jpg' | relative_url }}" alt="Labeling">
+        </div>
         <h4>Labeling</h4>
       </a>
       <p class="tag">AR, Text Overlay</p>
@@ -75,7 +77,9 @@ title: AR Pattern Library
 
     <div class="thumbnail">
       <a href="{{ '/patterns/triggering.html' | relative_url }}">
-        <img src="{{ '/images/bkg_06.jpg' | relative_url }}" alt="Indicating & Triggering" class="cards"/>
+        <div class="image-container">
+          <img src="{{ '/images/bkg_06.jpg' | relative_url }}" alt="Indicating & Triggering">
+        </div>
         <h4>Indicating & Triggering</h4>
       </a>
       <p class="tag">Activation, Hints</p>
@@ -90,6 +94,7 @@ title: AR Pattern Library
 
   </div>
 </section>
+
 
 <!-- JS for "More" toggle -->
 <script>
