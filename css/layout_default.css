@@ -503,7 +503,10 @@ footer {
   .navbar {
     display: none;
     flex-direction: column;
-    padding: 0 1rem;
+    padding: 1rem;
+    background-color: #222; /* 添加背景色 */
+    border-top: 2px solid #008cff;
+    z-index: 999;
   }
 
   .navbar.show {
@@ -513,6 +516,11 @@ footer {
   .nav-links {
     flex-direction: column;
     gap: 1rem;
+  }
+
+  .nav-links li a {
+    color: white;
+    font-size: 1.2rem;
   }
 
 .text_column {
