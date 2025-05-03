@@ -23,31 +23,30 @@ permalink: /index.html
 <section id="patterns" class="gallery-section">
   <h2 class="section-title">High-Level Patterns</h2>
   <div class="gallery">
-    {% for pattern in site.pages %}
-      {% if pattern.category == "high-level" %}
-        <div class="thumbnail">
-          <a href="{{ pattern.url | relative_url }}">
-            <div class="image-container">
-              <img src="{{ pattern.thumbnail | relative_url }}" alt="{{ pattern.title }}">
-            </div>
-            <h4>{{ pattern.title }}</h4>
-          </a>
-          <p class="tag">
-            {% if pattern.tags %}
-              {% for tag in pattern.tags %}
-                <span class="tag-item">{{ tag }}</span>{% unless forloop.last %}, {% endunless %}
-              {% endfor %}
-            {% endif %}
-          </p>
-          <div class="text_column">
-            <div class="text-wrapper">
-              <span class="short-text">{{ pattern.summary }}</span>
-              <span class="full-text" style="display:none;">{{ pattern.description }}</span>
-            </div>
-            <span class="show-more" onclick="toggleText(this)">More</span>
+    {% assign high_level_patterns = site.patterns | where: "category", "high-level" | sort: "order" %}
+    {% for pattern in high_level_patterns %}
+      <div class="thumbnail">
+        <a href="{{ pattern.url | relative_url }}">
+          <div class="image-container">
+            <img src="{{ pattern.thumbnail | relative_url }}" alt="{{ pattern.title }}">
           </div>
+          <h4>{{ pattern.title }}</h4>
+        </a>
+        <p class="tag">
+          {% if pattern.tags %}
+            {% for tag in pattern.tags %}
+              <span class="tag-item">{{ tag }}</span>{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+          {% endif %}
+        </p>
+        <div class="text_column">
+          <div class="text-wrapper">
+            <span class="short-text">{{ pattern.summary }}</span>
+            <span class="full-text" style="display:none;">{{ pattern.description }}</span>
+          </div>
+          <span class="show-more" onclick="toggleText(this)">More</span>
         </div>
-      {% endif %}
+      </div>
     {% endfor %}
   </div>
 </section>
@@ -56,39 +55,31 @@ permalink: /index.html
 <section class="gallery-section">
   <h2 class="section-title">Sub-Patterns</h2>
   <div class="gallery">
-    <div class="thumbnail">
-      <a href="{{ '/patterns/labeling.html' | relative_url }}">
-        <div class="image-container">
-          <img src="{{ '/images/bkg_06.jpg' | relative_url }}" alt="Labeling">
+    {% assign sub_level_patterns = site.patterns | where: "category", "sub-level" | sort: "order" %}
+    {% for pattern in sub_level_patterns %}
+      <div class="thumbnail">
+        <a href="{{ pattern.url | relative_url }}">
+          <div class="image-container">
+            <img src="{{ pattern.thumbnail | relative_url }}" alt="{{ pattern.title }}">
+          </div>
+          <h4>{{ pattern.title }}</h4>
+        </a>
+        <p class="tag">
+          {% if pattern.tags %}
+            {% for tag in pattern.tags %}
+              <span class="tag-item">{{ tag }}</span>{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+          {% endif %}
+        </p>
+        <div class="text_column">
+          <div class="text-wrapper">
+            <span class="short-text">{{ pattern.summary }}</span>
+            <span class="full-text" style="display:none;">{{ pattern.description }}</span>
+          </div>
+          <span class="show-more" onclick="toggleText(this)">More</span>
         </div>
-        <h4>Labeling</h4>
-      </a>
-      <p class="tag">AR, Text Overlay</p>
-      <div class="text_column">
-        <div class="text-wrapper">
-          <span class="short-text">Displays labels over exhibit parts in AR view.</span>
-          <span class="full-text" style="display:none;">Displays labels over exhibit parts in AR view. Labels may be context-sensitive, appear on demand, or fade in/out as the user navigates around the exhibit.</span>
-        </div>
-        <span class="show-more" onclick="toggleText(this)">More</span>
       </div>
-    </div>
-
-    <div class="thumbnail">
-      <a href="{{ '/patterns/triggering.html' | relative_url }}">
-        <div class="image-container">
-          <img src="{{ '/images/bkg_06.jpg' | relative_url }}" alt="Indicating & Triggering">
-        </div>
-        <h4>Indicating & Triggering</h4>
-      </a>
-      <p class="tag">Activation, Hints</p>
-      <div class="text_column">
-        <div class="text-wrapper">
-          <span class="short-text">Tells users what can be triggered, and how.</span>
-          <span class="full-text" style="display:none;">Tells users what can be triggered, and how. Visual hints, glow outlines, or vibration feedback indicate interactable objects and provide onboarding guidance.</span>
-        </div>
-        <span class="show-more" onclick="toggleText(this)">More</span>
-      </div>
-    </div>
+    {% endfor %}
   </div>
 </section>
 

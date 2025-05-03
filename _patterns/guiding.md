@@ -2,13 +2,14 @@
 layout: pattern
 title: "Point of Interest Guide"
 category: "high-level"
+order: 1
 tags:
   - Navigation
   - AR
 thumbnail: /images/Circles.png
 summary: "Guiding to Points of Interest (PoIs)"
 description: "To assist users in reaching PoIs effectively, combine spatial guidance, interface support, and multisensory feedback."
-permalink: /patterns/guiding/
+
 ---
 
 # Point of Interest Guide

@@ -4,7 +4,8 @@
     <li class="dropdown">
       <span>High-Level Patterns ▾</span>
       <ul class="dropdown-content">
-        {% for pattern in site.data.patterns.high_level %}
+        {% assign high_level_patterns = site.patterns | where: "category", "high-level" %}
+        {% for pattern in high_level_patterns %}
           <li><a href="{{ pattern.url | relative_url }}">{{ pattern.title }}</a></li>
         {% endfor %}
       </ul>
@@ -13,7 +14,8 @@
     <li class="dropdown">
       <span>Sub-Level Patterns ▾</span>
       <ul class="dropdown-content">
-        {% for pattern in site.data.patterns.sub_level %}
+        {% assign sub_level_patterns = site.patterns | where: "category", "sub-level" %}
+        {% for pattern in sub_level_patterns %}
           <li><a href="{{ pattern.url | relative_url }}">{{ pattern.title }}</a></li>
         {% endfor %}
       </ul>

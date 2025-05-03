@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>AR Experience Indicator</title>
+  <title>Point of Interest Guide</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="/ar-interaction-patterns/css/layout_default.css" rel="stylesheet">
@@ -81,54 +81,67 @@
 
 
     <main class="pattern-content">
-      <h1 id="ar-experience-indicator">AR Experience Indicator</h1>
+      <h1 id="point-of-interest-guide">Point of Interest Guide</h1>
 
-<p><strong>Problem</strong><br />
-Visitors are often unaware of which exhibits contain embedded AR content or how to activate it. As a result, they may miss enriching experiences or waste time searching for interactive features without success.</p>
+<h2 id="problem">Problem</h2>
+<p>Visitors in AR-enhanced environments such as museums or exhibitions may struggle to efficiently locate points of interest (PoIs). Without clear directional guidance, they risk missing key exhibits due to complex spatial layouts, limited time, or inadequate physical signage.</p>
 
-<p><strong>Context</strong><br />
-This pattern is used in exhibition environments where only a subset of the exhibits contains AR experiences. It assumes that:</p>
+<h2 id="context">Context</h2>
+<p>This pattern is suitable for AR spaces containing multiple PoIs, such as museums, galleries, or trade shows. It is especially valuable when:</p>
+
 <ul>
-  <li>Visitors are equipped with an HMD or other AR interface;</li>
-  <li>There are no clear visual or spatial cues indicating which exhibits are interactive.</li>
+  <li>Visitors have limited time and need to prioritize key content.</li>
+  <li>The venue is large or subdivided, making it hard to identify or reach a specific exhibit.</li>
+  <li>Conventional maps or signage are insufficient or difficult to interpret.</li>
 </ul>
 
-<p><strong>Use When</strong></p>
+<h2 id="use-when">Use When</h2>
+
 <ul>
-  <li>Visitors are freely exploring and need explicit, discoverable cues for AR-enabled exhibits.</li>
-  <li>Visitors reach a specific exhibit and want to activate rich multimedia or contextual content.</li>
+  <li>Visitors begin exploration and seek their first AR destination.</li>
+  <li>Visitors want to locate unvisited exhibits efficiently.</li>
+  <li>Visitors wish to revisit previously explored exhibits.</li>
+  <li>Time constraints require targeted navigation.</li>
 </ul>
 
-<p><strong>Solution</strong><br />
-To help visitors easily identify and access AR content, combine clear visual cues with intuitive activation methods and feedback:</p>
+<h2 id="solution">Solution</h2>
+
+<p>To assist users in reaching PoIs effectively, combine spatial guidance, interface support, and multisensory feedback:</p>
 
 <ul>
   <li>
-    <p><strong>Visual Indicators</strong><br />
-Place recognizable AR prompts (such as floating 3D icons, glowing outlines, pulsing circles, or minimalist labels) near exhibits that offer digital interaction. These cues distinguish AR-enabled exhibits from non-interactive ones.</p>
+    <p><strong>Path Point-Based Guiding Method</strong><br />
+Generate or author a guiding path from the user’s current or starting position to a selected PoI.</p>
   </li>
-  <li><strong>Activation Mechanism</strong><br />
-Enable users to launch the AR content through intuitive interactions, such as:
-    <ul>
-      <li>Gaze or gesture recognition zones;</li>
-      <li>Voice commands (e.g., “show me more”);</li>
-      <li>Virtual or spatial triggers (e.g., stepping into a glowing AR circle on the floor to start content playback).</li>
-    </ul>
+  <li>
+    <p><strong>Point of Interest Selection Interface</strong><br />
+Provide a user interface for selecting PoIs by interest, efficiency, or time.</p>
   </li>
-  <li><strong>Feedback Cues</strong><br />
-Once an exhibit is activated, provide immediate feedback confirming success:
-    <ul>
-      <li>Visually, via brief animations, interface changes, or highlight effects;</li>
-      <li>Audibly, using sound effects, tones, or spoken messages to indicate system response.</li>
-    </ul>
+  <li>
+    <p><strong>Navigation Control Interface</strong><br />
+Allow users to start, pause, resume, or stop guidance.</p>
+  </li>
+  <li>
+    <p><strong>Directional Visual Cues</strong><br />
+Overlay visual indicators in AR space.</p>
+  </li>
+  <li>
+    <p><strong>Auditory Feedback</strong><br />
+Use spatial sounds or voice guidance at key locations.</p>
+  </li>
+  <li>
+    <p><strong>Arrival Trigger</strong><br />
+Provide visual/audio confirmation when the user reaches the PoI.</p>
   </li>
 </ul>
 
-<p><strong>Media</strong><br />
-<img src="https://example.com/ar-indicator-demo.gif" alt="Example of AR Indicator" /></p>
+<h2 id="media">Media</h2>
 
-<p><strong>Notes</strong><br />
-This pattern helps prevent missed opportunities for engagement by making AR content clearly discoverable and easily triggerable. It supports both first-time and returning visitors by offering consistent, recognizable AR interaction cues.</p>
+<p><img src="https://example.com/guiding-pattern-demo.gif" alt="Example of AR Navigation" /></p>
+
+<h2 id="notes">Notes</h2>
+
+<p>This pattern enhances orientation and engagement in AR-rich spaces by reducing spatial confusion and supporting personalized exhibit discovery.</p>
 
     </main>
 
