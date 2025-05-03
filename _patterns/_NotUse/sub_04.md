@@ -1,3 +1,17 @@
+---
+layout: pattern
+title: "AR Experience Presenter"
+category: "sub-level"
+order: 3
+
+tags:
+  - Exploration
+  - Experience Navigation
+thumbnail: /images/Presenter_Button.png
+summary: "Exploring and Controlling AR Content"
+description: "Exploring and Controlling AR Content: Present the content in a structured, navigable, and user-controlled manner."
+---
+
 # Drawing Pattern
 
 **Intent:** Allow users to highlight exhibit features by drawing in AR.
