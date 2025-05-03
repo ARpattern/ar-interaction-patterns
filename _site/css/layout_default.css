@@ -10,7 +10,7 @@
   }
   
   .logo a:hover {
-	color: #007bff; /* 可选：鼠标悬停时变色 */
+	color: #008cff; /* 可选：鼠标悬停时变色 */
 	text-decoration: underline; /* 或保持无下划线 */
 	
   }
@@ -42,7 +42,7 @@
   .tagline {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1rem;
-	color: #007bff;
+	color: #008cff;
 	margin: 0;
 	margin-top: 0.5rem; /* 换行时的垂直间距 */
   
@@ -102,20 +102,20 @@ header {
   
   .header-nav li a {
 	text-decoration: none;
-	color: #007bff;
+	color: #008cff;
 	font-family: 'Roboto', sans-serif;
 	font-size: 0.95rem;
 	transition: color 0.2s ease;
   }
   
   .header-nav li a:hover {
-	color: #0056b3;
+	color: #008cff;
   }
 
   .header-nav li a.active {
-	border-bottom: 2px solid #007bff;
+	border-bottom: 2px solid #008cff;
 	font-weight: bold;
-	color: #007bff;
+	color: #008cff;
   }
 
 .hero_header {
@@ -124,6 +124,17 @@ header {
 	margin: 0;
 	letter-spacing: 4px;
 }
+
+
+.menu-toggle {
+	display: none;
+	font-size: 2rem;
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: #007bff;
+  }
+
 /* About Section */
 
 
@@ -150,13 +161,13 @@ header {
   }
   
   .nav-links li a:hover {
-	border-bottom: 2px solid #007bff; /* 悬停时显示蓝色下划线 */
+	border-bottom: 2px solid #008cff; /* 悬停时显示蓝色下划线 */
   }
   
   .nav-links li a.active {
-	border-bottom: 2px solid #007bff; /* 当前页面高亮下划线 */
+	border-bottom: 2px solid #008cff; /* 当前页面高亮下划线 */
 	font-weight: bold;
-	color: #007bff;
+	color: #008cff;
   }
 
 html {
@@ -172,7 +183,7 @@ html {
   margin-top: 0;
   margin-bottom: 1rem;
   font-family: 'Roboto', sans-serif;
-  border-left: 4px solid #007bff; /* 可选：加一点视觉引导 */
+  border-left: 4px solid #008cff; /* 可选：加一点视觉引导 */
   padding-left: 0.6rem;
 }
 .intro-text {
@@ -299,7 +310,7 @@ html {
 .gallery .thumbnail h4 {
 	margin-top: 5px;
 	margin-bottom: 5px;
-	color: #007bff;
+	color: #008cff;
 	text-align: left;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -476,6 +487,26 @@ footer {
   .header-nav {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin: 1rem;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .navbar.show {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
   }
 
 .text_column {
