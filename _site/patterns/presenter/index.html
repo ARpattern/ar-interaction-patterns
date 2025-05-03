@@ -50,27 +50,45 @@
 </nav>
 
 
-    <!-- Pattern-specific secondary nav -->
-    <nav class="pattern-subnav">
-  <ul class="dropdown-menu">
+    <div class="pattern-page-container">
+      <aside class="pattern-sidebar">
+        <nav class="pattern-subnav">
+  <ul class="pattern-list">
 
-    <li class="dropdown">
-      <span>High-Level Patterns ▾</span>
-      <ul class="dropdown-content">
+    <!-- High-Level Patterns -->
+    <li class="pattern-group">
+      <h3>High-Level Patterns</h3>
+      <ul>
         
         
-          <li><a href="/ar-interaction-patterns/patterns/guiding/">Point of Interest Guide</a></li>
+          <li>
+            <a href="/ar-interaction-patterns/patterns/guiding/"
+               class="">
+              Point of Interest Guide
+            </a>
+          </li>
         
-          <li><a href="/ar-interaction-patterns/patterns/indicator/">AR Experience Indicator</a></li>
+          <li>
+            <a href="/ar-interaction-patterns/patterns/indicator/"
+               class="">
+              AR Experience Indicator
+            </a>
+          </li>
         
-          <li><a href="/ar-interaction-patterns/patterns/presenter/">AR Experience Presenter</a></li>
+          <li>
+            <a href="/ar-interaction-patterns/patterns/presenter/"
+               class="active">
+              AR Experience Presenter
+            </a>
+          </li>
         
       </ul>
     </li>
 
-    <li class="dropdown">
-      <span>Sub-Level Patterns ▾</span>
-      <ul class="dropdown-content">
+    <!-- Sub-Level Patterns -->
+    <li class="pattern-group">
+      <h3>Sub-Level Patterns</h3>
+      <ul>
         
         
       </ul>
@@ -79,9 +97,10 @@
   </ul>
 </nav>
 
+      </aside>
 
-    <main class="pattern-content">
-      <h1 id="ar-experience-presenter">AR Experience Presenter</h1>
+      <main class="pattern-main-content">
+        <h1 id="ar-experience-presenter">AR Experience Presenter</h1>
 
 <p><strong>Problem</strong><br />
 Visitors often encounter multiple layers of information for a single exhibit—such as historical background, scientific explanation, and cultural relevance. Without structure, this can lead to information overload or frustration due to lack of control over the content flow.</p>
@@ -132,7 +151,8 @@ If the AR experience includes animation, video, or timed sequences, offer “Pau
 <p><strong>Notes</strong><br />
 This pattern supports deep, self-directed learning by combining information structure with user navigation control. It works especially well for content-rich exhibits in cultural heritage, science, or educational AR environments.</p>
 
-    </main>
+      </main>
+    </div>
 
     <footer id="contact">
     <p class="hero_header">GET IN TOUCH WITH ME</p>
@@ -147,7 +167,6 @@ This pattern supports deep, self-directed learning by combining information stru
 
   </div>
 
-  <!-- ✅ 加上 JS 脚本 -->
   <script src="/ar-interaction-patterns/assets/js/site.js" defer></script>
 </body>
 </html>

@@ -97,9 +97,9 @@ html, body {
   font-weight: bold;
 }
 .pattern-subnav {
-  background-color: #f5f5f5;
-  padding: 0.8rem 2rem;
-  border-bottom: 1px solid #ddd;
+  background: none;
+  border: none;
+  padding: 0;
 }
 
 .pattern-subnav .dropdown-menu {
@@ -142,4 +142,67 @@ html, body {
 
 .pattern-subnav .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.pattern-page-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+/* 左侧导航栏 */
+.pattern-sidebar {
+  width: 240px;
+  background: #f7f7f7;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  position: sticky;
+  top: 80px;
+  height: max-content;
+}
+
+.pattern-subnav h3 {
+  margin-top: 1rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid #ccc;
+  font-size: 1rem;
+  color: #2d72d9;
+}
+
+/* 主内容 */
+.pattern-main-content {
+  flex: 1;
+  max-width: 800px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .pattern-page-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .pattern-sidebar {
+    width: 100%;
+    position: static;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    background-color: #fafafa;
+  }
+
+  .pattern-main-content {
+    max-width: 100%;
+  }
+
+  .pattern-subnav h3 {
+    margin-top: 1rem;
+  }
+
+  .pattern-subnav ul {
+    padding-left: 0.5rem;
+  }
 }

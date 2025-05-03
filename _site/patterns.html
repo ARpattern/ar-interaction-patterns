@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="/ar-interaction-patterns/css/layout_default.css" rel="stylesheet">
-
-  
+  <link href="/ar-interaction-patterns/css/layout_pattern.css" rel="stylesheet">
 </head>
 
 <body>
@@ -51,8 +50,57 @@
 </nav>
 
 
-    <main>
-      <section class="gallery-section">
+    <div class="pattern-page-container">
+      <aside class="pattern-sidebar">
+        <nav class="pattern-subnav">
+  <ul class="pattern-list">
+
+    <!-- High-Level Patterns -->
+    <li class="pattern-group">
+      <h3>High-Level Patterns</h3>
+      <ul>
+        
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/guiding/"
+               class="">
+              Point of Interest Guide
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/indicator/"
+               class="">
+              AR Experience Indicator
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/presenter/"
+               class="">
+              AR Experience Presenter
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+
+    <!-- Sub-Level Patterns -->
+    <li class="pattern-group">
+      <h3>Sub-Level Patterns</h3>
+      <ul>
+        
+        
+      </ul>
+    </li>
+
+  </ul>
+</nav>
+
+      </aside>
+
+      <main class="pattern-main-content">
+        <section class="gallery-section">
   <h2 class="section-title">High-Level Patterns</h2>
   <div class="gallery">
     
@@ -184,7 +232,8 @@
     }
     </script>
     
-    </main>
+      </main>
+    </div>
 
     <footer id="contact">
     <p class="hero_header">GET IN TOUCH WITH ME</p>
@@ -196,11 +245,9 @@
     <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
   </div>
   
-    
-    
+
   </div>
 
-    <!-- 引入统一的 JavaScript 文件 -->
-    <script src="/ar-interaction-patterns/assets/js/site.js" defer></script>
+  <script src="/ar-interaction-patterns/assets/js/site.js" defer></script>
 </body>
 </html>

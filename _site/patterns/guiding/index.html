@@ -50,27 +50,45 @@
 </nav>
 
 
-    <!-- Pattern-specific secondary nav -->
-    <nav class="pattern-subnav">
-  <ul class="dropdown-menu">
+    <div class="pattern-page-container">
+      <aside class="pattern-sidebar">
+        <nav class="pattern-subnav">
+  <ul class="pattern-list">
 
-    <li class="dropdown">
-      <span>High-Level Patterns ▾</span>
-      <ul class="dropdown-content">
+    <!-- High-Level Patterns -->
+    <li class="pattern-group">
+      <h3>High-Level Patterns</h3>
+      <ul>
         
         
-          <li><a href="/ar-interaction-patterns/patterns/guiding/">Point of Interest Guide</a></li>
+          <li>
+            <a href="/ar-interaction-patterns/patterns/guiding/"
+               class="active">
+              Point of Interest Guide
+            </a>
+          </li>
         
-          <li><a href="/ar-interaction-patterns/patterns/indicator/">AR Experience Indicator</a></li>
+          <li>
+            <a href="/ar-interaction-patterns/patterns/indicator/"
+               class="">
+              AR Experience Indicator
+            </a>
+          </li>
         
-          <li><a href="/ar-interaction-patterns/patterns/presenter/">AR Experience Presenter</a></li>
+          <li>
+            <a href="/ar-interaction-patterns/patterns/presenter/"
+               class="">
+              AR Experience Presenter
+            </a>
+          </li>
         
       </ul>
     </li>
 
-    <li class="dropdown">
-      <span>Sub-Level Patterns ▾</span>
-      <ul class="dropdown-content">
+    <!-- Sub-Level Patterns -->
+    <li class="pattern-group">
+      <h3>Sub-Level Patterns</h3>
+      <ul>
         
         
       </ul>
@@ -79,9 +97,10 @@
   </ul>
 </nav>
 
+      </aside>
 
-    <main class="pattern-content">
-      <h1 id="point-of-interest-guide">Point of Interest Guide</h1>
+      <main class="pattern-main-content">
+        <h1 id="point-of-interest-guide">Point of Interest Guide</h1>
 
 <h2 id="problem">Problem</h2>
 <p>Visitors in AR-enhanced environments such as museums or exhibitions may struggle to efficiently locate points of interest (PoIs). Without clear directional guidance, they risk missing key exhibits due to complex spatial layouts, limited time, or inadequate physical signage.</p>
@@ -143,7 +162,8 @@ Provide visual/audio confirmation when the user reaches the PoI.</p>
 
 <p>This pattern enhances orientation and engagement in AR-rich spaces by reducing spatial confusion and supporting personalized exhibit discovery.</p>
 
-    </main>
+      </main>
+    </div>
 
     <footer id="contact">
     <p class="hero_header">GET IN TOUCH WITH ME</p>
@@ -158,7 +178,6 @@ Provide visual/audio confirmation when the user reaches the PoI.</p>
 
   </div>
 
-  <!-- ✅ 加上 JS 脚本 -->
   <script src="/ar-interaction-patterns/assets/js/site.js" defer></script>
 </body>
 </html>
