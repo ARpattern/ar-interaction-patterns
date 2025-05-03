@@ -2,8 +2,7 @@ baseurl: "/ar-interaction-patterns"
 
 include:
   - _pages
-  - _layouts
-  - _patterns   
+
 
 collections:
   patterns:

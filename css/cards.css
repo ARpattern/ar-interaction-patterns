@@ -95,6 +95,23 @@
 	display: block;
   }
 
+  .summary-truncated {
+    font-size: 0.92rem;
+    color: #444;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.4em;
+    max-height: 4.2em;
+  
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
   @media screen and (max-width: 768px) {
     .gallery {
       display: flex;
@@ -127,12 +144,7 @@
       text-align: left;
       padding-left: 0;
       padding-right: 0;
-    }
-  
-    .summary-truncated {
-      -webkit-line-clamp: 4;
-      max-height: 5.6em; /* 1.4em × 4 行 */
-    }
+    }      
   }
   
   
