@@ -1,0 +1,29 @@
+high_level:
+  - title: "Point of Interest Guide"
+    url: /patterns/guiding/
+  - title: "Indicating & Triggering"
+    url: /patterns/triggering/
+  - title: "Sequential Explanation"
+    url: /patterns/sequencing/
+
+sub_level:
+  - title: "Labeling"
+    url: /patterns/labeling/
+  - title: "AR Feature Drawing"
+    url: /patterns/drawing/
+  - title: "Exhibit Reassembler"
+    url: /patterns/reassembling/
+  - title: "Navigation Feedback"
+    url: /patterns/navigation-feedback/
+  - title: "Proximity Activation"
+    url: /patterns/proximity-activation/
+  - title: "Environment-Aware Cues"
+    url: /patterns/environment-aware/
+  - title: "Multi-Modal Interaction"
+    url: /patterns/multi-modal/
+  - title: "Gesture Trigger"
+    url: /patterns/gesture-trigger/
+  - title: "Hint Overlay"
+    url: /patterns/hint-overlay/
+  - title: "Object Highlighting"
+    url: /patterns/object-highlighting/

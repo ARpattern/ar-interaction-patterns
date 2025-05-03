@@ -6,10 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="/ar-interaction-patterns/css/layout_default.css" rel="stylesheet">
-
-  
-    <link href="/ar-interaction-patterns/css/layout_pattern.css" rel="stylesheet">
-  
+  <link href="/ar-interaction-patterns/css/layout_pattern.css" rel="stylesheet">
 </head>
 
 <body>
@@ -53,7 +50,54 @@
 </nav>
 
 
-    <main>
+    <!-- Pattern-specific secondary nav -->
+    <nav class="pattern-subnav">
+  <ul class="dropdown-menu">
+
+    <li class="dropdown">
+      <span>High-Level Patterns ▾</span>
+      <ul class="dropdown-content">
+        
+          <li><a href="/ar-interaction-patterns/patterns/guiding/">Point of Interest Guide</a></li>
+        
+          <li><a href="/ar-interaction-patterns/patterns/triggering/">Indicating & Triggering</a></li>
+        
+          <li><a href="/ar-interaction-patterns/patterns/sequencing/">Sequential Explanation</a></li>
+        
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <span>Sub-Level Patterns ▾</span>
+      <ul class="dropdown-content">
+        
+          <li><a href="/ar-interaction-patterns/patterns/labeling/">Labeling</a></li>
+        
+          <li><a href="/ar-interaction-patterns/patterns/drawing/">AR Feature Drawing</a></li>
+        
+          <li><a href="/ar-interaction-patterns/patterns/reassembling/">Exhibit Reassembler</a></li>
+        
+          <li><a href="/ar-interaction-patterns/patterns/navigation-feedback/">Navigation Feedback</a></li>
+        
+          <li><a href="/ar-interaction-patterns/patterns/proximity-activation/">Proximity Activation</a></li>
+        
+          <li><a href="/ar-interaction-patterns/patterns/environment-aware/">Environment-Aware Cues</a></li>
+        
+          <li><a href="/ar-interaction-patterns/patterns/multi-modal/">Multi-Modal Interaction</a></li>
+        
+          <li><a href="/ar-interaction-patterns/patterns/gesture-trigger/">Gesture Trigger</a></li>
+        
+          <li><a href="/ar-interaction-patterns/patterns/hint-overlay/">Hint Overlay</a></li>
+        
+          <li><a href="/ar-interaction-patterns/patterns/object-highlighting/">Object Highlighting</a></li>
+        
+      </ul>
+    </li>
+
+  </ul>
+</nav>
+
+    <main class="pattern-content">
       <h1 id="ar-experience-presenter">AR Experience Presenter</h1>
 
 <p><strong>Problem</strong><br />
@@ -117,11 +161,10 @@ This pattern supports deep, self-directed learning by combining information stru
     <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
   </div>
   
-    
-    
+
   </div>
 
-    <!-- 引入统一的 JavaScript 文件 -->
-    <script src="/ar-interaction-patterns/assets/js/site.js"></script>
+  <!-- ✅ 加上 JS 脚本 -->
+  <script src="/ar-interaction-patterns/assets/js/site.js" defer></script>
 </body>
 </html>

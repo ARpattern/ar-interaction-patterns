@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: pattern
 title: "AR Experience Indicator"
 category: "high-level"
 tags:
@@ -11,6 +11,8 @@ summary: "Recognizing and Activating AR Experiences"
 description: "Recognizing and Activating AR Experiences: To help visitors easily identify and access AR content, combine clear visual cues with intuitive activation methods and feedback."
 permalink: /patterns/indicator/
 ---
+
+
 
 # AR Experience Indicator
 

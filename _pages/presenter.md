@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: pattern
 title: "AR Experience Presenter"
 category: "high-level"
 tags:
