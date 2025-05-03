@@ -194,11 +194,12 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 .text_column {
-	width: 90%;
+	width: 50%;
 	text-align: left;
 	font-weight: lighter;
 	line-height: 25px;
 	float: left;
+	padding: 1rem;
 	padding-left: 20px;
 	padding-right: 20px;
 	color: #A3A3A3;
@@ -541,6 +542,8 @@ footer {
 }
 .column {
 	width: 100%;
+	float: none;
+    padding: 0.5rem;
 	margin-top: 0px;
 }
 .hero_header {
