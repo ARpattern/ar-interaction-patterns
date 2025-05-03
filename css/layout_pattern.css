@@ -75,22 +75,6 @@ html, body {
   max-height: 4.2em;
 }
 
-/* Image Container (if used) */
-.image-container {
-  width: 100%;
-  height: 180px;
-  overflow: hidden;
-  aspect-ratio: 16 / 9;
-}
-
-.image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-}
-
 /* Text Truncation (if used in preview cards) */
 .text-wrapper {
   display: -webkit-box;
