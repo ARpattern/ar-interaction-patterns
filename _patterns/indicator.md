@@ -10,26 +10,25 @@ tags:
 thumbnail: /images/OrcaTrigger.jpg
 summary: "Recognizing and Activating AR Experiences"
 description: "Recognizing and Activating AR Experiences: To help visitors easily identify and access AR content, combine clear visual cues with intuitive activation methods and feedback."
-
 ---
 
 
 
 # AR Experience Indicator
 
-**Problem**  
+## Problem
 Visitors are often unaware of which exhibits contain embedded AR content or how to activate it. As a result, they may miss enriching experiences or waste time searching for interactive features without success.
 
-**Context**  
+## Context 
 This pattern is used in exhibition environments where only a subset of the exhibits contains AR experiences. It assumes that:
 - Visitors are equipped with an HMD or other AR interface;
 - There are no clear visual or spatial cues indicating which exhibits are interactive.
 
-**Use When**
+## Use When
 - Visitors are freely exploring and need explicit, discoverable cues for AR-enabled exhibits.
 - Visitors reach a specific exhibit and want to activate rich multimedia or contextual content.
 
-**Solution**  
+## Solution  
 To help visitors easily identify and access AR content, combine clear visual cues with intuitive activation methods and feedback:
 
 - **Visual Indicators**  
@@ -46,8 +45,8 @@ To help visitors easily identify and access AR content, combine clear visual cue
   - Visually, via brief animations, interface changes, or highlight effects;
   - Audibly, using sound effects, tones, or spoken messages to indicate system response.
 
-**Media**  
-![Example of AR Indicator](https://example.com/ar-indicator-demo.gif)
+## Media 
 
-**Notes**  
+
+## Notes 
 This pattern helps prevent missed opportunities for engagement by making AR content clearly discoverable and easily triggerable. It supports both first-time and returning visitors by offering consistent, recognizable AR interaction cues.

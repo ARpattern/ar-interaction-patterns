@@ -3,6 +3,7 @@ layout: pattern
 title: "AR Experience Presenter"
 category: "high-level"
 order: 3
+
 tags:
   - Exploration
   - Experience Navigation
@@ -13,20 +14,20 @@ description: "Exploring and Controlling AR Content: Present the content in a str
 
 # AR Experience Presenter
 
-**Problem**  
+## Problem
 Visitors often encounter multiple layers of information for a single exhibit—such as historical background, scientific explanation, and cultural relevance. Without structure, this can lead to information overload or frustration due to lack of control over the content flow.
 
-**Context**  
+## Context
 This pattern applies to exhibits that integrate complex or categorized AR content, especially when:
 - The subject matter contains various dimensions (e.g., biological, historical, ecological);
 - Visitors have differing levels of prior knowledge;
 - A self-paced, modular presentation enhances engagement and retention.
 
-**Use When**
+## Use When
 - Visitors have activated the virtual content associated with the exhibit.
 - Users wish to explore rich information at their own speed, focusing on areas of personal interest.
 
-**Solution**  
+## Solution
 Present the content in a structured, navigable, and user-controlled manner:
 
 - **Exhibit Information Categorization**  
@@ -44,8 +45,8 @@ Present the content in a structured, navigable, and user-controlled manner:
 - **Control for Animated Content**  
   If the AR experience includes animation, video, or timed sequences, offer “Pause” and “Resume” buttons. These allow users to take breaks, repeat segments, or skip ahead, enhancing flexibility.
 
-**Media**  
+## Media
 ![Example of AR Stepwise Presentation](https://example.com/ar-presenter-demo.gif)
 
-**Notes**  
+## Notes
 This pattern supports deep, self-directed learning by combining information structure with user navigation control. It works especially well for content-rich exhibits in cultural heritage, science, or educational AR environments.

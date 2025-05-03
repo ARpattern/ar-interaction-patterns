@@ -6,10 +6,10 @@ order: 1
 tags:
   - Navigation
   - AR
+permalink: /ar-interaction-patterns/patterns/guiding/
 thumbnail: /images/Circles.png
 summary: "Guiding to Points of Interest (PoIs)"
 description: "To assist users in reaching PoIs effectively, combine spatial guidance, interface support, and multisensory feedback."
-
 ---
 
 # Point of Interest Guide
@@ -55,7 +55,7 @@ To assist users in reaching PoIs effectively, combine spatial guidance, interfac
 
 ## Media
 
-![Example of AR Navigation](https://example.com/guiding-pattern-demo.gif)
+
 
 ## Notes
 
