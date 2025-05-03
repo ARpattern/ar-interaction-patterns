@@ -442,7 +442,7 @@ footer {
   }
 
 /* Mobile */
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
 .logo {
 	width: 100%;
 	text-align: center;
