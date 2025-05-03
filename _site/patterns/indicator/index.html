@@ -15,36 +15,43 @@
 <body>
   <div class="container">
 
-    <!-- Header (Logo, Tagline, Search, Header Nav) -->
+    <!-- _includes/header.html -->
 <div class="title-bar">
-    <div class="logo-section">
-      <h4 class="logo">
-        <a href="/index.html">AR Pattern Library</a>
-      </h4>
-      <p class="tagline">An HMD-based AR interaction design pattern collection</p>
-    </div>
-  
-    <div class="header-right">
-      <form class="search-form" action="/search" method="get">
-        🔍 <input type="text" name="q" placeholder="Search..." />
-      </form>
-      <ul class="header-nav">
-        <li><a href="/about.html" class="">About</a></li>
-        <li><a href="/contact.html" class="">Contact</a></li>
-      </ul>
-    </div>
+  <!-- 左侧 Logo 和 Tagline -->
+  <div class="logo-section">
+    <h4 class="logo">
+      <a href="/index.html">AR Pattern Library</a>
+    </h4>
+    <p class="tagline">An HMD-based AR interaction design pattern collection</p>
   </div>
-  
-  <!-- Primary Navigation -->
-  <nav class="navbar">
-    <ul class="nav-links">
-      <li><a href="/index.html" class="">Home</a></li>
-      <li><a href="/patterns.html" class="active">Patterns</a></li>
-      <li><a href="/technology.html" class="">Technology</a></li>
-      <li><a href="/literature.html" class="">Literature</a></li>
+
+  <!-- 右侧搜索栏 + About & Contact 链接 + 移动端汉堡按钮 -->
+  <div class="header-right">
+    <form class="search-form" action="/search" method="get">
+      🔍 <input type="text" name="q" placeholder="Search..." />
+    </form>
+
+    <!-- 移动端汉堡按钮，点击后显示/隐藏导航栏 -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <!-- Header 顶部右侧导航项 -->
+    <ul class="header-nav">
+      <li><a href="/about.html" class="">About</a></li>
+      <li><a href="/contact.html" class="">Contact</a></li>
     </ul>
-  </nav>
-  
+  </div>
+</div>
+
+<!-- 一级主导航栏（页面主菜单） -->
+<nav class="navbar" id="mainNav">
+  <ul class="nav-links">
+    <li><a href="/index.html" class="">Home</a></li>
+    <li><a href="/patterns.html" class="active">Patterns</a></li>
+    <li><a href="/technology.html" class="">Technology</a></li>
+    <li><a href="/literature.html" class="">Literature</a></li>
+  </ul>
+</nav>
+
 
     <main>
       <h1 id="ar-experience-indicator">AR Experience Indicator</h1>
