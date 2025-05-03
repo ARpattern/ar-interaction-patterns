@@ -80,7 +80,7 @@
 
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3; /* 控制最多显示3行 */
+  line-clamp: 3; /* 控制最多显示3行 */
   overflow: hidden;
   text-overflow: ellipsis;
 
