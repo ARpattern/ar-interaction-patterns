@@ -1,150 +1,135 @@
 .thumbnail {
-	width: 23%;
-	text-align: center;
-	float: left;
-	margin-top: 35px;
-	background-color: #dddddd;
-	padding-bottom: 20px;
-	margin-left: 1%;
-	margin-right: 1%;
-	border-radius: 3px;
-	padding-top: 20px;
-	border-top: 4px solid #ececec;
-	border-bottom: 4px solid #c5c5c5;
-	
-	
-    position: relative;
-    min-height: 360px; /* 保证卡片统一高度，按你页面适配调整 */
-    box-sizing: border-box;
+  width:25%;
+  float: left;
+  margin: 35px 1%;
+  background-color: #dddddd;
+  padding: 20px 0 20px 0;
+  border-radius: 3px;
+  border-top: 4px solid #ececec;
+  border-bottom: 4px solid #c5c5c5;
+  min-height: 360px;
+  box-sizing: border-box;
 
-	height: 400px; /* 统一固定高度，具体值可调整 */
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	
-}
-.thumbnail img {
-	width: 100%;
-	height: auto; /* 保持比例 */
-	object-fit: cover; /* 或 contain，根据你想显示的效果 */
-  }
+  display: flex;
+  flex-direction: column;
 
-  .gallery .thumbnail h4 {
-	margin-top: 5px;
-	margin-bottom: 5px;
-	color: #008cff;
-	text-align: left;
-	padding-left: 20px;
-	padding-right: 20px;
+
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+
+  height: 300px; /* ✅ 确保所有卡片统一高度 */
+  justify-content: flex-start;
+
+  
 }
-.gallery .thumbnail p {
-	margin: 0;
-	color: #B3B3B3;
-	text-align: left;
-	padding-left: 20px;
+
+.thumbnail:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+}
+.thumbnail:active {
+  transform: scale(0.97);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .thumbnail a {
-	text-decoration: none;
-	color: inherit;
-  }
-  
-  .thumbnail a:hover h4 {
-	color: #7a970f;         /* 悬停时改变标题颜色 */
-	text-decoration: none;  /* 不显示下划线 */
+  text-decoration: none;
+  color: inherit;
+}
+.thumbnail a:hover h4 {
+  color: #7a970f;
+}
+
+.gallery .thumbnail h4 {
+  margin: 5px 0;
+  color: #008cff;
+  text-align: left;
+  padding: 0 20px;
+}
+.gallery .thumbnail p {
+  margin: 0;
+  color: #B3B3B3;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.gallery .thumbnail .tag {
+  color: #5D5E5D;
+  padding: 4px 20px;
+  text-align: left;
+}
+
+.image-container {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.summary-truncated {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  word-break: break-word;
+  white-space: normal;
+  margin-top: 6px;
+  padding: 0 20px;
+
+  flex-grow: 1;         /* ✅ 自动填满剩余空间 */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.4em;
+  max-height: 4.2em;
+  font-size: 0.95rem;
+  margin-top: 6px;
+  padding: 0 20px;
+  word-break: break-word;
+  white-space: normal;
+}
+
+@media screen and (max-width: 1200px) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+    padding: 0 1rem;
   }
 
   .thumbnail {
-	transition: box-shadow 0.3s ease, transform 0.3s ease;
-	cursor: pointer;
-  }
-  
-  .thumbnail:hover {
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-	transform: translateY(-4px);
-  }
-  
-  .thumbnail:active {
-	transform: scale(0.97); /* 点击时轻微缩小 */
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    border-radius: 8px;
+    height: auto;
+    min-height: 0;
   }
 
-  .gallery .thumbnail .tag {
-	color: #5D5E5D;
-	padding-bottom: 4px;
-	padding-top: 4px;
-	text-align: left;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-.image-container {
-	width: 100%;
-	height: 180px; /* 你想要统一的高度 */
-	overflow: hidden;
-
-	aspect-ratio: 16 / 9;
-	width: 100%;
-	overflow: hidden;
-  }
-  
-  .image-container img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover; /* 保证图片不变形且铺满区域 */
-	object-position: center; /* 居中裁剪 */
-	display: block;
+  .image-container {
+    height: auto;
+    max-height: 200px;
   }
 
+  .gallery .thumbnail h4,
+  .gallery .thumbnail p,
+  .gallery .thumbnail .tag,
   .summary-truncated {
-    font-size: 0.92rem;
-    color: #444;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    line-height: 1.4em;
-    max-height: 4.2em;
-  
-    word-break: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
+    padding-left: 0;
+    padding-right: 0;
   }
-
-  @media screen and (max-width: 768px) {
-    .gallery {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      align-items: stretch;
-      padding: 0 1rem;
-    }
-  
-    .thumbnail {
-      width: 100%;
-      margin: 0;
-      padding: 1rem;
-      border-radius: 8px;
-      height: auto;
-      min-height: 0;
-      box-sizing: border-box;
-    }
-  
-    .thumbnail img {
-      width: 100%;
-      max-height: 200px;
-      object-fit: cover;
-      border-radius: 6px;
-    }
-  
-    .gallery .thumbnail h4,
-    .gallery .thumbnail p,
-    .gallery .thumbnail .tag {
-      text-align: left;
-      padding-left: 0;
-      padding-right: 0;
-    }      
-  }
-  
-  
+}
