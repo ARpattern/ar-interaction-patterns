@@ -462,8 +462,9 @@ footer {
 	padding-right: 20px;
 }
 
+
 /* Mobile */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 .logo {
 	width: 100%;
 	text-align: center;
@@ -526,9 +527,12 @@ footer {
 
 .text_column {
 	width: 100%;
+	float: none;
 	font-family: 'Roboto', sans-serif;
 	text-align: justify;
-	padding: 0;
+	padding: 1rem;
+	padding-left: 2rem;
+    padding-right: 2rem;
 }
 .intro .column p {
 	width: 80%;
@@ -538,12 +542,15 @@ footer {
 	padding-left: 20px;
 }
 .thumbnail {
+    margin: 1%;
 	width: 100%;
+    float: none;
+    padding: 1rem;
 }
 .column {
 	width: 100%;
 	float: none;
-    padding: 0.5rem;
+    padding: 1rem;
 	margin-top: 0px;
 }
 .hero_header {
@@ -552,69 +559,21 @@ footer {
 	line-height: 22px;
 	text-align: center;
 }
-}
-
-.logo {
-	width: 100%;
-	text-align: center;
-	margin-top: 13px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-}
-.text_column {
-	width: 100%;
-	text-align: left;
-	padding: 0;
-}
-.thumbnail {
-	width: 100%;
-}
-.column {
-	width: 100%;
-	margin-top: 0px;
-}
-.thumbnail {
-	width: 100%;
-}
-.text_column {
-	padding-left: 20px;
-	padding-right: 20px;
-	width: 90%;
-}
-.column {
-	width: 100%;
-	margin-left: 0px;
-	margin-right: 0px;
-}
-.profile {
-  margin-top: 30px;
-  margin-bottom: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
-}
 .intro .column p {
-	width: 90%;
-	text-align: center;
-	padding-left: 0px;
+    width: 80%;
+    text-align: justify;
+  }
+
+  .profile {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
 }
 
-
-/* Small Desktops */
-@media (min-width: 768px) and (max-width: 1096px) {
-.text_column {
-	width: 100%;
-}
-.thumbnail {
-	width: 48%;
-}
-.text_column {
-	width: 90%;
-	margin: 0;
-	padding: 20px;
-}
-.intro .column p {
-	width: 80%;
-}
-}
 
