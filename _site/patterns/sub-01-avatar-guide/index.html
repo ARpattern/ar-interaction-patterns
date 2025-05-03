@@ -106,9 +106,37 @@
           </li>
         
           <li>
-            <a href="/ar-interaction-patterns/patterns/sub-03/"
+            <a href="/ar-interaction-patterns/patterns/sub-03-sequential-explanation/"
                class="">
-              AR Experience Presenter
+              Sequential Explanation
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-04-labelling/"
+               class="">
+              Labelling
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-05-ar-exhibit-reassembler/"
+               class="">
+              AR Exhibit Reassembler
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-06-ar-feature-drawing/"
+               class="">
+              AR Feature Drawing
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-07-ar-threat-defender/"
+               class="">
+              AR Threat Defender
             </a>
           </li>
         
@@ -121,25 +149,118 @@
       </aside>
 
       <main class="pattern-main-content">
-        <h1 id="drawing-pattern">Drawing Pattern</h1>
+        <h1 id="avatar-guide">Avatar Guide</h1>
 
-<p><strong>Intent:</strong> Allow users to highlight exhibit features by drawing in AR.</p>
+<h2 id="problem">Problem</h2>
+<p>In augmented-reality (AR) venues with intricate spatial configurations, visitors may still overlook salient points of interest (PoIs) even when a predefined path exists. Conventional planar arrows and markers lack the behavioural affordances that help users pace themselves and maintain orientation, especially under time pressure or cognitive load.</p>
 
-<p><strong>Scenario:</strong> A Deinonychus fossil is shown. Visitors can use finger gestures to draw outlines or annotations on parts like claws or feathers.</p>
+<h2 id="context">Context</h2>
+<p>This sub-pattern applies to museums, galleries, trade fairs, and other AR-enhanced environments that:</p>
 
-<p><strong>Steps:</strong></p>
-<ol>
-  <li>Activate drawing mode</li>
-  <li>Track finger or hand movement</li>
-  <li>Render lines or markers in 3D space</li>
-  <li>Optionally save or share results</li>
-</ol>
+<ul>
+  <li>
+    <p>contain multiple PoIs distributed across a complex floor plan;</p>
+  </li>
+  <li>
+    <p>wish to foster a more “human-like” escort experience;</p>
+  </li>
+  <li>
+    <p>already support real-time localisation sufficient to spawn and animate an avatar in front of the user.</p>
+  </li>
+</ul>
 
-<p><strong>Media:</strong><br />
-<img src="https://example.com/drawing-demo.gif" alt="Drawing Demo" /></p>
+<h2 id="use-when">Use When</h2>
 
-<p><strong>Notes:</strong><br />
-This pattern supports active learning and personalized exploration.</p>
+<ul>
+  <li>
+    <p>Visitors begin their exploration and prefer to “follow a guide” rather than interpret abstract symbols.</p>
+  </li>
+  <li>
+    <p>Users wish to maintain a natural walking rhythm while receiving continuous, glanceable cues.</p>
+  </li>
+  <li>
+    <p>The venue aims to convey a branded or thematic persona (e.g., a historical character) through the guide itself.</p>
+  </li>
+  <li>
+    <p>Time constraints necessitate adaptive pacing without user micro-management.</p>
+  </li>
+</ul>
+
+<h2 id="solution">Solution</h2>
+
+<p>Combine path pre-authoring with an embodied virtual companion that dynamically adapts to the user’s behaviour.</p>
+
+<p><strong>Avatar-Centred Guiding Method</strong></p>
+
+<ul>
+  <li>
+    <p>Instantiate a 3-D avatar at the user’s current location; bind its locomotion to the authored path while monitoring the visitor’s speed and heading.</p>
+  </li>
+  <li>
+    <p>Apply inverse kinematics and subtle idle animations to preserve plausibility when the user stalls or deviates.</p>
+  </li>
+</ul>
+
+<p><strong>Point of Interest Selection Interface</strong></p>
+
+<ul>
+  <li>
+    <p>Present a floating radial or list menu from which users can choose PoIs.</p>
+  </li>
+  <li>
+    <p>Display estimated travel time that accounts for the avatar’s planned speed profile.</p>
+  </li>
+</ul>
+
+<p><strong>Navigation Control Interface</strong></p>
+
+<ul>
+  <li>
+    <p>Provide a palm-up hand-menu (revealed by a simple gesture) with Start, Pause, Resume, and End commands.</p>
+  </li>
+  <li>
+    <p>Offer haptic or auditory confirmation for each state change.</p>
+  </li>
+</ul>
+
+<p><strong>Directional Visual Cues</strong></p>
+
+<ul>
+  <li>
+    <p>The avatar leads at a fixed visual distance (e.g., 2–3 m).</p>
+  </li>
+  <li>
+    <p>Colour-code the avatar’s attire or emissive outline to indicate navigation states (e.g., green = en-route, amber = paused).</p>
+  </li>
+</ul>
+
+<p><strong>Auditory Feedback</strong></p>
+
+<ul>
+  <li>
+    <p>Spatialised footstep or vocal prompts at critical junctures (e.g., “Turn left ahead”).</p>
+  </li>
+  <li>
+    <p>Volume and cadence adapt to ambient noise and visitor proximity.</p>
+  </li>
+</ul>
+
+<p><strong>Arrival Trigger</strong></p>
+
+<ul>
+  <li>
+    <p>At the PoI, the avatar stops, turns toward the user, and performs a brief gesture.</p>
+  </li>
+  <li>
+    <p>Simultaneous auditory chime and on-screen tooltip confirm successful arrival.</p>
+  </li>
+</ul>
+
+<h2 id="media">Media</h2>
+
+<h2 id="notes">Notes</h2>
+
+<p>The Avatar Guide sub-pattern enhances social presence and reduces cognitive overhead by translating directional data into anthropomorphic motion. Adaptive speed regulation mitigates user frustration caused by mismatched walking paces, while the hand-menu prevents visual clutter in the primary field of view.</p>
 
       </main>
     </div>
