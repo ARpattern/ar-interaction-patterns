@@ -40,12 +40,10 @@ permalink: /index.html
           {% endif %}
         </p>
         <div class="text_column">
-          <div class="text-wrapper">
-            <span class="short-text">{{ pattern.summary }}</span>
-            <span class="full-text" style="display:none;">{{ pattern.description }}</span>
+          <div class="summary-truncated">
+            {{ pattern.summary }}
           </div>
-          <span class="show-more" onclick="toggleText(this)">More</span>
-        </div>
+        </div>        
       </div>
     {% endfor %}
   </div>
@@ -72,36 +70,15 @@ permalink: /index.html
           {% endif %}
         </p>
         <div class="text_column">
-          <div class="text-wrapper">
-            <span class="short-text">{{ pattern.summary }}</span>
-            <span class="full-text" style="display:none;">{{ pattern.description }}</span>
+          <div class="summary-truncated">
+            {{ pattern.summary }}
           </div>
-          <span class="show-more" onclick="toggleText(this)">More</span>
         </div>
+        
       </div>
     {% endfor %}
   </div>
 </section>
 
 <!-- JS for "More" toggle -->
-<script>
-function toggleText(button) {
-  const wrapper = button.parentNode.querySelector('.text-wrapper');
-  const short = wrapper.querySelector('.short-text');
-  const full = wrapper.querySelector('.full-text');
 
-  if (full.style.display === 'none') {
-    full.style.display = 'inline';
-    short.style.display = 'none';
-    wrapper.style.webkitLineClamp = 'unset';
-    wrapper.style.maxHeight = 'none';
-    button.textContent = 'Less';
-  } else {
-    full.style.display = 'none';
-    short.style.display = 'inline';
-    wrapper.style.webkitLineClamp = '2';
-    wrapper.style.maxHeight = '2.8em';
-    button.textContent = 'More';
-  }
-}
-</script>

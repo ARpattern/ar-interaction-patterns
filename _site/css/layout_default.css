@@ -279,6 +279,32 @@ html {
 	line-height: 1.4em;
 	max-height: 4.8em; /* 行高 × 行数 */
 	text-overflow: ellipsis;
+
+	white-space: normal;
+
+	word-break: break-word;   /* 自动断词 */
+	overflow-wrap: anywhere;  /* 优先换行 */
+  }
+
+  .full-text {
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	white-space: normal;
+  }
+
+  .summary-truncated {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+  
+	/* 标准写法，未来用于兼容 Firefox 和新标准 */
+	line-clamp: 3;
+	box-orient: vertical;
+  
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 1.4em;
+	max-height: 4.2em;
   }
 
   .image-container {
