@@ -48,3 +48,13 @@ permalink: /patterns.html
           {% if pattern.tags %}
             {% for tag in pattern.tags %}
               <span class="tag-item">{{ tag }}</span>{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+          {% endif %}
+        </p>
+        <div class="summary-truncated">
+          {{ pattern.summary }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
