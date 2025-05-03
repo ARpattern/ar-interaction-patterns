@@ -8,7 +8,7 @@ tags:
   - AR Experience
   - AR Effects
 thumbnail: /images/OrcaTrigger.jpg
-summary: "Recognizing and Activating AR Experiences"
+summary: "Recognizing and Activating AR Exhibit"
 description: "Recognizing and Activating AR Experiences: To help visitors easily identify and access AR content, combine clear visual cues with intuitive activation methods and feedback."
 ---
 

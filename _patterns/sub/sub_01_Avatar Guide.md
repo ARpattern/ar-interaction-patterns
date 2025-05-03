@@ -1,8 +1,8 @@
 ---
 layout: pattern
-title: "AR Experience Presenter"
+title: "Avatar Guide"
 category: "sub-level"
-order: 3
+order: 1
 
 tags:
   - Exploration
