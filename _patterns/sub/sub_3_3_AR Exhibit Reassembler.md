@@ -13,7 +13,9 @@ thumbnail: /images/Placing1.jpg
 summary: "Reassembling Incomplete Exhibits through AR Interaction"
 description: "Enable visitors to reconstruct missing parts of physical exhibits using AR-based jigsaw mechanics, enhancing structural understanding and engagement through guided, interactive assembly."
 ---
-
+<div class="column">
+  <img src="{{ '/images/Placing1.jpg' | relative_url }}" alt="AR Interaction" class="profile">
+</div> 
 # AR Exhibit Reassembler
 
 ## Problem

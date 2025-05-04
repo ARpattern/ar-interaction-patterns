@@ -13,7 +13,9 @@ thumbnail: /images/DrawingExample.jpg
 summary: "Drawing and Exploring Interpretive Features in AR"
 description: "Enable visitors to creatively sketch hypothetical features—like feathers or textures—directly onto 3D models, supporting scientific dialogue and participatory interpretation through AR drawing tools."
 ---
-
+<div class="column">
+  <img src="{{ '/images/DrawingExample.jpg' | relative_url }}" alt="AR Interaction" class="profile">
+</div> 
 # AR Exhibit Feature Drawing
 
 ## Problem

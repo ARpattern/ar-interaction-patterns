@@ -12,7 +12,9 @@ thumbnail: /images/Gif/Labelling.gif
 summary: "Explore In-Depth Exhibit Information"
 description: "Provides access to detailed information about an exhibit, particularly useful for complex or multi-faceted displays."
 ---
-
+<div class="column">
+  <img src="{{ '/images/Gif/Labelling.gif' | relative_url }}" alt="AR Interaction" class="profile">
+</div> 
 # Sequential Explanation
 
 ## Problem

@@ -12,7 +12,9 @@ thumbnail: /images/Gif/GrabFish-ezgif.com-video-to-gif-converter.gif
 summary: "Triggering Deeper Understanding Through Action"
 description: "Engage visitors in concise, meaningful interactions that activate core scientific or cultural knowledge embedded in AR exhibits."
 ---
-
+<div class="column">
+  <img src="{{ '/images/Gif/GrabFish-ezgif.com-video-to-gif-converter.gif' | relative_url }}" alt="AR Interaction" class="profile">
+</div> 
 # Exhibit Knowledge Trigger
 
 ## Problem

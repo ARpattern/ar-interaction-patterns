@@ -13,7 +13,9 @@ thumbnail: /images/Object Catching_1.png
 summary: "Defending Ecosystems through AR-Based Environmental Challenges"
 description: "Transform invisible environmental threats into an interactive AR defense game, enabling visitors to protect vulnerable habitats through gestures while learning about real-world ecological impacts and solutions."
 ---
-
+<div class="column">
+  <img src="{{ '/images/Object Catching_1.png' | relative_url }}" alt="AR Interaction" class="profile">
+</div> 
 # AR Threat Defender
 
 ## Problem

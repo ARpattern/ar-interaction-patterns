@@ -12,6 +12,9 @@ thumbnail: /images/Gif/FollowAvatar.gif
 summary: "Exploring and Controlling AR Content"
 description: "Exploring and Controlling AR Content: Present the content in a structured, navigable, and user-controlled manner."
 ---
+<div class="column">
+  <img src="{{ '/images/Gif/FollowAvatar.gif' | relative_url }}" alt="AR Interaction" class="profile">
+</div>  
 
 # Avatar Guide
 
