@@ -9,7 +9,8 @@
   <link href="{{ '/css/layout_default.css' | relative_url }}" rel="stylesheet">
   <link href="{{ '/css/cards.css' | relative_url }}" rel="stylesheet">
 
-  {% if page.url contains '/patterns/' %}
+
+  {% if page.layout == 'pattern' %}
     <link href="{{ '/css/layout_pattern.css' | relative_url }}" rel="stylesheet">
   {% elsif page.url == '/technology.html' %}
     <link href="{{ '/css/layout_technology.css' | relative_url }}" rel="stylesheet">

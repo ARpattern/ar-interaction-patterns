@@ -230,6 +230,11 @@ html, body {
   align-items: center;  /* ⬅️ 关键：让子元素（如 .column）水平居中 */
   gap: 1.5rem;
   margin-top: 2rem;
+  color: #333;
+}
+
+.intro-text {
+  color: #333 !important;
 }
 
 .column {
@@ -238,6 +243,24 @@ html, body {
   margin: 0 auto;   /* 让整个块居中 */
 }
 
+.intro .column p,
+.intro-text {
+  color: #333 !important;
+}
+
+/* 强制左对齐、让标题只占它本身需要的宽度 */
+.intro .two-column-block {
+  display: grid;
+  grid-template-columns: minmax(auto, 150px) 1fr;
+  column-gap: 1em;
+  margin-bottom: 1.5em;
+  align-items: start;
+}
+
+.intro .column-left {
+  text-align: left;
+  padding-right: 0.5em; /* 让标题和正文间留一点空 */
+}
 
 
 @media screen and (max-width: 800px) {

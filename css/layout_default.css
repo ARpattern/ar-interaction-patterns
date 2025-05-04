@@ -200,17 +200,21 @@ html {
   
   /* 用 grid 强制左右两栏 */
   .intro .two-column-block {
-	display: grid;
-	grid-template-columns: 200px 1fr;   /* 左 200px，右 自适应 */
-	column-gap: 1.5em;
-	margin-bottom: 1.5em;
-	align-items: start;
+	display: flex;
+	align-items: flex-start;  /* 顶端对齐 */
+	margin-bottom: 1.5em;     /* 区块间隔 */
   }
   
   /* 左侧标题靠右对齐，看起来更整齐 */
   .intro .column-left {
-	text-align: right;
-	padding-right: 0.5em;
+	flex: 0 20;      /* 紧缩到内容宽度 */
+	margin-right: 1em;   /* 左右栏的间距 */
+	text-align: center;    /* 标题左对齐 */
+  }
+
+  /* 右栏铺满剩余 */
+.intro .column-right {
+	flex: 1;
   }
   
   /* 减小两段文字间距 */
@@ -310,8 +314,6 @@ html {
 	line-height: 1.4em;
 	max-height: 4.2em;
   }
-
-
 .show-more {
 	color: #5e7400;
 	cursor: pointer;
@@ -319,18 +321,8 @@ html {
 	margin-top: auto;
 	font-weight: bold;
 }
-
-
-
-
-
-
-
 /* More info */
-.intro {
-	background-color: #FFFFFF;
-	padding-bottom: 35px;
-}
+
 .column {
 	width: 50%;
 	text-align: center;
@@ -409,10 +401,7 @@ footer {
 	padding-top: 20px;
 	padding-bottom: 20PX;
 }
-.intro {
-	display: inline-block;
-	background-color: #ffffff;
-}
+
 .intro-video-wrapper {
 	position: relative;
 	width: 100%;
