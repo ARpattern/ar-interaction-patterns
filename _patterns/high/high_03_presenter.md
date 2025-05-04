@@ -1,7 +1,9 @@
 ---
 layout: pattern
-title: "AR Experience Presenter"
+title: "Experience Presenter"
 category: "high-level"
+pattern_category: presenter
+overlay: /images/PatternIcon/whale Tour.png
 order: 3
 
 tags:

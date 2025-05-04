@@ -1,7 +1,9 @@
 ---
 layout: pattern
-title: "AR Experience Indicator"
+title: "Experience Indicator"
 category: "high-level"
+pattern_category: indicator
+overlay: /images/PatternIcon/Initial Node.png
 order: 2
 tags:
   - Indication

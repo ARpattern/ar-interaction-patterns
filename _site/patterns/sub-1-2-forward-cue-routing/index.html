@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Point of Interest Guide</title>
+  <title>Forward Cue-Routing</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="/ar-interaction-patterns/css/layout_default.css" rel="stylesheet">
@@ -63,7 +63,7 @@
         
           <li>
             <a href="/ar-interaction-patterns/ar-interaction-patterns/patterns/guiding/"
-               class="active">
+               class="">
               Point of Interest Guide
             </a>
           </li>
@@ -100,7 +100,7 @@
         
           <li>
             <a href="/ar-interaction-patterns/patterns/sub-1-2-forward-cue-routing/"
-               class="">
+               class="active">
               Forward Cue-Routing
             </a>
           </li>
@@ -163,57 +163,110 @@
       </aside>
 
       <main class="pattern-main-content">
-        <h1 id="point-of-interest-guide">Point of Interest Guide</h1>
+        <h1 id="forward-cue-routing">Forward Cue-Routing</h1>
 
 <h2 id="problem">Problem</h2>
-<p>Visitors in AR-enhanced environments such as museums or exhibitions may struggle to efficiently locate points of interest (PoIs). Without clear directional guidance, they risk missing key exhibits due to complex spatial layouts, limited time, or inadequate physical signage.</p>
+<p>Visitors often lose situational awareness at decision points such as corners or junctions. Traditional path lines may be overlooked in visually dense AR scenes, and users may miss subtle route deviations, leading to detours and time loss.</p>
 
 <h2 id="context">Context</h2>
-<p>This pattern is suitable for AR spaces containing multiple PoIs, such as museums, galleries, or trade shows. It is especially valuable when:</p>
+<p>Applicable to AR-enabled environments that:</p>
 
 <ul>
-  <li>Visitors have limited time and need to prioritize key content.</li>
-  <li>The venue is large or subdivided, making it hard to identify or reach a specific exhibit.</li>
-  <li>Conventional maps or signage are insufficient or difficult to interpret.</li>
+  <li>
+    <p>feature long corridors, frequent turns, or multi-level layouts;</p>
+  </li>
+  <li>
+    <p>can pre-author routes and embed triggers at discrete waypoints;</p>
+  </li>
+  <li>
+    <p>require an unobtrusive, ground-anchored visual language to maintain immersion.</p>
+  </li>
 </ul>
 
 <h2 id="use-when">Use When</h2>
 
 <ul>
-  <li>Visitors begin exploration and seek their first AR destination.</li>
-  <li>Visitors want to locate unvisited exhibits efficiently.</li>
-  <li>Visitors wish to revisit previously explored exhibits.</li>
-  <li>Time constraints require targeted navigation.</li>
+  <li>
+    <p>Users prefer minimal above-eye-level graphics that do not occlude exhibits.</p>
+  </li>
+  <li>
+    <p>Clear anticipation of turns is essential—for example, in labyrinthine galleries.</p>
+  </li>
+  <li>
+    <p>The institution wants a metaphor evocative of flow or movement (e.g., ripples) rather than character-based guidance.</p>
+  </li>
+  <li>
+    <p>Acoustic icons can be leveraged at each turn to reinforce direction without constant narration.</p>
+  </li>
 </ul>
 
 <h2 id="solution">Solution</h2>
 
-<p>To assist users in reaching PoIs effectively, combine spatial guidance, interface support, and multisensory feedback:</p>
+<p>Leverage animated ground projections and waypoint-linked audio to shepherd visitors smoothly from origin to destination.</p>
+
+<p><strong>Waypoint-Based Guiding Method</strong></p>
 
 <ul>
   <li>
-    <p><strong>Path Point-Based Guiding Method</strong><br />
-Generate or author a guiding path from the user’s current or starting position to a selected PoI.</p>
+    <p>Author a polyline route; place event triggers at each change-of-direction node.</p>
   </li>
   <li>
-    <p><strong>Point of Interest Selection Interface</strong><br />
-Provide a user interface for selecting PoIs by interest, efficiency, or time.</p>
+    <p>Each trigger initiates a localised cue cluster (visual + auditory).</p>
+  </li>
+</ul>
+
+<p><strong>Point of Interest Selection Interface</strong></p>
+
+<ul>
+  <li>
+    <p>At the start hub, render a planar menu pinned to the floor or a nearby pedestal.</p>
   </li>
   <li>
-    <p><strong>Navigation Control Interface</strong><br />
-Allow users to start, pause, resume, or stop guidance.</p>
+    <p>Options include PoI thumbnails, estimated walking time, and a Start button.</p>
+  </li>
+</ul>
+
+<p><strong>Navigation Control Interface</strong></p>
+
+<ul>
+  <li>
+    <p>The same start menu reappears on demand via gesture or voice (“Show route menu”).</p>
   </li>
   <li>
-    <p><strong>Directional Visual Cues</strong><br />
-Overlay visual indicators in AR space.</p>
+    <p>Users can Pause or Abort; route progress is cached for later resumption.</p>
+  </li>
+</ul>
+
+<p><strong>Directional Visual Cues</strong></p>
+
+<ul>
+  <li>
+    <p>A series of concentric, outward-expanding “raindrop” rings animate along the ground, always propagating toward the next waypoint.</p>
   </li>
   <li>
-    <p><strong>Auditory Feedback</strong><br />
-Use spatial sounds or voice guidance at key locations.</p>
+    <p>Ring expansion rate corresponds to recommended walking speed; slowing rings indicate the need to decelerate.</p>
+  </li>
+</ul>
+
+<p><strong>Auditory Feedback</strong></p>
+
+<ul>
+  <li>
+    <p>At each turn trigger, play a short spatialised whoosh or bell aligned with the upcoming direction.</p>
   </li>
   <li>
-    <p><strong>Arrival Trigger</strong><br />
-Provide visual/audio confirmation when the user reaches the PoI.</p>
+    <p>Ambient volume scales with hallway acoustics to remain perceptible but non-intrusive.</p>
+  </li>
+</ul>
+
+<p><strong>Arrival Trigger</strong></p>
+
+<ul>
+  <li>
+    <p>Final rings converge into a glowing disc at the PoI.</p>
+  </li>
+  <li>
+    <p>A harmonic chord and gentle pulse of light confirm arrival.</p>
   </li>
 </ul>
 
@@ -221,7 +274,7 @@ Provide visual/audio confirmation when the user reaches the PoI.</p>
 
 <h2 id="notes">Notes</h2>
 
-<p>This pattern enhances orientation and engagement in AR-rich spaces by reducing spatial confusion and supporting personalized exhibit discovery.</p>
+<p>Forward Cue-Routing preserves the clarity of a drawn path while avoiding visual overload in the user’s forward gaze. By anchoring cues to the floor plane and synchronising them with discrete acoustic events, the pattern balances immersion and instruction, supporting intuitive navigation even in acoustically or visually busy environments.</p>
 
       </main>
     </div>

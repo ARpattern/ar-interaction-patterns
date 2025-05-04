@@ -24,26 +24,9 @@ permalink: /index.html
   <h2 class="section-title">High-Level Patterns</h2>
   <div class="gallery">
     {% assign high_level_patterns = site.patterns | where: "category", "high-level" | sort: "order" %}
-    {% for pattern in high_level_patterns %}
-      <div class="thumbnail">
-        <a href="{{ pattern.url | relative_url }}">
-          <div class="image-container">
-            <img src="{{ pattern.thumbnail | relative_url }}" alt="{{ pattern.title }}">
-          </div>
-          <h4>{{ pattern.title }}</h4>
-        </a>
-        <p class="tag">
-          {% if pattern.tags %}
-            {% for tag in pattern.tags %}
-              <span class="tag-item">{{ tag }}</span>{% unless forloop.last %}, {% endunless %}
-            {% endfor %}
-          {% endif %}
-        </p>
-        <div class="summary-truncated">
-          {{ pattern.summary }}
-        </div>              
-      </div>
-    {% endfor %}
+{% for pattern in high_level_patterns %}
+  {% include pattern-card.html pattern=pattern %}
+{% endfor %}
   </div>
 </section>
 
@@ -52,26 +35,9 @@ permalink: /index.html
   <h2 class="section-title">Sub-Patterns</h2>
   <div class="gallery">
     {% assign sub_level_patterns = site.patterns | where: "category", "sub-level" | sort: "order" %}
-    {% for pattern in sub_level_patterns %}
-      <div class="thumbnail">
-        <a href="{{ pattern.url | relative_url }}">
-          <div class="image-container">
-            <img src="{{ pattern.thumbnail | relative_url }}" alt="{{ pattern.title }}">
-          </div>
-          <h4>{{ pattern.title }}</h4>
-        </a>
-        <p class="tag">
-          {% if pattern.tags %}
-            {% for tag in pattern.tags %}
-              <span class="tag-item">{{ tag }}</span>{% unless forloop.last %}, {% endunless %}
-            {% endfor %}
-          {% endif %}
-        </p>
-        <div class="summary-truncated">
-          {{ pattern.summary }}
-        </div>        
-      </div>
-    {% endfor %}
+{% for pattern in sub_level_patterns %}
+  {% include pattern-card.html pattern=pattern %}
+{% endfor %}
   </div>
 </section>
 

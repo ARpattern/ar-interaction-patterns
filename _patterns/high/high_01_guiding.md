@@ -2,6 +2,8 @@
 layout: pattern
 title: "Point of Interest Guide"
 category: "high-level"
+pattern_category: guiding
+overlay: /images/PatternIcon/Path.png
 order: 1
 tags:
   - Navigation

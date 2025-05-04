@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Point of Interest Guide</title>
+  <title>Labelling</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="/ar-interaction-patterns/css/layout_default.css" rel="stylesheet">
@@ -63,7 +63,7 @@
         
           <li>
             <a href="/ar-interaction-patterns/ar-interaction-patterns/patterns/guiding/"
-               class="active">
+               class="">
               Point of Interest Guide
             </a>
           </li>
@@ -128,7 +128,7 @@
         
           <li>
             <a href="/ar-interaction-patterns/patterns/sub-3-2-labelling/"
-               class="">
+               class="active">
               Labelling
             </a>
           </li>
@@ -163,65 +163,35 @@
       </aside>
 
       <main class="pattern-main-content">
-        <h1 id="point-of-interest-guide">Point of Interest Guide</h1>
+        <h1 id="sequential-explanation">Sequential Explanation</h1>
 
 <h2 id="problem">Problem</h2>
-<p>Visitors in AR-enhanced environments such as museums or exhibitions may struggle to efficiently locate points of interest (PoIs). Without clear directional guidance, they risk missing key exhibits due to complex spatial layouts, limited time, or inadequate physical signage.</p>
+<p>Visitors are unable to access detailed knowledge about specific parts or components of an exhibit due to spatial constraints in the exhibition area.</p>
 
 <h2 id="context">Context</h2>
-<p>This pattern is suitable for AR spaces containing multiple PoIs, such as museums, galleries, or trade shows. It is especially valuable when:</p>
-
-<ul>
-  <li>Visitors have limited time and need to prioritize key content.</li>
-  <li>The venue is large or subdivided, making it hard to identify or reach a specific exhibit.</li>
-  <li>Conventional maps or signage are insufficient or difficult to interpret.</li>
-</ul>
+<p>Exhibits often consist of multiple parts or components. In limited exhibition spaces, it’s challenging to provide comprehensive labels or explanations for each component. Visitors need clear identification and information about what they are viewing, including the official names and significance of the exhibit parts.</p>
 
 <h2 id="use-when">Use When</h2>
 
 <ul>
-  <li>Visitors begin exploration and seek their first AR destination.</li>
-  <li>Visitors want to locate unvisited exhibits efficiently.</li>
-  <li>Visitors wish to revisit previously explored exhibits.</li>
-  <li>Time constraints require targeted navigation.</li>
+  <li>Visitors at the explanation function to learn more about specific exhibit components.</li>
+  <li>An exhibit includes several parts/components, and the exhibition space is limited.</li>
 </ul>
 
 <h2 id="solution">Solution</h2>
 
-<p>To assist users in reaching PoIs effectively, combine spatial guidance, interface support, and multisensory feedback:</p>
-
 <ul>
-  <li>
-    <p><strong>Path Point-Based Guiding Method</strong><br />
-Generate or author a guiding path from the user’s current or starting position to a selected PoI.</p>
-  </li>
-  <li>
-    <p><strong>Point of Interest Selection Interface</strong><br />
-Provide a user interface for selecting PoIs by interest, efficiency, or time.</p>
-  </li>
-  <li>
-    <p><strong>Navigation Control Interface</strong><br />
-Allow users to start, pause, resume, or stop guidance.</p>
-  </li>
-  <li>
-    <p><strong>Directional Visual Cues</strong><br />
-Overlay visual indicators in AR space.</p>
-  </li>
-  <li>
-    <p><strong>Auditory Feedback</strong><br />
-Use spatial sounds or voice guidance at key locations.</p>
-  </li>
-  <li>
-    <p><strong>Arrival Trigger</strong><br />
-Provide visual/audio confirmation when the user reaches the PoI.</p>
-  </li>
+  <li>Pointing Line: Implement a visual pointing line that connects the physical exhibit parts/components.</li>
+  <li>Title Text: Provide a title text for each part/component, clearly visible and linked to the respective element via the pointing line.</li>
+  <li>Proximity Trigger: Integrate a distance sensor that detects the proximity of the user to the title text.</li>
+  <li>Conditional Explanation Display: When a visitor approaches a title text (triggering the sensor), display a detailed explanation of that part/component. Hide this detailed information when the visitor moves away.</li>
 </ul>
 
 <h2 id="media">Media</h2>
 
 <h2 id="notes">Notes</h2>
 
-<p>This pattern enhances orientation and engagement in AR-rich spaces by reducing spatial confusion and supporting personalized exhibit discovery.</p>
+<p>This pattern supports enhanced visitor engagement by delivering contextual, space-efficient information tailored to user interest and proximity.</p>
 
       </main>
     </div>

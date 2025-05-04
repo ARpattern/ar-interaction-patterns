@@ -14,6 +14,7 @@
   height: 360px; /* 固定高度 */
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   cursor: pointer;
+  position: relative;
 }
 
 .thumbnail:hover {
@@ -40,7 +41,46 @@
   height: 180px;
   overflow: hidden;
   aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  position: relative;
 }
+
+.color-block {
+  position: relative;
+  background-color: #4ab900; /* 你的色块背景 */
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  flex-direction: column;      /* 图片在上，文字在下 */
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  height: 100%;                /* 保持和 image-container 匹配 */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.overlay-icon {
+  max-width: 150px;
+  max-height: 150;
+  width: auto;
+  height: auto;
+  margin: 0 auto 10px auto;
+  display: block;
+  object-fit: contain;
+}
+
+.block-text {
+  display: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+
 
 .image-container img {
   width: 100%;
@@ -52,21 +92,25 @@
 
 /* 标题 */
 .gallery .thumbnail h4 {
-  margin: 8px 0 5px;
+  margin: 30px 0 5px; /* 卡片文字上方空间的距离，当前是30px */
   padding: 0 20px;
-  font-size: 1rem;
-  color: #008cff;
+  font-size: 1.2rem;
+  color: #000000;
   text-align: left;
 }
 
 /* 分类标签 */
 .gallery .thumbnail p,
 .gallery .thumbnail .tag {
-  margin: 0;
+  white-space: nowrap;            /* 不换行 */
+  overflow: hidden;               /* 超出隐藏 */
+  text-overflow: ellipsis;        /* 显示省略号 */
+
+  font-size: 0.9rem;
   color: #5D5E5D;
   text-align: left;
   padding: 0 20px 6px;
-  font-size: 0.9rem;
+  margin: 0;
 }
 
 /* 摘要 */
@@ -80,7 +124,7 @@
 
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3; /* 控制最多显示3行 */
+  line-clamp: 2; /* 控制最多显示3行 */
   overflow: hidden;
   text-overflow: ellipsis;
 
@@ -90,6 +134,7 @@
 
   box-sizing: border-box;
   flex-grow: 1;
+  margin-top: 10px; /* 增加顶部间距 */
 }
 
 /* 卡片容器响应式布局 */
@@ -99,6 +144,41 @@
   justify-content: flex-start; /* 从左开始，不拉伸对齐 */
   gap: 0%; /* 可选：卡片之间添加间距 */
 }
+
+.color-bar {
+  height: 8px;
+  width: 90%;
+  margin: 12px auto 10px auto;
+  border-radius: 8px;
+  background-color: #ccc; /* 默认灰色，可选 */
+}
+
+/* 分类颜色 */
+.color-bar.guiding {
+  background-color: #4ab900;
+}
+
+.color-bar.indicator {
+  background-color: #0099ff;
+}
+
+.color-bar.presenter {
+  background-color: #ff008c;
+}
+
+/* 顶部色块颜色（高层级 pattern 专用） */
+.color-block.guiding {
+  background-color: #4ab900;
+}
+
+.color-block.indicator {
+  background-color: #0099ff; /* 同 indicator 的底部 bar */
+}
+
+.color-block.presenter {
+  background-color: #ff008c; /* 同 presenter 的底部 bar */
+}
+
 
 @media screen and (max-width: 800px) {
   .gallery {

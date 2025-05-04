@@ -389,7 +389,7 @@ footer {
 	max-width: 500px; /* 控制最大宽度 */
 	height: auto; /* 保持原始比例 */
 	display: block;
-	margin: 0 auto; /* 可选：居中图片 */
+	margin:  auto; /* 可选：居中图片 */
 }
 
 .pattern-subnav {
@@ -438,6 +438,22 @@ footer {
 	border-radius: 4px;
   }
 
+  .pattern-subnav {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.pattern-subnav ul,
+.pattern-subnav .pattern-list {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+.pattern-sidebar {
+	padding-left: 0;
+  }
+
+  
 /* Mobile */
 @media (max-width: 800px) {
 .logo {

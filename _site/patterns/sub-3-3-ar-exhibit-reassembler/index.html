@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Point of Interest Guide</title>
+  <title>Exhibit Reassembler</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="/ar-interaction-patterns/css/layout_default.css" rel="stylesheet">
@@ -63,7 +63,7 @@
         
           <li>
             <a href="/ar-interaction-patterns/ar-interaction-patterns/patterns/guiding/"
-               class="active">
+               class="">
               Point of Interest Guide
             </a>
           </li>
@@ -135,7 +135,7 @@
         
           <li>
             <a href="/ar-interaction-patterns/patterns/sub-3-3-ar-exhibit-reassembler/"
-               class="">
+               class="active">
               Exhibit Reassembler
             </a>
           </li>
@@ -163,65 +163,77 @@
       </aside>
 
       <main class="pattern-main-content">
-        <h1 id="point-of-interest-guide">Point of Interest Guide</h1>
+        <h1 id="ar-exhibit-reassembler">AR Exhibit Reassembler</h1>
 
 <h2 id="problem">Problem</h2>
-<p>Visitors in AR-enhanced environments such as museums or exhibitions may struggle to efficiently locate points of interest (PoIs). Without clear directional guidance, they risk missing key exhibits due to complex spatial layouts, limited time, or inadequate physical signage.</p>
+<p>When an exhibit showcases only partial physical artifacts, visitors struggle to grasp the exhibit’s full form and scale, hindering their understanding of how individual parts relate to the whole.</p>
 
 <h2 id="context">Context</h2>
-<p>This pattern is suitable for AR spaces containing multiple PoIs, such as museums, galleries, or trade shows. It is especially valuable when:</p>
-
-<ul>
-  <li>Visitors have limited time and need to prioritize key content.</li>
-  <li>The venue is large or subdivided, making it hard to identify or reach a specific exhibit.</li>
-  <li>Conventional maps or signage are insufficient or difficult to interpret.</li>
-</ul>
+<p>This pattern applies to museum pieces (e.g., fossils, machinery, architectural relics) where substantial elements are missing, yet digital reconstructions are available to complete the story.</p>
 
 <h2 id="use-when">Use When</h2>
 
 <ul>
-  <li>Visitors begin exploration and seek their first AR destination.</li>
-  <li>Visitors want to locate unvisited exhibits efficiently.</li>
-  <li>Visitors wish to revisit previously explored exhibits.</li>
-  <li>Time constraints require targeted navigation.</li>
+  <li>
+    <p>Visitors encounter exhibits with missing components that must be virtually reconstructed.</p>
+  </li>
+  <li>
+    <p>The goal is to deepen comprehension of an object’s overall structure and significance through active participation.</p>
+  </li>
 </ul>
 
 <h2 id="solution">Solution</h2>
 
-<p>To assist users in reaching PoIs effectively, combine spatial guidance, interface support, and multisensory feedback:</p>
+<p><strong>Jigsaw-Puzzle Reconstruction Mechanic</strong></p>
 
 <ul>
   <li>
-    <p><strong>Path Point-Based Guiding Method</strong><br />
-Generate or author a guiding path from the user’s current or starting position to a selected PoI.</p>
+    <p>Spawn interactive 3-D pieces representing the absent parts.</p>
   </li>
   <li>
-    <p><strong>Point of Interest Selection Interface</strong><br />
-Provide a user interface for selecting PoIs by interest, efficiency, or time.</p>
+    <p>Require visitors to match shapes, edges, or textures to dock each piece in its correct position on the physical artifact.</p>
+  </li>
+</ul>
+
+<p><strong>Progression Feedback</strong></p>
+
+<ul>
+  <li>
+    <p>After every correct placement, provide immediate visual confirmation (e.g., glow animation) and an encouraging audio cue.</p>
   </li>
   <li>
-    <p><strong>Navigation Control Interface</strong><br />
-Allow users to start, pause, resume, or stop guidance.</p>
+    <p>Display a completion meter to motivate continued engagement.</p>
+  </li>
+</ul>
+
+<p><strong>Adaptive Challenge Balancing</strong></p>
+
+<ul>
+  <li>
+    <p>Begin with boundary or high-contrast pieces to build confidence.</p>
   </li>
   <li>
-    <p><strong>Directional Visual Cues</strong><br />
-Overlay visual indicators in AR space.</p>
+    <p>Gradually increase difficulty by introducing subtler matches or mirrored pieces based on user performance.</p>
   </li>
-  <li>
-    <p><strong>Auditory Feedback</strong><br />
-Use spatial sounds or voice guidance at key locations.</p>
-  </li>
-  <li>
-    <p><strong>Arrival Trigger</strong><br />
-Provide visual/audio confirmation when the user reaches the PoI.</p>
-  </li>
+</ul>
+
+<p><strong>Start-Point Guidance &amp; Tutorial</strong></p>
+
+<ul>
+  <li>Highlight an initial region of interest and launch a concise voice-over or on-screen guide explaining controls and objectives.</li>
+</ul>
+
+<p><strong>Narrative Enhancements</strong></p>
+
+<ul>
+  <li>As sections assemble, trigger contextual facts (e.g., bone function, historical discovery) to weave learning into the puzzle flow.</li>
 </ul>
 
 <h2 id="media">Media</h2>
 
 <h2 id="notes">Notes</h2>
 
-<p>This pattern enhances orientation and engagement in AR-rich spaces by reducing spatial confusion and supporting personalized exhibit discovery.</p>
+<p>This pattern transforms incomplete physical remains into a hands-on, completion-driven experience that reinforces structural understanding and sustains visitor motivation.</p>
 
       </main>
     </div>
