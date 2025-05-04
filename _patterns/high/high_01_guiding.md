@@ -8,7 +8,7 @@ order: 1
 tags:
   - Navigation
   - AR
-permalink: /ar-interaction-patterns/patterns/guiding/
+
 thumbnail: /images/high_guide.png
 summary: "Guiding to Points of Interest (PoIs)"
 description: "To assist users in reaching PoIs effectively, combine spatial guidance, interface support, and multisensory feedback."

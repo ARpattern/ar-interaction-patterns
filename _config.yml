@@ -6,10 +6,8 @@ collections:
     output: true
     permalink: /patterns/:name/
 
-collections_dir: _patterns  # ⬅️ 把 patterns 放在 _patterns/patterns 中
-
 include:
-  - _patterns  # ⬅️ 不加它，Jekyll 不会处理这个目录！
+  - _patterns
 
 defaults:
   - scope:
