@@ -21,7 +21,7 @@ description: "Use a proximity-triggered floor circle to attract attention and se
 Visitors often struggle with understanding the various categories of information in an exhibit and may find it challenging to explore the exhibit at their own pace.
 
 ## Context
-his pattern is applicable in AR-supported exhibition spaces where:
+This pattern is applicable in AR-supported exhibition spaces where:
 
 - Only select exhibits offer AR content, requiring visual cues to stand out;
 
@@ -41,9 +41,11 @@ his pattern is applicable in AR-supported exhibition spaces where:
 Provide an attention-grabbing interface anchored in physical space, using a distance-based trigger to seamlessly initiate AR content:
 
 **Spatial Entry Trigger**
+
 A virtual circle is rendered on the floor in front of the exhibit. This serves as both a visual attractor and an activation zone. The trigger is proximity-based: when the user steps inside the circle, the system initiates the AR experience.
 
 **AR Experience Indicator Interface**
+
 Positioned above or near the activation circle is a combination of elements that convey exhibit identity and interactivity:
 
 - A 3D model representing the exhibit, such as a swimming orca rendered with subtle looping animation;
@@ -53,6 +55,7 @@ Positioned above or near the activation circle is a combination of elements that
 - The floor circle, which may pulse or glow gently to draw attention without disrupting the spatial environment.
 
 **Activation Mechanism**
+
 When the user enters the virtual circle:
 
 - A spatial audio cue plays (e.g., a short chime or water splash);
@@ -62,6 +65,7 @@ When the user enters the virtual circle:
 - A voice prompt confirms activation (e.g., “Orca AR experience launched”).
 
 **Feedback Cues**
+
 Immediate multimodal feedback ensures users know their action was successful:
 
 - Visual disappearance of interface elements;
@@ -69,6 +73,7 @@ Immediate multimodal feedback ensures users know their action was successful:
 - Contextual audio confirmation via spatial voice or tone;
 
 - Optional brief visual transition or AR content boot-up sequence.
+
 ## Media
 
 

@@ -19,66 +19,66 @@ description: "Exploring and Controlling AR Content: Present the content in a str
 # Avatar Guide
 
 ## Problem
-In augmented-reality (AR) venues with intricate spatial configurations, visitors may still overlook salient points of interest (PoIs) even when a predefined path exists. Conventional planar arrows and markers lack the behavioural affordances that help users pace themselves and maintain orientation, especially under time pressure or cognitive load.
+In AR‑enhanced museum settings, guests may overlook salient points of interest despite the presence of a preconfigured route. Traditional planar indicators—such as arrows or floor decals—offer limited guidance for regulating walking pace and preserving orientation, particularly when visitors divide their attention among exhibits.
 
 ## Context
-This sub-pattern applies to museums, galleries, trade fairs, and other AR-enhanced environments that:
+This sub‑pattern is intended for gallery and museum spaces that:
 
-- contain multiple PoIs distributed across a complex floor plan;
+- Feature multiple points of interest dispersed across a nontrivial floor plan
 
-- wish to foster a more “human-like” escort experience;
+- Support real‑time user localization accurate enough to anchor and animate a virtual figure in situ
 
-- already support real-time localisation sufficient to spawn and animate an avatar in front of the user.
+-  Seek to provide a more personable, dramaturgical escort experience than abstract wayfinding cues allow
 
 ## Use When
 
-- Visitors begin their exploration and prefer to “follow a guide” rather than interpret abstract symbols.
+- Visitors prefer to “follow” a guide rather than decode symbolic markers
 
-- Users wish to maintain a natural walking rhythm while receiving continuous, glanceable cues.
+- Maintaining a natural, steady walking pace is important for visitor comfort
 
-- The venue aims to convey a branded or thematic persona (e.g., a historical character) through the guide itself.
+- The venue desires to embody thematic or narrative elements (e.g., a curator avatar or historical persona) in its navigation system
 
-- Time constraints necessitate adaptive pacing without user micro-management.
+- The system must adjust pacing dynamically without requiring manual speed controls
+
 
 ## Solution
 
-Combine path pre-authoring with an embodied virtual companion that dynamically adapts to the user’s behaviour.
+**Avatar Instantiation & Path Binding**
 
-**Avatar-Centred Guiding Method**
+- Spawn a 3D avatar at the user’s position and bind its movement to the authored path.
 
-- Instantiate a 3-D avatar at the user’s current location; bind its locomotion to the authored path while monitoring the visitor’s speed and heading.
+- Monitor the visitor’s heading and speed; continuously adjust the guide’s velocity to remain at an optimal following distance (approx. 2–3 m).
 
-- Apply inverse kinematics and subtle idle animations to preserve plausibility when the user stalls or deviates.
+**Kinematic Plausibility**
 
-**Point of Interest Selection Interface**
+- Employ inverse‑kinematics and subtle idle animations to maintain realism when the user pauses or veers off-course.
 
-- Present a floating radial or list menu from which users can choose PoIs.
+- Colour‑code the avatar’s outline or attire to reflect navigation states (e.g., green for “en route,” amber for “paused”).
 
-- Display estimated travel time that accounts for the avatar’s planned speed profile.
+**Point‑of‑Interest Menu**
 
-**Navigation Control Interface**
+- Provide a floating radial or list menu allowing users to select their next destination.
 
-- Provide a palm-up hand-menu (revealed by a simple gesture) with Start, Pause, Resume, and End commands.
+- Display estimated travel time based on the avatar’s adaptive speed profile.
 
-- Offer haptic or auditory confirmation for each state change.
+**Gesture‑Activated Controls**
 
-**Directional Visual Cues**
+- Recognize a simple hand gesture (e.g., palm‑up) to reveal a mini hand‑menu with Start, Pause, Resume, and End options.
 
-- The avatar leads at a fixed visual distance (e.g., 2–3 m).
+- Deliver haptic or auditory confirmation upon each command.
 
-- Colour-code the avatar’s attire or emissive outline to indicate navigation states (e.g., green = en-route, amber = paused).
+**Auditory & Spatial Prompts**
 
-**Auditory Feedback**
+- Issue spatialized vocal cues (e.g., “Turn left ahead”) and footstep sounds at key decision points.
 
-- Spatialised footstep or vocal prompts at critical junctures (e.g., “Turn left ahead”).
+- Dynamically adjust volume and cadence in response to ambient noise and proximity.
 
-- Volume and cadence adapt to ambient noise and visitor proximity.
+**Arrival Interaction**
 
-**Arrival Trigger**
+- Upon reaching a PoI, have the avatar stop, turn toward the visitor, and perform a brief welcoming gesture.
 
-- At the PoI, the avatar stops, turns toward the user, and performs a brief gesture.
+- Simultaneously trigger an on‑screen tooltip and a gentle chime to affirm arrival.
 
-- Simultaneous auditory chime and on-screen tooltip confirm successful arrival.
 
 ## Media
 
@@ -86,4 +86,4 @@ Combine path pre-authoring with an embodied virtual companion that dynamically a
 
 ## Notes
 
-The Avatar Guide sub-pattern enhances social presence and reduces cognitive overhead by translating directional data into anthropomorphic motion. Adaptive speed regulation mitigates user frustration caused by mismatched walking paces, while the hand-menu prevents visual clutter in the primary field of view.
+By anthropomorphizing wayfinding, the Avatar Guide reduces cognitive load and fosters social presence. Its adaptive pacing prevents visitor frustration caused by mismatched walking speeds, while gesture‑activated controls minimize visual clutter. The use of themed avatars can further reinforce the institution’s narrative identity.

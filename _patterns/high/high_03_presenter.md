@@ -48,7 +48,7 @@ Present the content in a structured, navigable, and user-controlled manner:
   If the AR experience includes animation, video, or timed sequences, offer “Pause” and “Resume” buttons. These allow users to take breaks, repeat segments, or skip ahead, enhancing flexibility.
 
 ## Media
-![Example of AR Stepwise Presentation](https://example.com/ar-presenter-demo.gif)
+
 
 ## Notes
 This pattern supports deep, self-directed learning by combining information structure with user navigation control. It works especially well for content-rich exhibits in cultural heritage, science, or educational AR environments.
