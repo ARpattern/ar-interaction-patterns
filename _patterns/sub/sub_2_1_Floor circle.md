@@ -8,7 +8,7 @@ order: 2.1
 tags:
   - Exploration
   - Spatial Trigger
-thumbnail: /images/Floor_Circle.png
+thumbnail: /images/Gif/EnteringCircle.gif
 summary: "Spatial Activation of AR Content"
 description: "Use a proximity-triggered floor circle to attract attention and seamlessly activate AR experiences, enabling intuitive and embodied engagement."
 ---

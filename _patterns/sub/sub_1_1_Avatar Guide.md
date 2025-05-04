@@ -8,7 +8,7 @@ order: 1.1
 tags:
   - Exploration
   - Experience Navigation
-thumbnail: /images/FollowingTheButterfly.png
+thumbnail: /images/Gif/FollowAvatar.gif
 summary: "Exploring and Controlling AR Content"
 description: "Exploring and Controlling AR Content: Present the content in a structured, navigable, and user-controlled manner."
 ---

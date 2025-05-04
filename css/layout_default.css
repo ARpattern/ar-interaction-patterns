@@ -191,12 +191,41 @@ html {
   border-left: 4px solid #008cff; /* 可选：加一点视觉引导 */
   padding-left: 0.6rem;
 }
-.intro-text {
-  font-size: 1.2rem !important;
-  color: #474747 !important;
-  line-height: 3;
-  font-family: 'Roboto', sans-serif;
-}
+/* 限制整个板块宽度并居中 */
+.intro .two-column-section {
+	max-width: 800px;
+	margin: 2em auto 0;
+	padding: 0;
+  }
+  
+  /* 用 grid 强制左右两栏 */
+  .intro .two-column-block {
+	display: grid;
+	grid-template-columns: 200px 1fr;   /* 左 200px，右 自适应 */
+	column-gap: 1.5em;
+	margin-bottom: 1.5em;
+	align-items: start;
+  }
+  
+  /* 左侧标题靠右对齐，看起来更整齐 */
+  .intro .column-left {
+	text-align: right;
+	padding-right: 0.5em;
+  }
+  
+  /* 减小两段文字间距 */
+  .intro .intro-text.tight {
+	line-height: 1.6;
+	margin-bottom: 0.8em;
+  }
+  
+  /* 调整 list 缩进 */
+  .intro ul.intro-text.tight {
+	padding-left: 1.2em;
+	margin: 0.5em 0;
+  }
+  
+
 .text_column {
 	width: 50%;
 	text-align: left;
@@ -384,13 +413,23 @@ footer {
 	display: inline-block;
 	background-color: #ffffff;
 }
-.profile {
+.intro-video-wrapper {
+	position: relative;
 	width: 100%;
-	max-width: 500px; /* 控制最大宽度 */
-	height: auto; /* 保持原始比例 */
-	display: block;
-	margin:  auto; /* 可选：居中图片 */
-}
+	max-width: 1200px;     /* 与图片时同样的最大宽度 */
+	margin-bottom: 2em;   /* 与原来图片的下边距保持一致 */
+	aspect-ratio: 16 / 9; /* 新规范：自动保持 16:9 */
+	background-color: #000; /* 视频加载前的背景色 */
+  }
+  
+  .intro-video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+  }
 
 .pattern-subnav {
 	background-color: #f7f7f7;

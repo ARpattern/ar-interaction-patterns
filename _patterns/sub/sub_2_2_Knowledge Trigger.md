@@ -8,7 +8,7 @@ order: 2.2
 tags:
   - Exploration
   - Knowledge Activation
-thumbnail: /images/Presenter_Button.png
+thumbnail: /images/Gif/GrabFish-ezgif.com-video-to-gif-converter.gif
 summary: "Triggering Deeper Understanding Through Action"
 description: "Engage visitors in concise, meaningful interactions that activate core scientific or cultural knowledge embedded in AR exhibits."
 ---
