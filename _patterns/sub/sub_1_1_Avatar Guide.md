@@ -3,7 +3,7 @@ layout: pattern
 title: "Avatar Guide"
 category: "sub-level"
 pattern_category: guiding
-order: 1
+order: 1.1
 
 tags:
   - Exploration

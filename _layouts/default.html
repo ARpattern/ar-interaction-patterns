@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>{{ page.title }}</title>
+  <link rel="canonical" href="{{ page.canonical | default: page.url | absolute_url | replace: 'index.html', '' }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="{{ '/css/layout_default.css' | relative_url }}" rel="stylesheet">
@@ -19,15 +20,13 @@
 
 <body>
   <div class="container">
-
     {% include header.html %}
-
     <main>
       {{ content }}
     </main> 
   </div>
+
   {% include footer.html %}
-    <!-- 引入统一的 JavaScript 文件 -->
-    <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
+  <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
 </body>
 </html>

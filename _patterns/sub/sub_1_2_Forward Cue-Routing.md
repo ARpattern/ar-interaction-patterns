@@ -3,7 +3,7 @@ layout: pattern
 title: "Forward Cue-Routing"
 category: "sub-level"
 pattern_category: guiding
-order: 2
+order: 1.2
 
 tags:
   - Exploration

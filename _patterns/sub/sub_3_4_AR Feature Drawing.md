@@ -3,7 +3,7 @@ layout: pattern
 title: "Feature Drawing"
 category: "sub-level"
 pattern_category: presenter
-order: 6
+order: 3.4
 
 tags:
   - Creative Expression

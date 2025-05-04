@@ -1,6 +1,6 @@
 ---
 layout: pattern
-title: "AR Experience Presenter"
+title: "Experience Presenter"
 category: "sub-level"
 pattern_category: indicator
 order: 2.1

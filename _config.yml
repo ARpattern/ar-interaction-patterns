@@ -1,10 +1,13 @@
+url: "https://lovesini2152.github.io"
 baseurl: "/ar-interaction-patterns"
 
 include:
   - _pages
 
-
 collections:
   patterns:
     output: true
     permalink: /patterns/:name/
+
+plugins:
+  - jekyll-sitemap
