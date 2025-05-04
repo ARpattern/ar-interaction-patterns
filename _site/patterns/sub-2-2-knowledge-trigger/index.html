@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Experience Presenter</title>
-  <link rel="canonical" href="http://localhost:4000/ar-interaction-patterns/patterns/sub-2-2/">
+  <title>Knowledge Trigger</title>
+  <link rel="canonical" href="http://localhost:4000/ar-interaction-patterns/patterns/sub-2-2-knowledge-trigger/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="/ar-interaction-patterns/css/layout_default.css" rel="stylesheet">
@@ -107,16 +107,16 @@
           </li>
         
           <li>
-            <a href="/ar-interaction-patterns/patterns/sub-2-1/"
+            <a href="/ar-interaction-patterns/patterns/sub-2-1-floor-circle/"
                class="">
-              Experience Presenter
+              Floor circle
             </a>
           </li>
         
           <li>
-            <a href="/ar-interaction-patterns/patterns/sub-2-2/"
+            <a href="/ar-interaction-patterns/patterns/sub-2-2-knowledge-trigger/"
                class="active">
-              Experience Presenter
+              Knowledge Trigger
             </a>
           </li>
         
@@ -164,25 +164,109 @@
       </aside>
 
       <main class="pattern-main-content">
-        <h1 id="drawing-pattern">Drawing Pattern</h1>
+        <h1 id="exhibit-knowledge-trigger">Exhibit Knowledge Trigger</h1>
 
-<p><strong>Intent:</strong> Allow users to highlight exhibit features by drawing in AR.</p>
+<h2 id="problem">Problem</h2>
+<p>Visitors frequently perceive AR prompts as merely decorative and may fail to uncover deeper scientific or cultural insights embedded in an exhibit. Without an engaging, goal-oriented micro-task, the core educational message can remain latent, reducing the interpretive value of the AR experience.</p>
 
-<p><strong>Scenario:</strong> A Deinonychus fossil is shown. Visitors can use finger gestures to draw outlines or annotations on parts like claws or feathers.</p>
+<h2 id="context">Context</h2>
+<p>Applicable in AR-enhanced galleries where:</p>
 
-<p><strong>Steps:</strong></p>
-<ol>
-  <li>Activate drawing mode</li>
-  <li>Track finger or hand movement</li>
-  <li>Render lines or markers in 3D space</li>
-  <li>Optionally save or share results</li>
-</ol>
+<ul>
+  <li>
+    <p>Exhibits possess specific behavioural or functional phenomena (e.g., echolocation) that benefit from experiential demonstration;</p>
+  </li>
+  <li>
+    <p>Spatial affordances allow placement of auxiliary virtual objects within a few metres of the primary exhibit;</p>
+  </li>
+  <li>
+    <p>Visitors are encouraged to perform light, one-step interactions (e.g., grab-and-place) rather than lengthy manipulation sequences.</p>
+  </li>
+</ul>
 
-<p><strong>Media:</strong><br />
-<img src="https://example.com/drawing-demo.gif" alt="Drawing Demo" /></p>
+<h2 id="use-when">Use When</h2>
 
-<p><strong>Notes:</strong><br />
-This pattern supports active learning and personalized exploration.</p>
+<ul>
+  <li>
+    <p>Designers need to foreground a single, high-value knowledge point before unlocking more extensive AR content.</p>
+  </li>
+  <li>
+    <p>Visitors are likely to be attracted by playful, embodied tasks that immediately visualise cause–and-effect relationships.</p>
+  </li>
+  <li>
+    <p>The museum aims to scaffold learning progressively, rewarding exploratory behaviour with additional layers of information.</p>
+  </li>
+</ul>
+
+<h2 id="solution">Solution</h2>
+
+<p>Extract a concise knowledge nugget from the exhibit and embed it in an interaction loop that is short, intuitive, and intrinsically meaningful.</p>
+
+<p><strong>Knowledge-Centric Interaction Loop</strong></p>
+
+<ul>
+  <li>
+    <p>Identify the exhibit’s key concept—in the Orca case, ultrasonic hunting.</p>
+  </li>
+  <li>
+    <p>Author an auxiliary virtual object (e.g., a fish) positioned 2–3 m from the life-size 3-D orca model.</p>
+  </li>
+  <li>
+    <p>Instruct the visitor (verbally or via subtle UI) to grab the fish.</p>
+  </li>
+</ul>
+
+<p><strong>Dynamic Exhibit Response</strong></p>
+
+<p>Upon fish pickup, trigger a state change in the orca model:</p>
+
+<ul>
+  <li>
+    <p>Orca re-orients toward the fish with realistic swimming animation;</p>
+  </li>
+  <li>
+    <p>A pulsed, cone-shaped sonar waveform emanates from the orca’s head;</p>
+  </li>
+  <li>
+    <p>Spatial audio plays an authentic echolocation click sequence.</p>
+  </li>
+</ul>
+
+<p><strong>Completion &amp; Knowledge Delivery</strong></p>
+
+<p>When the visitor places or throws the fish into the orca’s mouth region:</p>
+
+<ul>
+  <li>
+    <p>A confirmation chime sounds and the sonar animation ceases;</p>
+  </li>
+  <li>
+    <p>A concise multimedia panel appears, summarising orca echolocation (frequency range, hunting tactics, ecological relevance);</p>
+  </li>
+  <li>
+    <p>The panel offers a “Discover More” button that unlocks additional AR layers—e.g., feeding-behaviour mini-scenes or comparative anatomy overlays.</p>
+  </li>
+</ul>
+
+<p><strong>Feedback Cues</strong></p>
+
+<ul>
+  <li>
+    <p>Visual — fish outline glows when within the valid drop zone; orca eyes blink to acknowledge success.</p>
+  </li>
+  <li>
+    <p>Auditory — escalating sonar pings as proximity narrows, resolved by a softer “capture” tone on completion.</p>
+  </li>
+  <li>
+    <p>Haptic (optional) — short controller vibration or glove feedback when the fish is released correctly.</p>
+  </li>
+</ul>
+
+<h2 id="media">Media</h2>
+
+<h2 id="notes">Notes</h2>
+
+<p>The Exhibit Knowledge Trigger pattern blends discovery learning with purposeful motion, ensuring each interaction yields an immediate educational payoff. By coupling a single-step task to an iconic behavioural demonstration, it magnifies visitor curiosity and seamlessly channels them into deeper AR content pathways.</p>
 
       </main>
     </div>

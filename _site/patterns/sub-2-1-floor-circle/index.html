@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Experience Presenter</title>
-  <link rel="canonical" href="http://localhost:4000/ar-interaction-patterns/patterns/sub-2-1/">
+  <title>Floor circle</title>
+  <link rel="canonical" href="http://localhost:4000/ar-interaction-patterns/patterns/sub-2-1-floor-circle/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="/ar-interaction-patterns/css/layout_default.css" rel="stylesheet">
@@ -107,16 +107,16 @@
           </li>
         
           <li>
-            <a href="/ar-interaction-patterns/patterns/sub-2-1/"
+            <a href="/ar-interaction-patterns/patterns/sub-2-1-floor-circle/"
                class="active">
-              Experience Presenter
+              Floor circle
             </a>
           </li>
         
           <li>
-            <a href="/ar-interaction-patterns/patterns/sub-2-2/"
+            <a href="/ar-interaction-patterns/patterns/sub-2-2-knowledge-trigger/"
                class="">
-              Experience Presenter
+              Knowledge Trigger
             </a>
           </li>
         
@@ -164,25 +164,95 @@
       </aside>
 
       <main class="pattern-main-content">
-        <h1 id="drawing-pattern">Drawing Pattern</h1>
+        <h1 id="floor-circle">Floor circle</h1>
 
-<p><strong>Intent:</strong> Allow users to highlight exhibit features by drawing in AR.</p>
+<h2 id="problem">Problem</h2>
+<p>Visitors often struggle with understanding the various categories of information in an exhibit and may find it challenging to explore the exhibit at their own pace.</p>
 
-<p><strong>Scenario:</strong> A Deinonychus fossil is shown. Visitors can use finger gestures to draw outlines or annotations on parts like claws or feathers.</p>
+<h2 id="context">Context</h2>
+<p>his pattern is applicable in AR-supported exhibition spaces where:</p>
 
-<p><strong>Steps:</strong></p>
-<ol>
-  <li>Activate drawing mode</li>
-  <li>Track finger or hand movement</li>
-  <li>Render lines or markers in 3D space</li>
-  <li>Optionally save or share results</li>
-</ol>
+<ul>
+  <li>
+    <p>Only select exhibits offer AR content, requiring visual cues to stand out;</p>
+  </li>
+  <li>
+    <p>Visitors are free-roaming and may not follow a predetermined path;</p>
+  </li>
+  <li>
+    <p>Activation should feel natural and effortless, without relying on handheld input or complex gestures.</p>
+  </li>
+</ul>
 
-<p><strong>Media:</strong><br />
-<img src="https://example.com/drawing-demo.gif" alt="Drawing Demo" /></p>
+<h2 id="use-when">Use When</h2>
+<ul>
+  <li>
+    <p>Visitors are scanning the environment for interactive exhibits.</p>
+  </li>
+  <li>
+    <p>Visitors approach an AR-capable exhibit and need a clear entry point to trigger the experience.</p>
+  </li>
+  <li>
+    <p>Designers seek a spatial and embodied method to encourage proximity-based interaction.</p>
+  </li>
+</ul>
 
-<p><strong>Notes:</strong><br />
-This pattern supports active learning and personalized exploration.</p>
+<h2 id="solution">Solution</h2>
+
+<p>Provide an attention-grabbing interface anchored in physical space, using a distance-based trigger to seamlessly initiate AR content:</p>
+
+<p><strong>Spatial Entry Trigger</strong>
+A virtual circle is rendered on the floor in front of the exhibit. This serves as both a visual attractor and an activation zone. The trigger is proximity-based: when the user steps inside the circle, the system initiates the AR experience.</p>
+
+<p><strong>AR Experience Indicator Interface</strong>
+Positioned above or near the activation circle is a combination of elements that convey exhibit identity and interactivity:</p>
+
+<ul>
+  <li>
+    <p>A 3D model representing the exhibit, such as a swimming orca rendered with subtle looping animation;</p>
+  </li>
+  <li>
+    <p>A title label, e.g., “Orca,” displayed in clean, legible typography;</p>
+  </li>
+  <li>
+    <p>The floor circle, which may pulse or glow gently to draw attention without disrupting the spatial environment.</p>
+  </li>
+</ul>
+
+<p><strong>Activation Mechanism</strong>
+When the user enters the virtual circle:</p>
+
+<ul>
+  <li>
+    <p>A spatial audio cue plays (e.g., a short chime or water splash);</p>
+  </li>
+  <li>
+    <p>The 3D model, label, and circle fade out or dissolve to signal the transition;</p>
+  </li>
+  <li>
+    <p>A voice prompt confirms activation (e.g., “Orca AR experience launched”).</p>
+  </li>
+</ul>
+
+<p><strong>Feedback Cues</strong>
+Immediate multimodal feedback ensures users know their action was successful:</p>
+
+<ul>
+  <li>
+    <p>Visual disappearance of interface elements;</p>
+  </li>
+  <li>
+    <p>Contextual audio confirmation via spatial voice or tone;</p>
+  </li>
+  <li>
+    <p>Optional brief visual transition or AR content boot-up sequence.</p>
+    <h2 id="media">Media</h2>
+  </li>
+</ul>
+
+<h2 id="notes">Notes</h2>
+
+<p>The Circle Indicator pattern makes AR content more accessible and discoverable through spatially grounded, low-friction interaction. By relying on embodied triggers and minimal UI, it supports intuitive engagement while preserving immersion in the exhibition space. This design is especially effective for visitors unfamiliar with gesture-based systems or those exploring independently without guidance.</p>
 
       </main>
     </div>
