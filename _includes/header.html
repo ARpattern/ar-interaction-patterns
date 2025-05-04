@@ -10,8 +10,12 @@
 
   <!-- 右侧搜索栏 + About & Contact 链接 + 移动端汉堡按钮 -->
   <div class="header-right">
-    <form class="search-form" action="/search" method="get">
-      🔍 <input type="text" name="q" placeholder="Search..." />
+    <form class="search-form" action="{{ '/search/' | relative_url }}" method="get">
+      <div class="search-input-wrapper">
+        <span class="search-icon">🔍</span>
+        <input type="text" name="q" placeholder="Search..." />
+      </div>
+      <button type="submit">Search</button>
     </form>
 
     <!-- 移动端汉堡按钮，点击后显示/隐藏导航栏 -->

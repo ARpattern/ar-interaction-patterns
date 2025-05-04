@@ -1,0 +1,45 @@
+---
+layout: default
+title: Search Results
+permalink: /search/
+---
+
+<h2>Search Results for "<span id="search-query"></span>"</h2>
+<div id="search-results">Loading...</div>
+
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script>
+  const query = new URLSearchParams(window.location.search).get('q') || '';
+  document.getElementById('search-query').textContent = query;
+
+  fetch('{{ "/assets/js/search.json" | relative_url }}')
+    .then(res => res.json())
+    .then(pages => {
+      const idx = lunr(function () {
+        this.ref('url');
+        this.field('title');
+        this.field('excerpt');
+
+        pages.forEach(doc => this.add(doc));
+      });
+
+      const results = query ? idx.search(query) : [];
+      const container = document.getElementById('search-results');
+
+      if (!query) {
+        container.innerHTML = '<p>Please enter a search query.</p>';
+      } else if (results.length === 0) {
+        container.innerHTML = `<p>No results found for "<strong>${query}</strong>".</p>`;
+      } else {
+        container.innerHTML = results.map(result => {
+          const page = pages.find(p => p.url === result.ref);
+          return `
+            <article style="margin-bottom: 2em;">
+              <h3><a href="${page.url}">${page.title || '(Untitled)'}</a></h3>
+              <p>${page.excerpt}</p>
+            </article>
+          `;
+        }).join('');
+      }
+    });
+</script>

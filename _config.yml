@@ -1,13 +1,19 @@
 url: "https://lovesini2152.github.io"
 baseurl: "/ar-interaction-patterns"
 
-include:
-  - _pages
-
 collections:
   patterns:
     output: true
     permalink: /patterns/:name/
 
-plugins:
-  - jekyll-sitemap
+collections_dir: _patterns  # ⬅️ 把 patterns 放在 _patterns/patterns 中
+
+include:
+  - _patterns  # ⬅️ 不加它，Jekyll 不会处理这个目录！
+
+defaults:
+  - scope:
+      path: ""
+      type: patterns
+    values:
+      layout: pattern
