@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Exhibit Reassembler</title>
+  <link rel="canonical" href="http://localhost:4000/ar-interaction-patterns/patterns/sub-3-3-ar-exhibit-reassembler/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="/ar-interaction-patterns/css/layout_default.css" rel="stylesheet">
+  <link href="/ar-interaction-patterns/css/layout_pattern.css" rel="stylesheet">
+  <link href="/ar-interaction-patterns/css/cards.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- _includes/header.html -->
+<div class="title-bar">
+  <!-- 左侧 Logo 和 Tagline -->
+  <div class="logo-section">
+    <h4 class="logo">
+      <a href="/ar-interaction-patterns/index.html">AR Pattern Library</a>
+    </h4>
+    <p class="tagline">An HMD-based AR interaction design pattern collection</p>
+  </div>
+
+  <!-- 右侧搜索栏 + About & Contact 链接 + 移动端汉堡按钮 -->
+  <div class="header-right">
+    <form class="search-form" action="/ar-interaction-patterns/search/" method="get">
+      <div class="search-input-wrapper">
+        <span class="search-icon">🔍</span>
+        <input type="text" name="q" placeholder="Search..." />
+      </div>
+      <button type="submit">Search</button>
+    </form>
+
+    <!-- 移动端汉堡按钮，点击后显示/隐藏导航栏 -->
+    <button class="menu-toggle">☰</button>
+
+    <!-- Header 顶部右侧导航项 -->
+    <ul class="header-nav">
+      <li><a href="/ar-interaction-patterns/about.html" class="">About</a></li>
+      <li><a href="/ar-interaction-patterns/contact.html" class="">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 一级主导航栏（页面主菜单） -->
+<nav class="navbar" id="mainNav">
+  <ul class="nav-links">
+    <li><a href="/ar-interaction-patterns/index.html" class="">Home</a></li>
+    <li><a href="/ar-interaction-patterns/patterns.html" class="active">Patterns</a></li>
+    <li><a href="/ar-interaction-patterns/tech.html" class="">Technology</a></li>
+    <li><a href="/ar-interaction-patterns/literature.html" class="">Literature</a></li>
+  </ul>
+</nav>
+
+    <div class="pattern-page-container">
+      <aside class="pattern-sidebar">
+        <nav class="pattern-subnav">
+  <ul class="pattern-list">
+
+    <!-- High-Level Patterns -->
+    <li class="pattern-group">
+      <h3>High-Level Patterns</h3>
+      <ul>
+        
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/high-01-guiding/"
+               class="">
+              Point of Interest Guide
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/high-02-indicator/"
+               class="">
+              Experience Indicator
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/high-03-presenter/"
+               class="">
+              Experience Presenter
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+
+    <!-- Sub-Level Patterns -->
+    <li class="pattern-group">
+      <h3>Sub-Level Patterns</h3>
+      <ul>
+        
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-1-1-avatar-guide/"
+               class="">
+              Avatar Guide
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-1-2-forward-cue-routing/"
+               class="">
+              Forward Cue-Routing
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-2-1-floor-circle/"
+               class="">
+              Floor circle
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-2-2-knowledge-trigger/"
+               class="">
+              Knowledge Trigger
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-3-1-sequential-explanation/"
+               class="">
+              Sequential Explanation
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-3-2-labelling/"
+               class="">
+              Labelling
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-3-3-ar-exhibit-reassembler/"
+               class="active">
+              Exhibit Reassembler
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-3-4-ar-feature-drawing/"
+               class="">
+              Feature Drawing
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-3-5-ar-threat-defender/"
+               class="">
+              Threat Defender
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+
+  </ul>
+</nav>
+
+      </aside>
+
+      <main class="pattern-main-content">
+        <div class="column">
+  <img src="/ar-interaction-patterns/images/Placing1.jpg" alt="AR Interaction" class="profile" />
+</div>
+<h1 id="ar-exhibit-reassembler">AR Exhibit Reassembler</h1>
+
+<h2 id="problem">Problem</h2>
+<p>When an exhibit showcases only partial physical artifacts, visitors struggle to grasp the exhibit’s full form and scale, hindering their understanding of how individual parts relate to the whole.</p>
+
+<h2 id="context">Context</h2>
+<p>This pattern applies to museum pieces (e.g., fossils, machinery, architectural relics) where substantial elements are missing, yet digital reconstructions are available to complete the story.</p>
+
+<h2 id="use-when">Use When</h2>
+
+<ul>
+  <li>
+    <p>Visitors encounter exhibits with missing components that must be virtually reconstructed.</p>
+  </li>
+  <li>
+    <p>The goal is to deepen comprehension of an object’s overall structure and significance through active participation.</p>
+  </li>
+</ul>
+
+<h2 id="solution">Solution</h2>
+
+<p><strong>Jigsaw-Puzzle Reconstruction Mechanic</strong></p>
+
+<ul>
+  <li>
+    <p>Spawn interactive 3-D pieces representing the absent parts.</p>
+  </li>
+  <li>
+    <p>Require visitors to match shapes, edges, or textures to dock each piece in its correct position on the physical artifact.</p>
+  </li>
+</ul>
+
+<p><strong>Progression Feedback</strong></p>
+
+<ul>
+  <li>
+    <p>After every correct placement, provide immediate visual confirmation (e.g., glow animation) and an encouraging audio cue.</p>
+  </li>
+  <li>
+    <p>Display a completion meter to motivate continued engagement.</p>
+  </li>
+</ul>
+
+<p><strong>Adaptive Challenge Balancing</strong></p>
+
+<ul>
+  <li>
+    <p>Begin with boundary or high-contrast pieces to build confidence.</p>
+  </li>
+  <li>
+    <p>Gradually increase difficulty by introducing subtler matches or mirrored pieces based on user performance.</p>
+  </li>
+</ul>
+
+<p><strong>Start-Point Guidance &amp; Tutorial</strong></p>
+
+<ul>
+  <li>Highlight an initial region of interest and launch a concise voice-over or on-screen guide explaining controls and objectives.</li>
+</ul>
+
+<p><strong>Narrative Enhancements</strong></p>
+
+<ul>
+  <li>As sections assemble, trigger contextual facts (e.g., bone function, historical discovery) to weave learning into the puzzle flow.</li>
+</ul>
+
+<h2 id="media">Media</h2>
+
+<h2 id="notes">Notes</h2>
+
+<p>This pattern transforms incomplete physical remains into a hands-on, completion-driven experience that reinforces structural understanding and sustains visitor motivation.</p>
+
+      </main>
+    </div>
+  </div>
+
+  <footer id="contact">
+    <p class="hero_header">GET IN TOUCH WITH ME</p>
+    <a href="mailto:yu.liu@hs-rm.de" class="button">EMAIL ME</a>
+  </footer>
+  
+  <div class="copyright">
+    &copy; 2025 Yu Liu. This project is part of my PhD research and is released under the 
+    <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
+  </div>
+  
+  <script src="/ar-interaction-patterns/assets/js/site.js" defer></script>
+</body>
+</html>

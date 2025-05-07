@@ -1,0 +1,16 @@
+<!-- _includes/tech-card.html -->
+<div class="thumbnail technology {{ tech.tech_category }}">
+    <a href="{{ tech.url | relative_url }}">
+      <div class="image-container">
+        <img src="{{ tech.image | relative_url }}" alt="{{ tech.title }} image">
+      </div>
+      <h4>{{ tech.title }}</h4>
+    </a>
+  
+    <div class="summary-truncated">
+      {{ tech.description }}
+    </div>
+  
+    <div class="color-bar {{ tech.tech_category }}"></div>
+  </div>
+  

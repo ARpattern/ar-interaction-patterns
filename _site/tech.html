@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Technology</title>
+  <link rel="canonical" href="http://localhost:4000/ar-interaction-patterns/tech.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="/ar-interaction-patterns/css/layout_default.css" rel="stylesheet">
+  <link href="/ar-interaction-patterns/css/layout_pattern.css" rel="stylesheet">
+  <link href="/ar-interaction-patterns/css/layout_technology.css" rel="stylesheet">
+  <link href="/ar-interaction-patterns/css/cards.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- _includes/header.html -->
+<div class="title-bar">
+  <!-- 左侧 Logo 和 Tagline -->
+  <div class="logo-section">
+    <h4 class="logo">
+      <a href="/ar-interaction-patterns/index.html">AR Pattern Library</a>
+    </h4>
+    <p class="tagline">An HMD-based AR interaction design pattern collection</p>
+  </div>
+
+  <!-- 右侧搜索栏 + About & Contact 链接 + 移动端汉堡按钮 -->
+  <div class="header-right">
+    <form class="search-form" action="/ar-interaction-patterns/search/" method="get">
+      <div class="search-input-wrapper">
+        <span class="search-icon">🔍</span>
+        <input type="text" name="q" placeholder="Search..." />
+      </div>
+      <button type="submit">Search</button>
+    </form>
+
+    <!-- 移动端汉堡按钮，点击后显示/隐藏导航栏 -->
+    <button class="menu-toggle">☰</button>
+
+    <!-- Header 顶部右侧导航项 -->
+    <ul class="header-nav">
+      <li><a href="/ar-interaction-patterns/about.html" class="">About</a></li>
+      <li><a href="/ar-interaction-patterns/contact.html" class="">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 一级主导航栏（页面主菜单） -->
+<nav class="navbar" id="mainNav">
+  <ul class="nav-links">
+    <li><a href="/ar-interaction-patterns/index.html" class="">Home</a></li>
+    <li><a href="/ar-interaction-patterns/patterns.html" class="">Patterns</a></li>
+    <li><a href="/ar-interaction-patterns/tech.html" class="active">Technology</a></li>
+    <li><a href="/ar-interaction-patterns/literature.html" class="">Literature</a></li>
+  </ul>
+</nav>
+
+    <div class="pattern-page-container">
+      <aside class="pattern-sidebar">
+        <nav class="pattern-subnav">
+  <ul class="pattern-list">
+
+    
+
+    
+      
+      
+        <li class="pattern-group">
+          <h3>Guidance Prefabs</h3>
+          <ul>
+            
+              <li>
+                <a href="/ar-interaction-patterns/technology/forward-cue/"
+                   class="">
+                  Forward Cue–Routing
+                </a>
+              </li>
+            
+          </ul>
+        </li>
+      
+    
+      
+      
+    
+      
+      
+    
+
+  </ul>
+</nav>
+
+      </aside>
+      <main class="pattern-main-content">
+        <div class="pattern-main-content">
+
+  <!-- 介绍部分 -->
+  <section id="about" class="intro">
+    <div class="column">
+      <img src="/ar-interaction-patterns/images/TechImage/Labelsofbones.png" alt="AR Technology Implementation" class="profile">
+    </div>    
+    <div class="column">
+      <h3 class="section-subtitle">Introduction</h3>
+      <p class="intro-text">
+        The <strong>Technology</strong> module presents the practical implementations of the interaction design patterns developed as part of my PhD research on head-mounted display (HMD)-based augmented reality in cultural heritage contexts.
+      </p>
+      <p class="intro-text">
+        All interaction patterns showcased here were originally conceived, designed, and evaluated by me, with the goal of supporting developers in creating effective AR interaction experiences grounded in both usability and contextual relevance.
+      </p>
+      <p class="intro-text">
+        To facilitate reuse and practical application, each pattern has been implemented as a Unity prefab, encapsulating its core interaction mechanisms. These prefabs are available for download and linked to corresponding GitHub repositories.
+      </p>
+      <p class="intro-text">
+        The Unity scripting work was technically supported by <strong>Manuel Feller</strong>, a master’s student in computer science, who contributed to the implementation of selected interaction scripts under my supervision. All algorithms and interaction logic were defined and approved by me to ensure consistency with the theoretical framework of the research.
+      </p>
+      <p class="intro-text">
+        This module complements the theoretical contributions of the dissertation by translating pattern-based design into ready-to-use, field-tested components suitable for integration into real-world AR applications.
+      </p>
+    </div>
+  </section>
+
+  <!-- Prefab 卡片展示部分 -->
+  <section class="gallery-section">
+    <h2 class="section-title">Unity Prefabs and Tools</h2>
+    <div class="gallery">
+      
+      
+        <!-- _includes/tech-card.html -->
+<div class="thumbnail technology guidance">
+    <a href="/ar-interaction-patterns/technology/forward-cue/">
+      <div class="image-container">
+        <img src="/ar-interaction-patterns/images/TechImage/ForwardCueRootImage.png" alt="Forward Cue–Routing image">
+      </div>
+      <h4>Forward Cue–Routing</h4>
+    </a>
+  
+    <div class="summary-truncated">
+      A Unity prefab implementing visual forward cue navigation in HMD-based AR applications.
+    </div>
+  
+    <div class="color-bar guidance"></div>
+  </div>
+  
+      
+    </div>
+  </section>
+
+</div>
+
+      </main>
+    </div>
+  </div>
+
+  <footer id="contact">
+    <p class="hero_header">GET IN TOUCH WITH ME</p>
+    <a href="mailto:yu.liu@hs-rm.de" class="button">EMAIL ME</a>
+  </footer>
+  
+  <div class="copyright">
+    &copy; 2025 Yu Liu. This project is part of my PhD research and is released under the 
+    <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
+  </div>
+  
+  <script src="/ar-interaction-patterns/assets/js/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<nav class="pattern-subnav">
+  <ul class="pattern-list">
+
+    {% assign categories = "guidance,feedback,input" | split: "," %}
+
+    {% for category in categories %}
+      {% assign tech_items = site.technology | where: "tech_category", category | sort: "order" %}
+      {% if tech_items.size > 0 %}
+        <li class="pattern-group">
+          <h3>{{ category | capitalize }} Prefabs</h3>
+          <ul>
+            {% for tech in tech_items %}
+              <li>
+                <a href="{{ tech.url | relative_url }}"
+                   class="{% if page.url == tech.url %}active{% endif %}">
+                  {{ tech.title }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endif %}
+    {% endfor %}
+
+  </ul>
+</nav>

@@ -1,0 +1,43 @@
+<!-- _includes/card.html -->
+{% assign item = item | default: include.pattern %}
+
+<div class="thumbnail {{ item.pattern_category }} {{ type }}">
+  <a href="{% if type == 'pattern' %}{{ item.url | relative_url }}{% else %}{{ item.link }}{% endif %}" target="{% if type == 'technology' %}_blank{% endif %}">
+    <div class="image-container">
+      {% if type == "pattern" and item.category == "high-level" %}
+        <div class="color-block {{ item.pattern_category }}">
+          {% if item.overlay %}
+            <img src="{{ item.overlay | relative_url }}" alt="overlay icon" class="overlay-icon">
+          {% endif %}
+          <span class="block-text">{{ item.block_text | default: item.title }}</span>
+        </div>
+      {% else %}
+        <img src="{{ item.thumbnail | default: item.image | relative_url }}" alt="{{ item.title }}">
+      {% endif %}
+    </div>
+
+    <h4>{{ item.title }}</h4>
+
+    {% if type == "technology" %}
+      <p class="summary-truncated">{{ item.description }}</p>
+    {% endif %}
+  </a>
+
+  {% if item.tags and type == "pattern" %}
+    <p class="tag">
+      {% for tag in item.tags %}
+        <span class="tag-item">{{ tag }}</span>{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </p>
+  {% endif %}
+
+  {% if (item.summary or item.description) and type == "pattern" %}
+    <div class="summary-truncated">
+      {{ item.summary | default: item.description }}
+    </div>
+  {% endif %}
+
+  {% if type == "pattern" %}
+    <div class="color-bar {{ item.pattern_category }}"></div>
+  {% endif %}
+</div>

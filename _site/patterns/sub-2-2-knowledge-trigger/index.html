@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Knowledge Trigger</title>
+  <link rel="canonical" href="http://localhost:4000/ar-interaction-patterns/patterns/sub-2-2-knowledge-trigger/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="/ar-interaction-patterns/css/layout_default.css" rel="stylesheet">
+  <link href="/ar-interaction-patterns/css/layout_pattern.css" rel="stylesheet">
+  <link href="/ar-interaction-patterns/css/cards.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- _includes/header.html -->
+<div class="title-bar">
+  <!-- 左侧 Logo 和 Tagline -->
+  <div class="logo-section">
+    <h4 class="logo">
+      <a href="/ar-interaction-patterns/index.html">AR Pattern Library</a>
+    </h4>
+    <p class="tagline">An HMD-based AR interaction design pattern collection</p>
+  </div>
+
+  <!-- 右侧搜索栏 + About & Contact 链接 + 移动端汉堡按钮 -->
+  <div class="header-right">
+    <form class="search-form" action="/ar-interaction-patterns/search/" method="get">
+      <div class="search-input-wrapper">
+        <span class="search-icon">🔍</span>
+        <input type="text" name="q" placeholder="Search..." />
+      </div>
+      <button type="submit">Search</button>
+    </form>
+
+    <!-- 移动端汉堡按钮，点击后显示/隐藏导航栏 -->
+    <button class="menu-toggle">☰</button>
+
+    <!-- Header 顶部右侧导航项 -->
+    <ul class="header-nav">
+      <li><a href="/ar-interaction-patterns/about.html" class="">About</a></li>
+      <li><a href="/ar-interaction-patterns/contact.html" class="">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 一级主导航栏（页面主菜单） -->
+<nav class="navbar" id="mainNav">
+  <ul class="nav-links">
+    <li><a href="/ar-interaction-patterns/index.html" class="">Home</a></li>
+    <li><a href="/ar-interaction-patterns/patterns.html" class="active">Patterns</a></li>
+    <li><a href="/ar-interaction-patterns/tech.html" class="">Technology</a></li>
+    <li><a href="/ar-interaction-patterns/literature.html" class="">Literature</a></li>
+  </ul>
+</nav>
+
+    <div class="pattern-page-container">
+      <aside class="pattern-sidebar">
+        <nav class="pattern-subnav">
+  <ul class="pattern-list">
+
+    <!-- High-Level Patterns -->
+    <li class="pattern-group">
+      <h3>High-Level Patterns</h3>
+      <ul>
+        
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/high-01-guiding/"
+               class="">
+              Point of Interest Guide
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/high-02-indicator/"
+               class="">
+              Experience Indicator
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/high-03-presenter/"
+               class="">
+              Experience Presenter
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+
+    <!-- Sub-Level Patterns -->
+    <li class="pattern-group">
+      <h3>Sub-Level Patterns</h3>
+      <ul>
+        
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-1-1-avatar-guide/"
+               class="">
+              Avatar Guide
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-1-2-forward-cue-routing/"
+               class="">
+              Forward Cue-Routing
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-2-1-floor-circle/"
+               class="">
+              Floor circle
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-2-2-knowledge-trigger/"
+               class="active">
+              Knowledge Trigger
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-3-1-sequential-explanation/"
+               class="">
+              Sequential Explanation
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-3-2-labelling/"
+               class="">
+              Labelling
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-3-3-ar-exhibit-reassembler/"
+               class="">
+              Exhibit Reassembler
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-3-4-ar-feature-drawing/"
+               class="">
+              Feature Drawing
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-3-5-ar-threat-defender/"
+               class="">
+              Threat Defender
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+
+  </ul>
+</nav>
+
+      </aside>
+
+      <main class="pattern-main-content">
+        <div class="column">
+  <img src="/ar-interaction-patterns/images/Gif/GrabFish-ezgif.com-video-to-gif-converter.gif" alt="AR Interaction" class="profile" />
+</div>
+<h1 id="exhibit-knowledge-trigger">Exhibit Knowledge Trigger</h1>
+
+<h2 id="problem">Problem</h2>
+<p>Visitors frequently perceive AR prompts as merely decorative and may fail to uncover deeper scientific or cultural insights embedded in an exhibit. Without an engaging, goal-oriented micro-task, the core educational message can remain latent, reducing the interpretive value of the AR experience.</p>
+
+<h2 id="context">Context</h2>
+<p>Applicable in AR-enhanced galleries where:</p>
+
+<ul>
+  <li>
+    <p>Exhibits possess specific behavioural or functional phenomena (e.g., echolocation) that benefit from experiential demonstration;</p>
+  </li>
+  <li>
+    <p>Spatial affordances allow placement of auxiliary virtual objects within a few metres of the primary exhibit;</p>
+  </li>
+  <li>
+    <p>Visitors are encouraged to perform light, one-step interactions (e.g., grab-and-place) rather than lengthy manipulation sequences.</p>
+  </li>
+</ul>
+
+<h2 id="use-when">Use When</h2>
+
+<ul>
+  <li>
+    <p>Designers need to foreground a single, high-value knowledge point before unlocking more extensive AR content.</p>
+  </li>
+  <li>
+    <p>Visitors are likely to be attracted by playful, embodied tasks that immediately visualise cause–and-effect relationships.</p>
+  </li>
+  <li>
+    <p>The museum aims to scaffold learning progressively, rewarding exploratory behaviour with additional layers of information.</p>
+  </li>
+</ul>
+
+<h2 id="solution">Solution</h2>
+
+<p>Extract a concise knowledge nugget from the exhibit and embed it in an interaction loop that is short, intuitive, and intrinsically meaningful.</p>
+
+<p><strong>Knowledge-Centric Interaction Loop</strong></p>
+
+<ul>
+  <li>
+    <p>Identify the exhibit’s key concept—in the Orca case, ultrasonic hunting.</p>
+  </li>
+  <li>
+    <p>Author an auxiliary virtual object (e.g., a fish) positioned 2–3 m from the life-size 3-D orca model.</p>
+  </li>
+  <li>
+    <p>Instruct the visitor (verbally or via subtle UI) to grab the fish.</p>
+  </li>
+</ul>
+
+<p><strong>Dynamic Exhibit Response</strong></p>
+
+<p>Upon fish pickup, trigger a state change in the orca model:</p>
+
+<ul>
+  <li>
+    <p>Orca re-orients toward the fish with realistic swimming animation;</p>
+  </li>
+  <li>
+    <p>A pulsed, cone-shaped sonar waveform emanates from the orca’s head;</p>
+  </li>
+  <li>
+    <p>Spatial audio plays an authentic echolocation click sequence.</p>
+  </li>
+</ul>
+
+<p><strong>Completion &amp; Knowledge Delivery</strong></p>
+
+<p>When the visitor places or throws the fish into the orca’s mouth region:</p>
+
+<ul>
+  <li>
+    <p>A confirmation chime sounds and the sonar animation ceases;</p>
+  </li>
+  <li>
+    <p>A concise multimedia panel appears, summarising orca echolocation (frequency range, hunting tactics, ecological relevance);</p>
+  </li>
+  <li>
+    <p>The panel offers a “Discover More” button that unlocks additional AR layers—e.g., feeding-behaviour mini-scenes or comparative anatomy overlays.</p>
+  </li>
+</ul>
+
+<p><strong>Feedback Cues</strong></p>
+
+<ul>
+  <li>
+    <p>Visual — fish outline glows when within the valid drop zone; orca eyes blink to acknowledge success.</p>
+  </li>
+  <li>
+    <p>Auditory — escalating sonar pings as proximity narrows, resolved by a softer “capture” tone on completion.</p>
+  </li>
+  <li>
+    <p>Haptic (optional) — short controller vibration or glove feedback when the fish is released correctly.</p>
+  </li>
+</ul>
+
+<h2 id="media">Media</h2>
+
+<h2 id="notes">Notes</h2>
+
+<p>The Exhibit Knowledge Trigger pattern blends discovery learning with purposeful motion, ensuring each interaction yields an immediate educational payoff. By coupling a single-step task to an iconic behavioural demonstration, it magnifies visitor curiosity and seamlessly channels them into deeper AR content pathways.</p>
+
+      </main>
+    </div>
+  </div>
+
+  <footer id="contact">
+    <p class="hero_header">GET IN TOUCH WITH ME</p>
+    <a href="mailto:yu.liu@hs-rm.de" class="button">EMAIL ME</a>
+  </footer>
+  
+  <div class="copyright">
+    &copy; 2025 Yu Liu. This project is part of my PhD research and is released under the 
+    <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
+  </div>
+  
+  <script src="/ar-interaction-patterns/assets/js/site.js" defer></script>
+</body>
+</html>

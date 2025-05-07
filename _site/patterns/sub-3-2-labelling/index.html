@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Labelling</title>
+  <link rel="canonical" href="http://localhost:4000/ar-interaction-patterns/patterns/sub-3-2-labelling/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="/ar-interaction-patterns/css/layout_default.css" rel="stylesheet">
+  <link href="/ar-interaction-patterns/css/layout_pattern.css" rel="stylesheet">
+  <link href="/ar-interaction-patterns/css/cards.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- _includes/header.html -->
+<div class="title-bar">
+  <!-- 左侧 Logo 和 Tagline -->
+  <div class="logo-section">
+    <h4 class="logo">
+      <a href="/ar-interaction-patterns/index.html">AR Pattern Library</a>
+    </h4>
+    <p class="tagline">An HMD-based AR interaction design pattern collection</p>
+  </div>
+
+  <!-- 右侧搜索栏 + About & Contact 链接 + 移动端汉堡按钮 -->
+  <div class="header-right">
+    <form class="search-form" action="/ar-interaction-patterns/search/" method="get">
+      <div class="search-input-wrapper">
+        <span class="search-icon">🔍</span>
+        <input type="text" name="q" placeholder="Search..." />
+      </div>
+      <button type="submit">Search</button>
+    </form>
+
+    <!-- 移动端汉堡按钮，点击后显示/隐藏导航栏 -->
+    <button class="menu-toggle">☰</button>
+
+    <!-- Header 顶部右侧导航项 -->
+    <ul class="header-nav">
+      <li><a href="/ar-interaction-patterns/about.html" class="">About</a></li>
+      <li><a href="/ar-interaction-patterns/contact.html" class="">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 一级主导航栏（页面主菜单） -->
+<nav class="navbar" id="mainNav">
+  <ul class="nav-links">
+    <li><a href="/ar-interaction-patterns/index.html" class="">Home</a></li>
+    <li><a href="/ar-interaction-patterns/patterns.html" class="active">Patterns</a></li>
+    <li><a href="/ar-interaction-patterns/tech.html" class="">Technology</a></li>
+    <li><a href="/ar-interaction-patterns/literature.html" class="">Literature</a></li>
+  </ul>
+</nav>
+
+    <div class="pattern-page-container">
+      <aside class="pattern-sidebar">
+        <nav class="pattern-subnav">
+  <ul class="pattern-list">
+
+    <!-- High-Level Patterns -->
+    <li class="pattern-group">
+      <h3>High-Level Patterns</h3>
+      <ul>
+        
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/high-01-guiding/"
+               class="">
+              Point of Interest Guide
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/high-02-indicator/"
+               class="">
+              Experience Indicator
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/high-03-presenter/"
+               class="">
+              Experience Presenter
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+
+    <!-- Sub-Level Patterns -->
+    <li class="pattern-group">
+      <h3>Sub-Level Patterns</h3>
+      <ul>
+        
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-1-1-avatar-guide/"
+               class="">
+              Avatar Guide
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-1-2-forward-cue-routing/"
+               class="">
+              Forward Cue-Routing
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-2-1-floor-circle/"
+               class="">
+              Floor circle
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-2-2-knowledge-trigger/"
+               class="">
+              Knowledge Trigger
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-3-1-sequential-explanation/"
+               class="">
+              Sequential Explanation
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-3-2-labelling/"
+               class="active">
+              Labelling
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-3-3-ar-exhibit-reassembler/"
+               class="">
+              Exhibit Reassembler
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-3-4-ar-feature-drawing/"
+               class="">
+              Feature Drawing
+            </a>
+          </li>
+        
+          <li>
+            <a href="/ar-interaction-patterns/patterns/sub-3-5-ar-threat-defender/"
+               class="">
+              Threat Defender
+            </a>
+          </li>
+        
+      </ul>
+    </li>
+
+  </ul>
+</nav>
+
+      </aside>
+
+      <main class="pattern-main-content">
+        <div class="column">
+  <img src="/ar-interaction-patterns/images/Gif/Labelling.gif" alt="AR Interaction" class="profile" />
+</div>
+<h1 id="sequential-explanation">Sequential Explanation</h1>
+
+<h2 id="problem">Problem</h2>
+<p>Visitors are unable to access detailed knowledge about specific parts or components of an exhibit due to spatial constraints in the exhibition area.</p>
+
+<h2 id="context">Context</h2>
+<p>Exhibits often consist of multiple parts or components. In limited exhibition spaces, it’s challenging to provide comprehensive labels or explanations for each component. Visitors need clear identification and information about what they are viewing, including the official names and significance of the exhibit parts.</p>
+
+<h2 id="use-when">Use When</h2>
+
+<ul>
+  <li>Visitors at the explanation function to learn more about specific exhibit components.</li>
+  <li>An exhibit includes several parts/components, and the exhibition space is limited.</li>
+</ul>
+
+<h2 id="solution">Solution</h2>
+
+<ul>
+  <li>Pointing Line: Implement a visual pointing line that connects the physical exhibit parts/components.</li>
+  <li>Title Text: Provide a title text for each part/component, clearly visible and linked to the respective element via the pointing line.</li>
+  <li>Proximity Trigger: Integrate a distance sensor that detects the proximity of the user to the title text.</li>
+  <li>Conditional Explanation Display: When a visitor approaches a title text (triggering the sensor), display a detailed explanation of that part/component. Hide this detailed information when the visitor moves away.</li>
+</ul>
+
+<h2 id="media">Media</h2>
+
+<h2 id="notes">Notes</h2>
+
+<p>This pattern supports enhanced visitor engagement by delivering contextual, space-efficient information tailored to user interest and proximity.</p>
+
+      </main>
+    </div>
+  </div>
+
+  <footer id="contact">
+    <p class="hero_header">GET IN TOUCH WITH ME</p>
+    <a href="mailto:yu.liu@hs-rm.de" class="button">EMAIL ME</a>
+  </footer>
+  
+  <div class="copyright">
+    &copy; 2025 Yu Liu. This project is part of my PhD research and is released under the 
+    <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
+  </div>
+  
+  <script src="/ar-interaction-patterns/assets/js/site.js" defer></script>
+</body>
+</html>
