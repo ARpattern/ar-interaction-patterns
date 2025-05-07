@@ -165,15 +165,19 @@ a.git-button:hover {
 
 
 @media screen and (max-width: 800px) {
-  .intro {
-    flex-direction: column;
-    gap: 1rem;
-  }
+  /* 布局方向调整 */
+  .intro,
   .pattern-page-container {
     flex-direction: column;
     gap: 1rem;
   }
 
+  /* 容器宽度适配小屏 */
+  .container {
+    width: 95%;
+  }
+
+  /* 侧边栏样式适配 */
   .pattern-sidebar {
     width: 100%;
     position: static;
@@ -187,6 +191,7 @@ a.git-button:hover {
     max-width: 100%;
   }
 
+  /* 子导航样式优化 */
   .pattern-subnav h3 {
     margin-top: 1rem;
   }
@@ -194,4 +199,26 @@ a.git-button:hover {
   .pattern-subnav ul {
     padding-left: 0.5rem;
   }
+
+  /* 文本排版适配 */
+  .page-section {
+    padding: 1rem 1rem;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /* 子导航下拉菜单支持点击展开 */
+  .pattern-subnav .dropdown:focus-within .dropdown-content {
+    display: block;
+  }
+
+  /* 可选：缩略图在移动端仍保留轻微交互视觉反馈 */
+  .thumbnail.technology:active {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+  }
 }
+
