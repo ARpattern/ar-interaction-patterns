@@ -71,14 +71,14 @@ body {
   border-bottom: 4px solid #a5a5a5;
 }
 
-.thumbnail.technology.feedback {
-  border-top: 4px solid #ff8c66;
-  border-bottom: 4px solid #e6734f;
+.thumbnail.technology.indicator {
+  border-top: 4px solid #f3f3f3;
+  border-bottom: 4px solid #a5a5a5;
 }
 
-.thumbnail.technology.input {
-  border-top: 4px solid #8cc44a;
-  border-bottom: 4px solid #6fa83a;
+.thumbnail.technology.presenter {
+  border-top: 4px solid #f3f3f3;
+  border-bottom: 4px solid #a5a5a5;
 }
 .pattern-subnav {
   background: none;

@@ -16,6 +16,12 @@
 
   {
     "title": "Untitled",
+    "url": "/ar-interaction-patterns/_technology/floor_circle_indicator.html",
+    "excerpt": "<section class=\"page-section\">  <h1 class=\"page-title\">Floor Circle Indicator</h1>  <div class=\"image-wrapper\">    <img src=\"/ar-interaction-patterns/images/TechImage/FloorCircle_Indicator.png\" alt..."
+  },
+
+  {
+    "title": "Untitled",
     "url": "/ar-interaction-patterns/_technology/forward-cue.html",
     "excerpt": "<section class=\"page-section\">  <h1 class=\"page-title\">Forward Cue–Routing</h1><div class=\"image-wrapper\">  <img src=\"/ar-interaction-patterns/images/TechImage/ForwardCueRootImage.png\" alt=\"Forward..."
   },
@@ -204,6 +210,12 @@
     "title": "Untitled",
     "url": "/ar-interaction-patterns/patterns/sub-3-5-ar-threat-defender/",
     "excerpt": "<div class=\"column\">  <img src=\"/ar-interaction-patterns/images/Object%20Catching_1.png\" alt=\"AR Interaction\" class=\"profile\" /></div><h1 id=\"ar-threat-defender\">AR Threat Defender</h1><h2 id=\"prob..."
+  },
+
+  {
+    "title": "Untitled",
+    "url": "/ar-interaction-patterns/technology/floor-circle-indicator/",
+    "excerpt": "<section class=\"page-section\">  <h1 class=\"page-title\">Floor Circle Indicator</h1>  <div class=\"image-wrapper\">    <img src=\"/ar-interaction-patterns/images/TechImage/FloorCircle_Indicator.png\" alt..."
   },
 
   {

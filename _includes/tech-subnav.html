@@ -1,7 +1,7 @@
 <nav class="pattern-subnav">
   <ul class="pattern-list">
 
-    {% assign categories = "guidance,feedback,input" | split: "," %}
+    {% assign categories = "guidance,feedback,input,indicator,presenter" | split: "," %}
 
     {% for category in categories %}
       {% assign tech_items = site.technology | where: "tech_category", category | sort: "order" %}

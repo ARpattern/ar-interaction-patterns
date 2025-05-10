@@ -5,7 +5,8 @@ order: 1
 description: A Unity prefab implementing visual forward cue navigation in HMD-based AR applications.
 image: /images/TechImage/ForwardCueRootImage.png
 tech_category: guidance
-github: https://github.com/lovesini2152/Git-AR-Design-Patterns_
+github: https://github.com/lovesini2152/AR-Design-Patterns_Git/releases/tag/ForwardCue_Routing_v1.0
+download: https://github.com/lovesini2152/AR-Design-Patterns_Git/releases/download/ForwardCue_Routing_v1.0/ForwardCue_Routing.unitypackage
 ---
 
 
@@ -27,4 +28,10 @@ github: https://github.com/lovesini2152/Git-AR-Design-Patterns_
   </p>
 
   <a href="{{ page.github }}" class="git-button" target="_blank">View on GitHub</a>
+
+  <section class="pattern-download">
+    <a class="download-btn" href="{{ page.download }}">
+      ⬇ Download forward cue_rooting.unitypackage
+    </a>
+  </section>
 </section>
